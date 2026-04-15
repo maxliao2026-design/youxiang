@@ -1,0 +1,26 @@
+# 排除所有影片與大型媒體
+**/*.mp4
+**/*.mov
+**/*.webm
+**/*.ogv
+**/*.avi
+**/*.wmv
+
+# 排除設計原始檔與壓縮包
+**/*.ai
+**/*.psd
+**/*.zip
+**/*.rar
+**/*.7z
+
+# 排除系統雜物
+**/.DS_Store
+**/Thumbs.db
+
+# 排除 Next.js 與編譯產物
+node_modules/
+.next/
+/build
+/out
+.vercel
+*.tsbuildinfo
