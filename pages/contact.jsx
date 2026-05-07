@@ -16,6 +16,10 @@ const TRANSLATIONS = {
         "有任何問題或建議？歡迎透過表單聯絡 Memory Corner 有香餐飲集團，我們將盡快回覆您。提供餐飲體驗、線上訂購、商業合作等諮詢服務。",
     },
     title: "聯絡我們 (Contact Us)",
+    notice: {
+      heading: "重要提醒",
+      body: "本集團高貴林（Coquitlam）分店目前不接受訂位/預約,如需用餐請現場 Walk-in 加入候位名單(Waiting List),謝謝您的理解與配合!",
+    },
     form: {
       name: "姓名 (Name)",
       name_ph: "請輸入您的姓名",
@@ -93,6 +97,10 @@ const TRANSLATIONS = {
         "Have questions or suggestions? Contact Memory Dining Group through this form for dining experience, online orders, or business inquiries.",
     },
     title: "Contact Us",
+    notice: {
+      heading: "Important Notice",
+      body: "Our Coquitlam location does NOT accept reservations at this time. Please walk in and join the waiting list. Thank you for your understanding!",
+    },
     form: {
       name: "Name",
       name_ph: "Enter your name",
@@ -345,6 +353,16 @@ export default function ContactPage({ t, locale }) {
                 {t.title}
               </h1>
             </div>
+
+            {/* 高貴林店不接受預訂的重要提醒 */}
+            <div className="notice" role="alert" aria-live="polite">
+              <span className="notice-icon" aria-hidden="true">⚠️</span>
+              <div className="notice-content">
+                <p className="notice-heading">{t.notice.heading}</p>
+                <p className="notice-body">{t.notice.body}</p>
+              </div>
+            </div>
+
             <form className="form" onSubmit={handleSubmit}>
               {/* 欄位1：姓名 */}
               <div className="field">
@@ -534,6 +552,57 @@ export default function ContactPage({ t, locale }) {
           @media (min-width: 768px) {
             .card {
               padding: 40px 40px;
+            }
+          }
+
+          .notice {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background-color: #fff7ed;
+            border: 2px solid #f59e0b;
+            border-left-width: 6px;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 22px;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.18);
+          }
+
+          .notice-icon {
+            font-size: 1.4rem;
+            line-height: 1.2;
+            flex-shrink: 0;
+          }
+
+          .notice-content {
+            flex: 1;
+          }
+
+          .notice-heading {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #b45309;
+            margin: 0 0 4px 0;
+            letter-spacing: 0.02em;
+          }
+
+          .notice-body {
+            font-size: 0.9rem;
+            color: #78350f;
+            line-height: 1.5;
+            margin: 0;
+          }
+
+          @media (min-width: 768px) {
+            .notice {
+              padding: 16px 20px;
+              gap: 14px;
+            }
+            .notice-heading {
+              font-size: 1rem;
+            }
+            .notice-body {
+              font-size: 0.95rem;
             }
           }
 
