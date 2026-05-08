@@ -18,7 +18,7 @@ const TRANSLATIONS = {
     title: "聯絡我們 (Contact Us)",
     notice: {
       heading: "重要提醒",
-      body: "本集團高貴林（Coquitlam）分店目前不接受訂位/預約,如需用餐請現場 Walk-in 加入候位名單(Waiting List),謝謝您的理解與配合!",
+      body: "目前無法透過此表單進行訂位/預約。如需用餐,請直接現場 Walk-in 加入候位名單(Waiting List)。謝謝您的理解與配合!",
     },
     form: {
       name: "姓名 (Name)",
@@ -99,7 +99,7 @@ const TRANSLATIONS = {
     title: "Contact Us",
     notice: {
       heading: "Important Notice",
-      body: "Our Coquitlam location does NOT accept reservations at this time. Please walk in and join the waiting list. Thank you for your understanding!",
+      body: "This contact form cannot be used for reservations. For dining, please walk in to join our waiting list. Thank you for your understanding!",
     },
     form: {
       name: "Name",
