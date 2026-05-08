@@ -18,8 +18,8 @@ const TRANSLATIONS = {
     title: "聯絡我們 (Contact Us)",
     notice: {
       heading: "重要提醒 / Important Notice",
-      body: "目前無法透過此表單進行訂位/預約。如需用餐,請直接現場 Walk-in 加入候位名單(Waiting List)。謝謝您的理解與配合!",
-      bodyEn: "This contact form cannot be used for reservations. For dining, please walk in to join our waiting list. Thank you for your understanding!",
+      body: "目前無法透過此表單進行訂位/預約。所有座位皆為現場 Walk-in 加入候位名單(Waiting List)。謝謝您的理解與配合!",
+      bodyEn: "This contact form cannot be used for reservations. All seating is walk-in only with a waiting list. Thank you for your understanding!",
     },
     form: {
       name: "姓名 (Name)",
@@ -100,8 +100,8 @@ const TRANSLATIONS = {
     title: "Contact Us",
     notice: {
       heading: "重要提醒 / Important Notice",
-      body: "目前無法透過此表單進行訂位/預約。如需用餐,請直接現場 Walk-in 加入候位名單(Waiting List)。謝謝您的理解與配合!",
-      bodyEn: "This contact form cannot be used for reservations. For dining, please walk in to join our waiting list. Thank you for your understanding!",
+      body: "目前無法透過此表單進行訂位/預約。所有座位皆為現場 Walk-in 加入候位名單(Waiting List)。謝謝您的理解與配合!",
+      bodyEn: "This contact form cannot be used for reservations. All seating is walk-in only with a waiting list. Thank you for your understanding!",
     },
     form: {
       name: "Name",
