@@ -13,6 +13,7 @@ import {
   useReducedMotion,
 } from "framer-motion";
 import Link from "next/link";
+import { ARTICLES } from "../data/news";
 
 /* =================================================================
    1. 靜態 UI 翻譯資料庫
@@ -33,20 +34,8 @@ const PAGE_TRANSLATIONS = {
 };
 
 /* =================================================================
-   2. 資料擴充
+   2. 設定
    ================================================================= */
-const NEWS_ITEMS = [
-  {
-    img: "/images/news-01.jpg",
-    title_zh: "滿額贈送Line Pay 點數回饋，買越多賺越多",
-    desc_zh: "[Line Pay 回饋] 限時活動，點數加倍送。",
-    title_en: "Get Line Pay points rewards, buy more earn more",
-    desc_en: "[Line Pay Rewards] Limited time offer, double points.",
-  },
-];
-
-// 生成假資料
-const NEWS = Array(17).fill(NEWS_ITEMS[0]);
 const PAGE_SIZE = 8;
 const spring = { type: "spring", stiffness: 70, damping: 22, mass: 0.9 };
 
@@ -62,7 +51,7 @@ const listVariants = (reduce) => ({
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.2 }, // 讓舊內容快速淡出
+    transition: { duration: 0.2 },
   },
 });
 
@@ -84,7 +73,7 @@ export default function News() {
   const isEn = locale === "en";
 
   const [page, setPage] = useState(1);
-  const totalPages = Math.max(1, Math.ceil(NEWS.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(ARTICLES.length / PAGE_SIZE));
   const reduce = useReducedMotion();
 
   // 切換頁面或語言時，滾動到頂部
@@ -94,7 +83,7 @@ export default function News() {
 
   const currentItems = useMemo(() => {
     const start = (page - 1) * PAGE_SIZE;
-    return NEWS.slice(start, start + PAGE_SIZE);
+    return ARTICLES.slice(start, start + PAGE_SIZE);
   }, [page]);
 
   const MotionLink = motion(Link);
@@ -126,8 +115,6 @@ export default function News() {
             >
               <AnimatePresence mode="wait">
                 <motion.div
-                  // 🔴 關鍵修改：Key 加入了 locale
-                  // 當 locale 改變時，React 會識別為不同元件，觸發 exit -> initial -> animate 流程
                   key={`page-${page}-lang-${locale}`}
                   className="contents"
                   variants={listVariants(reduce)}
@@ -141,8 +128,8 @@ export default function News() {
 
                     return (
                       <MotionLink
-                        href="/awards"
-                        key={`${page}-${i}-lang-${locale}`} // 這裡也加上 locale 比較保險
+                        href={`/news/${n.slug}`}
+                        key={`${page}-${i}-lang-${locale}`}
                         className="block will-change-transform"
                         whileTap={{ scale: 0.98 }}
                         style={{ transform: "translateZ(0)" }}
@@ -158,35 +145,36 @@ export default function News() {
                             willChange: "transform, opacity, filter",
                           }}
                         >
-                          <Link href="/news-inner">
-                            <div className="relative aspect-[1/1] border-2 border-black overflow-hidden">
-                              <motion.div
-                                whileHover={{ scale: 1.03 }}
-                                transition={spring}
-                                className="w-full h-full"
-                              >
-                                <Image
-                                  src={n.img}
-                                  alt={title}
-                                  fill
-                                  className="object-cover w-full"
-                                  sizes="(max-width: 1024px) 50vw, 25vw"
-                                  priority={i < 4}
-                                />
-                              </motion.div>
-                            </div>
+                          <div className="relative aspect-[1/1] border-2 border-black overflow-hidden">
+                            <motion.div
+                              whileHover={{ scale: 1.03 }}
+                              transition={spring}
+                              className="w-full h-full"
+                            >
+                              <Image
+                                src={n.img}
+                                alt={title}
+                                fill
+                                className="object-cover w-full"
+                                sizes="(max-width: 1024px) 50vw, 25vw"
+                                priority={i < 4}
+                              />
+                            </motion.div>
+                          </div>
 
-                            <div className="pt-1">
-                              <div className="px-3 py-5">
-                                <p className="text-[16px] text-gray-600">
-                                  {desc}
-                                </p>
-                                <h2 className="text-[24px] font-medium leading-tight text-black">
-                                  {title}
-                                </h2>
-                              </div>
+                          <div className="pt-1">
+                            <div className="px-3 py-5">
+                              <p className="text-[14px] text-gray-500 mb-1">
+                                {n.date}
+                              </p>
+                              <p className="text-[16px] text-gray-600">
+                                {desc}
+                              </p>
+                              <h2 className="text-[24px] font-medium leading-tight text-black">
+                                {title}
+                              </h2>
                             </div>
-                          </Link>
+                          </div>
                         </motion.article>
                       </MotionLink>
                     );
