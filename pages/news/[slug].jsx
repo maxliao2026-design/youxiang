@@ -41,10 +41,6 @@ const CONTENT = {
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">試營運期間，吃得到什麼？</h2>
           <p class="mb-4">「試營運」（soft opening）不是「半開」——是讓最早一批客人先體驗 Coquitlam 店風味的時期。試營運期間菜單較為精選，<strong>幾道熟客最常點的招牌菜，全部吃得到</strong>：</p>
-          <figure class="my-4 -mx-1 sm:mx-0 max-w-md">
-            <img src="/images/news/photos/lamb-hotpot.png" alt="當歸羊肉鍋 Angelica Root Lamb Hot Pot — 有香 Memory Corner 招牌料理，傳承自 1975 年高雄吳家羊肉鍋" class="rounded-lg w-full h-auto border border-stone-200 bg-white" loading="lazy" />
-            <figcaption class="text-[13px] text-gray-500 mt-2 italic">當歸羊肉鍋——三代家族傳承的招牌，Coquitlam 試營運期同樣吃得到。</figcaption>
-          </figure>
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -160,10 +156,6 @@ const CONTENT = {
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">What's Available During Soft Opening?</h2>
           <p class="mb-4">"Soft opening" doesn't mean "half-open" — it's the early window where the first wave of guests get to taste the Coquitlam location. The menu is curated during this period, and the dishes most regulars come back for are <strong>all available</strong>:</p>
-          <figure class="my-4 -mx-1 sm:mx-0 max-w-md">
-            <img src="/images/news/photos/lamb-hotpot.png" alt="Angelica Root Lamb Hot Pot at Memory Corner — the family signature dish, available at the Coquitlam location during soft opening" class="rounded-lg w-full h-auto border border-stone-200 bg-white" loading="lazy" />
-            <figcaption class="text-[13px] text-gray-500 mt-2 italic">Angelica Root Lamb Hot Pot — three generations of family recipe, available at Coquitlam during soft opening.</figcaption>
-          </figure>
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -314,10 +306,6 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">在有香實際上吃得到什麼？</h2>
 
           <h3 class="text-lg font-bold text-[#3b2a1a] mb-3 mt-6">招牌菜（4 道）</h3>
-          <figure class="my-4 -mx-1 sm:mx-0 max-w-md">
-            <img src="/images/news/photos/lamb-hotpot.png" alt="當歸羊肉鍋 Angelica Root Lamb Hot Pot — 有香 Memory Corner 招牌料理，傳承自 1975 年高雄吳家羊肉鍋" class="rounded-lg w-full h-auto border border-stone-200 bg-white" loading="lazy" />
-            <figcaption class="text-[13px] text-gray-500 mt-2 italic">當歸羊肉鍋——有香餐廳的招牌，1975 年高雄吳家羊肉鍋的延伸。</figcaption>
-          </figure>
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -461,10 +449,6 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">What Do You Actually Order at Memory Corner?</h2>
 
           <h3 class="text-lg font-bold text-[#3b2a1a] mb-3 mt-6">Signature Dishes (4)</h3>
-          <figure class="my-4 -mx-1 sm:mx-0 max-w-md">
-            <img src="/images/news/photos/lamb-hotpot.png" alt="Angelica Root Lamb Hot Pot at Memory Corner — the signature dish, carried from a 1975 Kaohsiung lamb hot pot shop" class="rounded-lg w-full h-auto border border-stone-200 bg-white" loading="lazy" />
-            <figcaption class="text-[13px] text-gray-500 mt-2 italic">Angelica Root Lamb Hot Pot — the signature dish at Memory Corner, carried from the family's 1975 Kaohsiung shop.</figcaption>
-          </figure>
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
