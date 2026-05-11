@@ -164,15 +164,15 @@ export default function News() {
 
                           <div className="pt-1">
                             <div className="px-3 py-5">
-                              <p className="text-[14px] text-gray-500 mb-1">
+                              <p className="text-[14px] text-gray-500 mb-2">
                                 {n.date}
                               </p>
-                              <p className="text-[16px] text-gray-600">
-                                {desc}
-                              </p>
-                              <h2 className="text-[24px] font-medium leading-tight text-black">
+                              <h2 className="text-[22px] sm:text-[24px] font-semibold leading-tight text-black mb-2">
                                 {title}
                               </h2>
+                              <p className="text-[15px] text-gray-600 leading-relaxed">
+                                {desc}
+                              </p>
                             </div>
                           </div>
                         </motion.article>
