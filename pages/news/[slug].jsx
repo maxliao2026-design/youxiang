@@ -29,7 +29,7 @@ const CONTENT = {
     "zh-TW": {
       title: "Memory Corner Coquitlam｜North Rd 試營運中",
       quick_answer:
-        "Memory Corner（有香）已於 Coquitlam 345 North Rd 開設第二家門市，目前處於試營運期，每日 11:30 AM – 11:00 PM 不分時段營業。試營運期間菜色較為精選，主要熱門菜（當歸羊肉鍋、台式三杯雞、有香鹽酥雞、蕃茄牛腩麵）都吃得到；午晚餐人均約 CAD $20–30。對 Tri-Cities（Coquitlam、Port Moody、Port Coquitlam）與 Burnaby 北側居民，意味著吃道地台菜不用再開車到 Richmond。",
+        "Memory Corner（有香）已於 Coquitlam 345 North Rd 開設第二家門市，目前處於試營運期。試營運期間菜色較為精選，主要熱門菜（當歸羊肉鍋、台式三杯雞、有香鹽酥雞、蕃茄牛腩麵）都吃得到；午晚餐人均約 CAD $20–30。對 Tri-Cities（Coquitlam、Port Moody、Port Coquitlam）與 Burnaby 北側居民，意味著吃道地台菜不用再開車到 Richmond。",
       content_html: `
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">對住在 Coquitlam 的人，這代表什麼？</h2>
@@ -79,7 +79,7 @@ const CONTENT = {
               </li>
               <li class="flex items-start gap-2">
                 <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-                <span><strong>營業時段</strong>：Richmond 採午晚餐分時段（午 11:30 AM–3:00 PM、晚 4:00 PM–10:00 PM；週五六晚至 11:00 PM）；Coquitlam <strong>連續營業 11:30 AM – 11:00 PM</strong>，下午茶時段也吃得到。</span>
+                <span><strong>營業時段</strong>：Coquitlam 採午晚餐分時段（週日至四 11:30 AM–3:00 PM、4:00 PM–10:00 PM；週五六晚至 11:00 PM）。Richmond 旗艦店週一至四為連續營業，週末則分時段。</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -94,7 +94,7 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">怎麼來：345 North Rd 的位置與動線</h2>
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <p class="mb-1"><strong>📍 地址</strong>：345 North Rd, Coquitlam, BC V3K 3V8</p>
-            <p class="mb-1"><strong>🕒 營業時間</strong>：每日 11:30 AM – 11:00 PM 不分時段</p>
+            <p class="mb-1"><strong>🕒 營業時間</strong>：週日至四 11:30 AM – 3:00 PM、4:00 PM – 10:00 PM；週五六 11:30 AM – 3:00 PM、4:00 PM – 11:00 PM</p>
             <p class="mb-1"><strong>☎ 電話</strong>：(604) 917-0168</p>
             <p class="mt-3 text-[14px] text-gray-600">North Rd 上、Coquitlam 與 Burnaby 交界處，距離 SFU Burnaby Mountain 校區開車約 20 分鐘，距離 Lougheed Town Centre SkyTrain 站約 5 分鐘車程。</p>
           </div>
@@ -110,10 +110,6 @@ const CONTENT = {
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
               <span><strong>SFU 留學生</strong>：從 Burnaby Mountain 下山約 20 分鐘車程，宿舍區跟室友揪一頓的好選擇。</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>下午茶時段想吃熱食的人</strong>：Coquitlam 店連續營業，下午 3 點到 4 點之間也吃得到（Richmond 旗艦店這時段休息）。</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -133,7 +129,7 @@ const CONTENT = {
         },
         {
           q: "與 Richmond 店有什麼不同？",
-          a: "同品牌、同集團、同熱門菜色，差別在於：Richmond 提供完整菜單、午晚餐分時段；Coquitlam 試營運期菜單較精選、每日 11:30 AM–11:00 PM 不分時段連續營業。完整對照請見 Memory Corner Richmond 介紹文章。",
+          a: "同品牌、同集團、同熱門菜色，差別在於：Richmond 提供完整菜單，週一至四連續營業、週末分時段；Coquitlam 試營運期菜單較為精選，每日採午晚餐分時段（週日至四晚至 10 點、週五六晚至 11 點）。完整對照請見 Memory Corner Richmond 介紹文章。",
         },
         {
           q: "客單價大概多少？",
@@ -152,7 +148,7 @@ const CONTENT = {
     en: {
       title: "Memory Corner Coquitlam: Taiwanese Restaurant Soft Opening",
       quick_answer:
-        "Memory Corner (有香) has opened its second location at 345 North Rd, Coquitlam, currently in soft opening with continuous service 11:30 AM – 11:00 PM daily. The opening menu is curated; the headline signatures (Angelica Root Lamb Hot Pot, Taiwanese Three-Cup Chicken, Memory Corner Deep-Fried Popcorn Chicken, Tomato Beef Brisket Noodle Soup) are available, with lunch and dinner averaging CAD $20–30 per person. For Tri-Cities (Coquitlam, Port Moody, Port Coquitlam) and north-Burnaby residents, this means authentic Taiwanese cuisine without the drive to Richmond.",
+        "Memory Corner (有香) has opened its second location at 345 North Rd, Coquitlam, currently in soft opening. The opening menu is curated; the headline signatures (Angelica Root Lamb Hot Pot, Taiwanese Three-Cup Chicken, Memory Corner Deep-Fried Popcorn Chicken, Tomato Beef Brisket Noodle Soup) are available, with lunch and dinner averaging CAD $20–30 per person. For Tri-Cities (Coquitlam, Port Moody, Port Coquitlam) and north-Burnaby residents, this means authentic Taiwanese cuisine without the drive to Richmond.",
       content_html: `
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">What This Means for Tri-Cities Residents</h2>
@@ -202,7 +198,7 @@ const CONTENT = {
               </li>
               <li class="flex items-start gap-2">
                 <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-                <span><strong>Hours</strong>: Richmond runs split lunch/dinner shifts (lunch 11:30 AM–3:00 PM; dinner 4:00 PM–10:00 PM, until 11:00 PM Fri/Sat); Coquitlam offers <strong>continuous service 11:30 AM – 11:00 PM</strong>, so afternoon visits work too.</span>
+                <span><strong>Hours</strong>: Coquitlam runs split lunch/dinner shifts daily (Sun–Thu 11:30 AM–3:00 PM and 4:00–10:00 PM; Fri–Sat dinner until 11:00 PM). Richmond runs continuously Mon–Thu and switches to split shifts on weekends.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -217,7 +213,7 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Visit: Finding 345 North Rd</h2>
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <p class="mb-1"><strong>📍 Address</strong>: 345 North Rd, Coquitlam, BC V3K 3V8</p>
-            <p class="mb-1"><strong>🕒 Hours</strong>: Daily 11:30 AM – 11:00 PM (continuous)</p>
+            <p class="mb-1"><strong>🕒 Hours</strong>: Sun–Thu 11:30 AM – 3:00 PM, 4:00 PM – 10:00 PM; Fri & Sat 11:30 AM – 3:00 PM, 4:00 PM – 11:00 PM</p>
             <p class="mb-1"><strong>☎ Phone</strong>: (604) 917-0168</p>
             <p class="mt-3 text-[14px] text-gray-600">On North Rd, near the Coquitlam–Burnaby border. About 20 minutes by car from SFU Burnaby Mountain campus, and roughly 5 minutes from Lougheed Town Centre SkyTrain Station.</p>
           </div>
@@ -233,10 +229,6 @@ const CONTENT = {
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
               <span><strong>SFU students</strong> — about 20 minutes off Burnaby Mountain; an easy group dinner option from the residences.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Late-afternoon diners</strong> — continuous service means you can eat between 3 and 4 PM (when Richmond's split shift is closed).</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -256,7 +248,7 @@ const CONTENT = {
         },
         {
           q: "How does it compare to the Richmond location?",
-          a: "Same brand, same group, same headline dishes. Richmond carries the full menu with split lunch/dinner shifts; Coquitlam runs a curated soft-opening menu with continuous service 11:30 AM–11:00 PM. For the full comparison, see the Memory Corner Richmond article.",
+          a: "Same brand, same group, same headline dishes. Richmond carries the full menu and runs continuously Mon–Thu, with split lunch/dinner shifts on weekends. Coquitlam runs a curated soft-opening menu with split shifts daily (Sun–Thu dinner until 10:00 PM; Fri–Sat dinner until 11:00 PM). For the full comparison, see the Memory Corner Richmond article.",
         },
         {
           q: "What's the average price per person?",
@@ -375,11 +367,11 @@ const CONTENT = {
           <ul class="space-y-2 mb-3">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Richmond 旗艦店</strong>：4651 Garden City Rd #1110，提供完整菜單，午晚餐分時段營業（午 11:30 AM–3:00 PM、晚 4:00 PM–10:00 PM；週五六晚至 11:00 PM）。</span>
+              <span><strong>Richmond 旗艦店</strong>：4651 Garden City Rd #1110，提供完整菜單。週一至四 11:30 AM – 10:00 PM 連續營業、週五 11:30 AM – 11:00 PM；週六、日午晚餐分時段（午 11:30 AM – 2:45 PM；晚 4:00 PM–10:00 PM，週六晚至 11:00 PM）。</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Coquitlam 店</strong>：345 North Rd，每日 11:30 AM – 11:00 PM 不分時段；<em>目前處於試營運期，菜色較為精選</em>。</span>
+              <span><strong>Coquitlam 店</strong>：345 North Rd，每日午晚餐分時段（週日至四 11:30 AM – 3:00 PM、4:00 PM – 10:00 PM；週五六晚至 11:00 PM）；<em>目前處於試營運期，菜色較為精選</em>。</span>
             </li>
           </ul>
           <p class="text-[14px] text-gray-600">主要熱門菜色（如當歸羊肉鍋、三杯雞、鹽酥雞、蕃茄牛腩麵）兩店共通；其他品項依各店供應為準。完整地址、電話、Google Maps 連結見文末「本文涉及門市」區。</p>
@@ -419,7 +411,7 @@ const CONTENT = {
         },
         {
           q: "Memory Corner Richmond 與 Coquitlam 店有什麼不同？",
-          a: "兩家屬於同一品牌與餐飲集團。Richmond 旗艦店位於 4651 Garden City Rd，提供完整菜單，午晚餐分時段營業。Coquitlam 店位於 345 North Rd，每日 11:30 AM–11:00 PM 不分時段，目前處於試營運期，菜色較為精選；未來菜單與 Richmond 也不會完全相同——但主要熱門菜色（當歸羊肉鍋、台式三杯雞、有香鹽酥雞、蕃茄牛腩麵）兩店共通。第一次造訪建議以 Richmond 為主；若 Coquitlam 較近，也歡迎在試營運期間體驗。",
+          a: "兩家屬於同一品牌與餐飲集團。Richmond 旗艦店位於 4651 Garden City Rd，提供完整菜單，週一至四連續營業、週末分時段。Coquitlam 店位於 345 North Rd，每日採午晚餐分時段營業（週日至四晚至 10 點、週五六晚至 11 點），目前處於試營運期，菜色較為精選；未來菜單與 Richmond 也不會完全相同——但主要熱門菜色（當歸羊肉鍋、台式三杯雞、有香鹽酥雞、蕃茄牛腩麵）兩店共通。第一次造訪建議以 Richmond 為主；若 Coquitlam 較近，也歡迎在試營運期間體驗。",
         },
         {
           q: "可以叫外送嗎？",
@@ -522,11 +514,11 @@ const CONTENT = {
           <ul class="space-y-2 mb-3">
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Richmond flagship</strong>: 4651 Garden City Rd #1110, full menu, with split lunch/dinner shifts (lunch 11:30 AM–3:00 PM; dinner 4:00–10:00 PM, until 11:00 PM Fri/Sat).</span>
+              <span><strong>Richmond flagship</strong>: 4651 Garden City Rd #1110, full menu. Mon–Thu 11:30 AM – 10:00 PM continuous; Fri 11:30 AM – 11:00 PM; Sat & Sun split lunch/dinner shifts (lunch 11:30 AM – 2:45 PM; dinner 4:00 PM – 10:00 PM, until 11:00 PM Sat).</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Coquitlam location</strong>: 345 North Rd, daily 11:30 AM – 11:00 PM continuous service; <em>currently in soft opening with a more curated menu</em>.</span>
+              <span><strong>Coquitlam location</strong>: 345 North Rd, split lunch/dinner shifts daily (Sun–Thu 11:30 AM – 3:00 PM, 4:00 PM – 10:00 PM; Fri & Sat 11:30 AM – 3:00 PM, 4:00 PM – 11:00 PM); <em>currently in soft opening with a more curated menu</em>.</span>
             </li>
           </ul>
           <p class="text-[14px] text-gray-600">The headline signature dishes (Angelica Root Lamb Hot Pot, Three-Cup Chicken, Popcorn Chicken, Tomato Beef Brisket Noodle Soup) are available at both; other items vary by location. Full address, phone, and Google Maps links in the location panel below.</p>
@@ -566,7 +558,7 @@ const CONTENT = {
         },
         {
           q: "How are the Richmond and Coquitlam locations different?",
-          a: "Same brand, same group. The Richmond flagship at 4651 Garden City Rd carries the full menu with split lunch/dinner shifts. The Coquitlam location at 345 North Rd offers continuous service 11:30 AM–11:00 PM and is currently in soft opening with a more curated selection — and going forward the menus won't be identical between the two — but the headline signature dishes (Angelica Root Lamb Hot Pot, Taiwanese Three-Cup Chicken, Memory Corner Deep-Fried Popcorn Chicken, Tomato Beef Brisket Noodle Soup) are available at both. First-time visitors are best served at Richmond; if Coquitlam is closer, the soft-opening experience is also worth a try.",
+          a: "Same brand, same group. The Richmond flagship at 4651 Garden City Rd carries the full menu, running continuously Mon–Thu and switching to split shifts on weekends. The Coquitlam location at 345 North Rd runs split shifts daily (Sun–Thu dinner until 10:00 PM; Fri–Sat dinner until 11:00 PM) and is currently in soft opening with a more curated selection — and going forward the menus won't be identical between the two — but the headline signature dishes (Angelica Root Lamb Hot Pot, Taiwanese Three-Cup Chicken, Memory Corner Deep-Fried Popcorn Chicken, Tomato Beef Brisket Noodle Soup) are available at both. First-time visitors are best served at Richmond; if Coquitlam is closer, the soft-opening experience is also worth a try.",
         },
         {
           q: "Do you offer delivery?",

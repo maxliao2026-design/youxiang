@@ -22,12 +22,14 @@ const RESTAURANTS = [
     addressCountry: "CA",
     geo: { latitude: 49.1666, longitude: -123.1336 },
     hours_human:
-      "Sun–Thu 11:30 AM – 3:00 PM, 4:00 PM – 10:00 PM\nFri & Sat 11:30 AM – 3:00 PM, 4:00 PM – 11:00 PM",
+      "Mon–Thu 11:30 AM – 10:00 PM\nFri 11:30 AM – 11:00 PM\nSat 11:30 AM – 2:45 PM, 4:00 PM – 11:00 PM\nSun 11:30 AM – 2:45 PM, 4:00 PM – 10:00 PM",
     hours_schema: [
-      { dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], opens: "11:30", closes: "15:00" },
-      { dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], opens: "16:00", closes: "22:00" },
-      { dayOfWeek: ["Friday", "Saturday"], opens: "11:30", closes: "15:00" },
-      { dayOfWeek: ["Friday", "Saturday"], opens: "16:00", closes: "23:00" },
+      { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "11:30", closes: "22:00" },
+      { dayOfWeek: ["Friday"], opens: "11:30", closes: "23:00" },
+      { dayOfWeek: ["Saturday"], opens: "11:30", closes: "14:45" },
+      { dayOfWeek: ["Saturday"], opens: "16:00", closes: "23:00" },
+      { dayOfWeek: ["Sunday"], opens: "11:30", closes: "14:45" },
+      { dayOfWeek: ["Sunday"], opens: "16:00", closes: "22:00" },
     ],
     img: "/images/brand-story/memory-corner-01.png",
     mapUrl: "https://maps.google.com/?q=4651+Garden+City+Rd+%231110,+Richmond,+BC+V6X+2K4",
@@ -48,9 +50,13 @@ const RESTAURANTS = [
     postalCode: "V3K 3V8",
     addressCountry: "CA",
     geo: { latitude: 49.2487, longitude: -122.8869 },
-    hours_human: "Daily 11:30 AM – 11:00 PM",
+    hours_human:
+      "Sun–Thu 11:30 AM – 3:00 PM, 4:00 PM – 10:00 PM\nFri & Sat 11:30 AM – 3:00 PM, 4:00 PM – 11:00 PM",
     hours_schema: [
-      { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "11:30", closes: "23:00" },
+      { dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], opens: "11:30", closes: "15:00" },
+      { dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], opens: "16:00", closes: "22:00" },
+      { dayOfWeek: ["Friday", "Saturday"], opens: "11:30", closes: "15:00" },
+      { dayOfWeek: ["Friday", "Saturday"], opens: "16:00", closes: "23:00" },
     ],
     img: "/images/brand-story/有香光采.webp",
     mapUrl: "https://maps.google.com/?q=345+North+Rd,+Coquitlam,+BC+V3K+3V8",
@@ -72,7 +78,7 @@ const RESTAURANTS = [
     addressCountry: "CA",
     geo: { latitude: 49.1838, longitude: -123.1380 },
     hours_human:
-      "Mon–Fri 5:00 PM – 12:30 AM\nSat, Sun & Holidays 11:30 AM – 12:30 AM",
+      "Mon–Fri 5:00 PM – 12:30 AM\nSat & Sun 11:30 AM – 12:30 AM",
     hours_schema: [
       { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "17:00", closes: "00:30" },
       { dayOfWeek: ["Saturday", "Sunday"], opens: "11:30", closes: "00:30" },
