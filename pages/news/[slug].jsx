@@ -103,7 +103,7 @@ const CONTENT = {
               </thead>
               <tbody>
                 <tr class="bg-[#fff7e8]">
-                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
+                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
                   <td class="p-3 border border-stone-200"><strong>一次性 USD $15</strong></td>
                   <td class="p-3 border border-stone-200">✅ 終身可改</td>
                   <td class="p-3 border border-stone-200">無上限</td>
@@ -151,7 +151,7 @@ const CONTENT = {
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">我們用的工具：OwnQR（買斷制，沒有月費）</h2>
           <p class="mb-3">市面上的動態 QR 工具大部分是訂閱制——每月 $9、$19、$39 不等，停了月費 QR 就會跳到付費牆。對餐廳來說最大的風險不是錢，是「萬一哪天那家公司倒了，店裡所有桌卡都會變成廢卡」。</p>
-          <p class="mb-3">所以我們挑了一個<strong>買斷制</strong>的工具：<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>。一次性 USD $15，QR 終身可改，沒有月費、沒有掃碼次數上限、沒有「升級才能用」的鎖功能。對小店來說這個定價模型遠比訂閱安心——印一次卡片就是用一輩子。</p>
+          <p class="mb-3">所以我們挑了一個<strong>買斷制</strong>的工具：<a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>。一次性 USD $15，QR 終身可改，沒有月費、沒有掃碼次數上限、沒有「升級才能用」的鎖功能。對小店來說這個定價模型遠比訂閱安心——印一次卡片就是用一輩子。</p>
           <p class="mb-3">幾個我們實際用下來覺得重要的細節：</p>
           <ul class="space-y-2 mb-4">
             <li class="flex items-start gap-2">
@@ -164,7 +164,7 @@ const CONTENT = {
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>後台儀表板</strong>：每個 QR 被掃幾次、什麼時段最多人掃，<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR 的分析頁</a>都看得到——這比想像中有用，因為可以反推哪幾道菜最被注意。</span>
+              <span><strong>後台儀表板</strong>：每個 QR 被掃幾次、什麼時段最多人掃，<a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR 的分析頁</a>都看得到——這比想像中有用，因為可以反推哪幾道菜最被注意。</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -181,7 +181,7 @@ const CONTENT = {
             <ol class="list-decimal pl-5 space-y-3 text-[15px] sm:text-[16px]">
               <li><strong>挑 3 道最有故事的菜色</strong>：不是最熱賣的，是「最常被客人問來歷」的。我們之後做的時候會從當歸羊肉鍋、三杯雞、滷肉飯這三道開始——因為它們是最常被問「這道菜怎麼來的？」的招牌。</li>
               <li><strong>每道菜寫一頁 300–500 字的故事頁</strong>：可以放在你網站的 /menu/dish-name 路徑下，或單獨一個故事網域都行。重點是<strong>用自己的網站</strong>，不要放在第三方平台，否則流量都跑到別人家。</li>
-              <li><strong>用<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">動態 QR 工具</a>把這 3 頁綁成 3 個 QR</strong>：每個 QR 對應一道菜。買斷制工具下，這一步是一次性付費。</li>
+              <li><strong>用<a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">動態 QR 工具</a>把這 3 頁綁成 3 個 QR</strong>：每個 QR 對應一道菜。買斷制工具下，這一步是一次性付費。</li>
               <li><strong>印成桌卡放在菜旁邊</strong>：建議印名片大小（90×54mm）即可，背面寫「掃我看這道菜的故事」這類引導。</li>
             </ol>
           </div>
@@ -239,7 +239,7 @@ const CONTENT = {
 
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">下次來，掃一下試試</h2>
-          <p class="mb-3">下次來 Memory Corner，桌上的 QR code 可以掃碼點餐——這個介面我們正在慢慢擴充，菜色故事頁、季節菜單入口、會員系統都會陸續掛上來。如果你也經營餐廳、想把同一張桌邊 QR 用到極致，從 <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> 開始試最簡單，買斷制風險最低，做壞了也只是 USD $15。</p>
+          <p class="mb-3">下次來 Memory Corner，桌上的 QR code 可以掃碼點餐——這個介面我們正在慢慢擴充，菜色故事頁、季節菜單入口、會員系統都會陸續掛上來。如果你也經營餐廳、想把同一張桌邊 QR 用到極致，從 <a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> 開始試最簡單，買斷制風險最低，做壞了也只是 USD $15。</p>
           <p class="text-[14px] text-gray-600">想看 Memory Corner 完整品牌故事，可以讀 <a href="/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Richmond 旗艦店三代傳承介紹</a>，或 <a href="/news/taiwanese-restaurant-coquitlam-north-rd" class="text-[#c59b63] hover:underline">Coquitlam North Rd 試營運專文</a>。</p>
         </section>
 
@@ -361,7 +361,7 @@ const CONTENT = {
               </thead>
               <tbody>
                 <tr class="bg-[#fff7e8]">
-                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
+                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
                   <td class="p-3 border border-stone-200"><strong>One-time USD $15</strong></td>
                   <td class="p-3 border border-stone-200">✅ Editable for life</td>
                   <td class="p-3 border border-stone-200">Unlimited</td>
@@ -409,7 +409,7 @@ const CONTENT = {
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">The tool we use: OwnQR (one-time purchase, no monthly fee)</h2>
           <p class="mb-3">Most dynamic-QR services on the market are subscription-based — $9, $19, $39 per month. If you stop paying, the QR codes either break or get hijacked to a paywall. For a restaurant, the real risk isn't the monthly cost — it's the prospect of <em>every printed card going dead</em> if that company shuts down or changes terms.</p>
-          <p class="mb-3">So we picked a <strong>one-time-purchase</strong> tool: <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>. USD $15 once, QR codes editable for life, no monthly fee, no scan limits, no "upgrade to unlock" tiers. For small operators this pricing model is much safer than subscriptions — print the cards once and use them forever.</p>
+          <p class="mb-3">So we picked a <strong>one-time-purchase</strong> tool: <a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>. USD $15 once, QR codes editable for life, no monthly fee, no scan limits, no "upgrade to unlock" tiers. For small operators this pricing model is much safer than subscriptions — print the cards once and use them forever.</p>
           <p class="mb-3">A few details that matter in practice:</p>
           <ul class="space-y-2 mb-4">
             <li class="flex items-start gap-2">
@@ -422,7 +422,7 @@ const CONTENT = {
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
-              <span><strong>Scan dashboard</strong>: <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR's analytics view</a> shows scans per QR and time-of-day patterns — useful because it tells you which dishes guests are most curious about.</span>
+              <span><strong>Scan dashboard</strong>: <a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR's analytics view</a> shows scans per QR and time-of-day patterns — useful because it tells you which dishes guests are most curious about.</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
@@ -439,7 +439,7 @@ const CONTENT = {
             <ol class="list-decimal pl-5 space-y-3 text-[15px] sm:text-[16px]">
               <li><strong>Pick 3 dishes with the strongest stories</strong> — not the bestsellers, the ones guests ask about most often. When we roll this out, we'll start with Angelica Root Lamb Hot Pot, Three-Cup Chicken, and Braised Pork Rice — the three dishes guests most often ask "where did this come from?" about.</li>
               <li><strong>Write a 300–500 word story page per dish</strong>, hosted on your own website at /menu/dish-name (or a dedicated stories domain). The key word is <strong>your own site</strong> — never park stories on a third-party platform, or the traffic isn't yours.</li>
-              <li><strong>Bind each page to a <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">dynamic QR code</a></strong> — one QR per dish. With a buy-once tool, this step is paid once and done.</li>
+              <li><strong>Bind each page to a <a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">dynamic QR code</a></strong> — one QR per dish. With a buy-once tool, this step is paid once and done.</li>
               <li><strong>Print as table cards</strong> next to the dish on the menu. Business-card size (90×54mm) works; on the back, put a short prompt like "Scan to read this dish's story."</li>
             </ol>
           </div>
@@ -497,7 +497,7 @@ const CONTENT = {
 
         <section class="mb-10">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Next visit, scan one</h2>
-          <p class="mb-3">Next time you're at Memory Corner, the QR codes on the table will get you to the order page — that interface is what we're slowly extending, with dish-story pages, seasonal-menu entry points, and membership all rolling in over time. If you run a restaurant yourself and want to push the same table-side QR further, <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> is the lowest-risk way in — a buy-once tool means even a failed experiment only costs USD $15.</p>
+          <p class="mb-3">Next time you're at Memory Corner, the QR codes on the table will get you to the order page — that interface is what we're slowly extending, with dish-story pages, seasonal-menu entry points, and membership all rolling in over time. If you run a restaurant yourself and want to push the same table-side QR further, <a href="https://ownqrcode.com/qr-code-for-restaurants" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> is the lowest-risk way in — a buy-once tool means even a failed experiment only costs USD $15.</p>
           <p class="text-[14px] text-gray-600">For the full Memory Corner brand story, see the <a href="/en/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Richmond flagship three-generation guide</a>, or the <a href="/en/news/taiwanese-restaurant-coquitlam-north-rd" class="text-[#c59b63] hover:underline">Coquitlam North Rd soft-opening article</a>.</p>
         </section>
 
