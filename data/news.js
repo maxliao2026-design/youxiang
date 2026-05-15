@@ -18,6 +18,45 @@
 
 const ARTICLES = [
   {
+    slug: "taiwanese-restaurant-dynamic-qr-menu-story",
+    date: "2026-05-15",
+    img: "/images/brand-story/memory-corner-01.png",
+    category: "guide",
+    author_id: "jessica-lin",
+    related_restaurants: [
+      "store-youxiang-richmond",
+      "store-youxiang-coquitlam",
+      "store-sweet-memory",
+      "store-old-memory-kitchen",
+    ],
+    keywords_zh: [
+      "餐廳 QR menu",
+      "動態 QR code 餐廳",
+      "台灣餐廳 數位菜單",
+      "Memory Corner QR",
+      "OwnQR 餐廳案例",
+      "餐廳 QR code 故事",
+      "Richmond 台菜 QR menu",
+    ],
+    keywords_en: [
+      "restaurant QR menu",
+      "dynamic QR code restaurant",
+      "Taiwanese restaurant digital menu",
+      "Memory Corner QR",
+      "OwnQR restaurant case study",
+      "QR code dish stories",
+      "buy-once dynamic QR code",
+    ],
+    is_listicle: true,
+    title_zh: "餐廳怎麼用動態 QR code 講菜色故事｜Memory Corner 的桌邊掃碼實作",
+    desc_zh:
+      "menu 上印不下的台灣故事，我們把它放進每道菜旁的 QR code。動態 QR 讓 Richmond 與 Coquitlam 兩家店共用同一張卡片，節慶菜色換內容不用重印——這篇分享我們怎麼設計餐廳場景的 QR 流程，以及用了哪套工具。",
+    title_en:
+      "How a Taiwanese Restaurant Uses Dynamic QR Codes for Dish Stories",
+    desc_en:
+      "The Taiwanese stories that don't fit on a menu now live behind QR codes beside each dish. Dynamic QR lets our Richmond and Coquitlam stores share the same printed cards, and seasonal swaps need no reprint — here's how we wired it up.",
+  },
+  {
     slug: "taiwanese-restaurant-coquitlam-north-rd",
     date: "2026-05-10",
     // 暫用 brand-story 既有 Coquitlam 店面照片（ASCII 檔名版，避開 Next/Image 中文檔名 bug）

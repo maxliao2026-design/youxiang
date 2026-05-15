@@ -22,6 +22,531 @@ import { buildArticleJsonLd } from "../../lib/seo/article-schema";
    ================================================================= */
 const CONTENT = {
   /* ─────────────────────────────────────────────────────────────
+     #G（動態 QR menu / 餐廳場景指南）
+     目前借用 brand-story Richmond 室內照當封面；
+     若之後有桌邊掃碼實拍可換成 /images/news/dynamic-qr-menu.webp
+     外部連結：ownqrcode.com（dofollow，依本檔既有外連結慣例不加 rel="nofollow"）
+     ───────────────────────────────────────────────────────────── */
+  "taiwanese-restaurant-dynamic-qr-menu-story": {
+    "zh-TW": {
+      title: "餐廳怎麼用動態 QR code 講菜色故事｜Memory Corner 的桌邊掃碼實作",
+      quick_answer:
+        "Memory Corner 在 Richmond 與 Coquitlam 兩家店桌上都有 QR code，目前主要是掃碼點餐——跟大部分餐廳一樣。但因為用的是動態 QR，同一張印好的卡片可以讓兩家店共用、節慶菜色換內容也不用重印；我們也正在規劃把同一個介面延伸成菜色故事頁，讓客人掃一下就能讀到那道菜從台灣帶來的家族故事。我們用的工具是 OwnQR（ownqrcode.com），一次性買斷制、無月費，邊緣跳轉小於 100ms。",
+      content_html: `
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">為什麼餐廳的 menu 上塞不下故事</h2>
+          <p class="mb-3">QR code 在 COVID 期間進入餐廳場景，原本只是應急的「無接觸點餐」方案。但根據近年產業追蹤資料，QR code 整體使用量自 2020 年後持續成長、北美 smartphone QR 掃描用戶人數在 2025 年來到歷史新高<sup><a href="#fn1" class="text-[#c59b63] hover:underline">[1]</a></sup>，而在餐廳業，QR-based menu 已從應急方案轉為常態功能<sup><a href="#fn2" class="text-[#c59b63] hover:underline">[2]</a></sup>——但絕大部分餐廳只是把它當「電子菜單」用，沒做更多。</p>
+          <p class="mb-3">我們覺得這是浪費。經營餐廳的人都知道一件尷尬的事：菜單上每個字都很貴。多印一行字，就少一格圖；多放一段故事，就少一道菜的曝光。對於做台菜的我們來說，這特別痛——因為每一道從 1975 年高雄吳家羊肉鍋傳下來的菜，背後都有一個值得講的故事，但菜單上只能寫菜名、寫價錢、放一張照片。</p>
+          <p class="mb-3">這幾年大家也試過很多解法：印加大版菜單、做品牌冊放在桌上、甚至做整本「菜色故事書」放在進門口。問題是——客人坐下來，最先做的是滑手機、不是翻紙本。</p>
+          <p class="mb-3">所以我們換了個方向：<strong>不要讓客人「翻」故事，讓他們「掃」故事</strong>——把已經存在桌上的 QR code，從「電子菜單」升級成「故事入口」。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">現在的桌邊 QR：點餐；我們想做的下一步：故事</h2>
+          <p class="mb-3">先說清楚現狀——今天 Memory Corner 桌上的 QR code 跟大部分餐廳一樣，掃進去就是<strong>掃碼點餐頁</strong>。這是 COVID 之後我們留下來的習慣，方便、實用，但停在功能性那一層。</p>
+          <p class="mb-3">用了一段時間之後，我們開始覺得：這個介面其實可以做更多。客人坐下來等菜的那 90 秒，與其滑 Instagram，不如讀<strong>那道菜的台灣故事</strong>。所以接下來我們正在規劃把同一張桌邊 QR 延伸成幾條入口：</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>菜色故事頁（規劃中）</strong>：未來掃當歸羊肉鍋旁邊那張卡，會看到 1975 年高雄吳家羊肉鍋怎麼開始、為什麼湯底要熬六小時；掃三杯雞那張，會看到醬油、麻油、米酒這「三杯」的家常配方，跟阿嬤堅持要放九層塔最後爆鍋的那段過程。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>跨店智慧分流</strong>：Coquitlam 試營運期菜單與 Richmond 完整菜單，可以共用同一張印刷品，後台依位置切換目標頁——這是動態 QR 的核心優勢，餐廳開到第二家店以後特別有感。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>節慶菜色入口（規劃中）</strong>：農曆新年、中秋月餅、夏天剉冰季——每次菜單切換時，後台改一次就好，桌上那張卡完全不用動。</span>
+            </li>
+          </ul>
+          <p class="mb-3">這篇文章一部分是分享我們現在用 QR 在做的事（掃碼點餐、跨店分流的設計思路），一部分是把<strong>正在規劃的下一步</strong>記錄下來——同時把這套要怎麼設計講出來給其他餐廳老闆參考。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">為什麼要用「動態」QR code，不是普通的</h2>
+          <p class="mb-4">餐廳場景裡 QR code 不是新東西——COVID 時期幾乎每家都試過電子菜單。但大部分餐廳沒繼續用，原因都是同一個：<strong>QR code 一旦印出來，連到哪裡就鎖死了</strong>。換菜單要重印、換頁面要重印、改網址要重印——一張卡片印上去，連到哪裡就是哪裡。</p>
+          <p class="mb-3">動態 QR code 解決的就是這件事。<strong>掃出來的網址是中繼網址</strong>，後台改要連到哪裡，QR 圖案不用動。對餐廳來說有四個實際好處：</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>跨店共用同一批印刷品</strong>：我們 Richmond 與 Coquitlam 兩家店用同一批桌卡。後台根據掃碼位置／時段，可以讓 Coquitlam 的客人看到 Coquitlam 試營運期菜單，Richmond 客人看到完整版。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>節慶菜色換不用重印</strong>：農曆新年、中秋節、夏天的剉冰季——每次菜單要切換時，後台改一次就好，桌上那張卡完全不用動。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>會員系統入口</strong>：餐後結帳的小票上印一個 QR，掃進去是<a href="/news/membership-rewards" class="text-[#c59b63] hover:underline">會員點數頁</a>。同樣一張小票模板可以一直用，後台改活動就好。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>掃碼數據看得到</strong>：哪道菜的故事 QR 被掃最多次、哪一桌掃碼率最高、週末跟平日的差別——這些都是動態 QR 工具自帶的儀表板。</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">市面上的動態 QR 工具怎麼選：5 款主要選項比較</h2>
+          <p class="mb-3">在進入「我們選了哪一家」之前，先把市場掃過一輪。動態 QR 工具的差別主要在四件事：<strong>定價模式</strong>（訂閱 vs 一次性買斷）、<strong>掃碼上限</strong>、<strong>跳轉速度</strong>、<strong>內建安全偵測</strong>。對餐廳來說，前兩項決定長期成本，後兩項決定使用體驗。</p>
+          <div class="overflow-x-auto -mx-5 sm:mx-0 mb-4">
+            <table class="min-w-full text-[14px] sm:text-[15px] border-collapse">
+              <thead>
+                <tr class="bg-[#3b2a1a] text-white">
+                  <th class="text-left p-3 border border-stone-300">工具</th>
+                  <th class="text-left p-3 border border-stone-300">定價模式</th>
+                  <th class="text-left p-3 border border-stone-300">動態編輯</th>
+                  <th class="text-left p-3 border border-stone-300">掃碼上限</th>
+                  <th class="text-left p-3 border border-stone-300">跳轉速度</th>
+                  <th class="text-left p-3 border border-stone-300">安全偵測</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#fff7e8]">
+                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
+                  <td class="p-3 border border-stone-200"><strong>一次性 USD $15</strong></td>
+                  <td class="p-3 border border-stone-200">✅ 終身可改</td>
+                  <td class="p-3 border border-stone-200">無上限</td>
+                  <td class="p-3 border border-stone-200">&lt;100ms（邊緣跳轉）</td>
+                  <td class="p-3 border border-stone-200">✅ Google Safe Browsing<sup><a href="#fn3" class="text-[#c59b63] hover:underline">[3]</a></sup></td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">QR Tiger</td>
+                  <td class="p-3 border border-stone-200">月費訂閱</td>
+                  <td class="p-3 border border-stone-200">付費方案</td>
+                  <td class="p-3 border border-stone-200">依方案分級</td>
+                  <td class="p-3 border border-stone-200">標準</td>
+                  <td class="p-3 border border-stone-200">部分</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">Uniqode（前 Beaconstac）</td>
+                  <td class="p-3 border border-stone-200">月費 + 企業方案</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                  <td class="p-3 border border-stone-200">依方案分級</td>
+                  <td class="p-3 border border-stone-200">標準</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">Bitly QR</td>
+                  <td class="p-3 border border-stone-200">月費（綁 Bitly 方案）</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                  <td class="p-3 border border-stone-200">依方案分級</td>
+                  <td class="p-3 border border-stone-200">標準</td>
+                  <td class="p-3 border border-stone-200">部分</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">QR Code Generator</td>
+                  <td class="p-3 border border-stone-200">免費 + 付費升級</td>
+                  <td class="p-3 border border-stone-200">付費方案</td>
+                  <td class="p-3 border border-stone-200">免費版受限</td>
+                  <td class="p-3 border border-stone-200">標準</td>
+                  <td class="p-3 border border-stone-200">部分</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-[14px] text-gray-600">對餐廳場景來說最關鍵的差別是<strong>定價模式</strong>。桌卡印一次用很多年，月費訂閱意味著「停付那一刻所有印刷品變廢紙」——這對小店是不能接受的長期風險。一次性買斷把這個風險拿掉，是我們最後選 OwnQR 的主要理由（也是這個對比結果指向的客觀結論）。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">我們用的工具：OwnQR（買斷制，沒有月費）</h2>
+          <p class="mb-3">市面上的動態 QR 工具大部分是訂閱制——每月 $9、$19、$39 不等，停了月費 QR 就會跳到付費牆。對餐廳來說最大的風險不是錢，是「萬一哪天那家公司倒了，店裡所有桌卡都會變成廢卡」。</p>
+          <p class="mb-3">所以我們挑了一個<strong>買斷制</strong>的工具：<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>。一次性 USD $15，QR 終身可改，沒有月費、沒有掃碼次數上限、沒有「升級才能用」的鎖功能。對小店來說這個定價模型遠比訂閱安心——印一次卡片就是用一輩子。</p>
+          <p class="mb-3">幾個我們實際用下來覺得重要的細節：</p>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>跳轉速度</strong>：邊緣跳轉小於 100ms，客人不會看到「正在跳轉中⋯⋯」那種尷尬的白頁。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>不用客人下載 app</strong>：用手機相機直接掃，掃完直接打開瀏覽器——這對年長客人特別重要。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>後台儀表板</strong>：每個 QR 被掃幾次、什麼時段最多人掃，<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR 的分析頁</a>都看得到——這比想像中有用，因為可以反推哪幾道菜最被注意。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>藝術 QR</strong>：可以做成有設計感的 QR，不是死板的黑白棋盤。我們把品牌色融進桌卡的 QR 裡，整體桌面風格比較一致。</span>
+            </li>
+          </ul>
+          <p class="text-[14px] text-gray-600">（揭露：OwnQR 是我們合作的工具，創辦人本身也是 Richmond 店的常客。我們選它純粹因為買斷制適合餐廳長期使用情境，並非廣告置入。）</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">餐廳老闆要從哪裡開始？最小可行版本</h2>
+          <p class="mb-3">如果你也經營餐廳、想試試這套，我們會建議從這四步開始——不用一次全做：</p>
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <ol class="list-decimal pl-5 space-y-3 text-[15px] sm:text-[16px]">
+              <li><strong>挑 3 道最有故事的菜色</strong>：不是最熱賣的，是「最常被客人問來歷」的。我們之後做的時候會從當歸羊肉鍋、三杯雞、滷肉飯這三道開始——因為它們是最常被問「這道菜怎麼來的？」的招牌。</li>
+              <li><strong>每道菜寫一頁 300–500 字的故事頁</strong>：可以放在你網站的 /menu/dish-name 路徑下，或單獨一個故事網域都行。重點是<strong>用自己的網站</strong>，不要放在第三方平台，否則流量都跑到別人家。</li>
+              <li><strong>用<a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">動態 QR 工具</a>把這 3 頁綁成 3 個 QR</strong>：每個 QR 對應一道菜。買斷制工具下，這一步是一次性付費。</li>
+              <li><strong>印成桌卡放在菜旁邊</strong>：建議印名片大小（90×54mm）即可，背面寫「掃我看這道菜的故事」這類引導。</li>
+            </ol>
+          </div>
+          <p class="text-[14px] text-gray-600">做完前 3 道之後，後面想擴充哪幾道菜都可以——同一套工具、同一個後台、同樣的模式複製。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">幾個我們繞過的坑</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>不要做成 app</strong>：客人不會為了吃一頓飯下載 app。一定要走「相機掃 → 瀏覽器開」這條最短路徑。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>不要逼客人留 email</strong>：故事頁就是故事頁，不要套表單、不要彈窗、不要 retargeting pixel。被客人發現「掃個 QR 還要交資料」會被討厭。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>故事不要寫成廣告</strong>：寫家裡的事、寫食材的事、寫食譜為什麼這樣調——不要寫「歡迎光臨我們的招牌菜」這種行銷文。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>QR 卡片要耐髒</strong>：餐廳桌上會碰到醬油、湯、油花，建議覆膜或用合成紙、厚度至少 350gsm；角落做圓角避免被刮翹邊。實務上普通卡紙約兩週就會因髒污或翹邊需要重印，防水合成紙則能撐半年以上。</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">哪些餐廳場景特別適合？</h2>
+          <p class="mb-3">不是每家餐廳都需要動態 QR——但下面這幾種場景，導入後通常很快會見效：</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🍜 小型獨立餐廳</h3>
+              <p class="text-[14px] text-gray-700">菜色少、故事多。每道招牌菜值得一頁專屬故事頁，QR 是把故事帶到桌邊最便宜的方式。</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🚚 食物卡車 / Food Truck</h3>
+              <p class="text-[14px] text-gray-700">沒有固定菜單牆、車身空間有限。一張 QR 貼紙把完整菜單、過敏原資訊、付款連結全收進去。</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🥐 烘焙坊與咖啡店</h3>
+              <p class="text-[14px] text-gray-700">每日商品輪換、季節限定多。動態 QR 一鍵切換當日菜單，不用每天重印 POP 標牌。</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🧋 飲料店 / 手搖飲</h3>
+              <p class="text-[14px] text-gray-700">外送平台連結、季節新品、會員集點——三個入口一個 QR 處理，杯身貼紙永遠是同一張。</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200 sm:col-span-2">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🎪 Pop-up / 快閃市集</h3>
+              <p class="text-[14px] text-gray-700">不同場次、不同地點、不同菜單。QR 圖案固定、後台切換目標頁，名片印一批可以用一整年。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">下次來，掃一下試試</h2>
+          <p class="mb-3">下次來 Memory Corner，桌上的 QR code 可以掃碼點餐——這個介面我們正在慢慢擴充，菜色故事頁、季節菜單入口、會員系統都會陸續掛上來。如果你也經營餐廳、想把同一張桌邊 QR 用到極致，從 <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> 開始試最簡單，買斷制風險最低，做壞了也只是 USD $15。</p>
+          <p class="text-[14px] text-gray-600">想看 Memory Corner 完整品牌故事，可以讀 <a href="/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Richmond 旗艦店三代傳承介紹</a>，或 <a href="/news/taiwanese-restaurant-coquitlam-north-rd" class="text-[#c59b63] hover:underline">Coquitlam North Rd 試營運專文</a>。</p>
+        </section>
+
+        <section class="mb-6 pt-6 border-t border-stone-200">
+          <h2 class="text-[16px] font-bold mb-3 text-gray-500">參考資料</h2>
+          <ol class="text-[13px] text-gray-600 space-y-2 list-decimal pl-5">
+            <li id="fn1">Statista — QR Codes statistics &amp; facts（QR code 使用量與用戶數追蹤）。<a href="https://www.statista.com/topics/9293/qr-codes/" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">statista.com/topics/9293/qr-codes</a></li>
+            <li id="fn2">Toast — Restaurant Trends Report（餐廳產業年度趨勢報告，含 QR menu 採用率追蹤）。<a href="https://pos.toasttab.com/restaurant-trends" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">pos.toasttab.com/restaurant-trends</a></li>
+            <li id="fn3">Google Safe Browsing — 官方文檔（OwnQR 整合的釣魚／惡意網址偵測 API）。<a href="https://safebrowsing.google.com/" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">safebrowsing.google.com</a></li>
+          </ol>
+        </section>
+      `,
+      faq: [
+        {
+          q: "動態 QR code 跟靜態 QR code 差在哪？",
+          a: "靜態 QR code 把目標網址直接編碼進圖形，印出來連到哪裡就鎖死了，要換目的地就得重印。動態 QR code 編碼的是一個中繼網址，掃完之後在後台可以隨時切換實際跳轉的目標——同一張印好的 QR，今天連到當歸羊肉鍋故事、下週可以改連到中秋限定菜單，QR 圖案完全不用動。對餐廳來說，動態 QR 才能避免每次換內容就要重印。",
+        },
+        {
+          q: "為什麼要選買斷制工具，不選月費的？",
+          a: "餐廳的桌卡一旦印出來，就是長期資產——可能用兩年三年都不換。如果 QR 工具是月費制，停付那一刻所有 QR 都會失效或跳到付費牆，等於所有桌卡瞬間變廢紙。買斷制工具（例如 OwnQR，USD $15 一次性）把這個風險拿掉——付一次錢，QR 永遠是你的，停業重開也不影響。",
+        },
+        {
+          q: "客人掃 QR 需要下載 app 嗎？",
+          a: "不用。iOS 跟 Android 的內建相機 app 都已支援掃 QR，把相機對準 QR 圖案、頂端會跳出網址連結，點一下就在瀏覽器打開。整個過程不需要下載、不需要登入、不需要授權任何資料。",
+        },
+        {
+          q: "餐廳要怎麼把 QR 卡片做得耐用？",
+          a: "餐廳桌面環境會碰水、醬油、油花，建議：(1) 印刷時加覆膜（PP 霧膜或亮膜）或用合成紙；(2) 卡片厚度至少 350gsm 以上；(3) 角落做圓角避免被刮翹邊。實務上普通卡紙約兩週就會因髒污或翹邊需要重印，換成防水合成紙後可以撐半年以上。",
+        },
+        {
+          q: "我可以從幾道菜開始試？",
+          a: "建議從 3 道最常被客人問來歷的招牌菜開始——不是最熱賣的，是「最有故事可講」的。每道菜寫一頁 300–500 字的故事頁、用動態 QR 綁定、印成桌卡放在菜旁邊。整套做完三道菜大概一個下午，預算（含工具、印刷、設計）通常在 USD $50 以內可以搞定。",
+        },
+        {
+          q: "OwnQR 安全嗎？掃了會不會被 phishing？",
+          a: "OwnQR 內建 Google Safe Browsing API 偵測，跳轉前會檢查目標網址是否為釣魚／惡意站。對餐廳老闆來說的另一層保險：因為 QR 是動態的，萬一發現任何一張被惡意改連結（例如員工流動造成的帳號風險），可以立刻在後台改回正確網址，不用回收實體卡片。",
+        },
+      ],
+      list_items: [
+        { name_zh: "OwnQR（買斷制動態 QR）", name_en: "OwnQR (Buy-once Dynamic QR)", url: "https://ownqrcode.com" },
+        { name_zh: "QR Tiger", name_en: "QR Tiger", url: "https://www.qrcode-tiger.com" },
+        { name_zh: "Uniqode（前 Beaconstac）", name_en: "Uniqode (formerly Beaconstac)", url: "https://www.uniqode.com" },
+        { name_zh: "Bitly QR", name_en: "Bitly QR", url: "https://bitly.com/pages/products/qr-codes" },
+        { name_zh: "QR Code Generator", name_en: "QR Code Generator", url: "https://www.qr-code-generator.com" },
+      ],
+    },
+    en: {
+      title: "How a Taiwanese Restaurant Uses Dynamic QR Codes for Dish Stories",
+      quick_answer:
+        "Memory Corner's Richmond and Coquitlam tables both have QR codes — right now they're used for ordering, like at most restaurants. But because they're dynamic QR codes, the same printed card works across both stores and seasonal menu swaps need no reprint. We're also planning to extend the same interface into dish-story pages, so guests can scan and read where each dish came from in Taiwan. The tool we use is OwnQR (ownqrcode.com): a one-time-purchase dynamic QR service, no monthly fee, sub-100ms edge redirects.",
+      content_html: `
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Menus don't have room for stories</h2>
+          <p class="mb-3">QR codes entered the restaurant world during COVID as an emergency "no-contact ordering" tool. But industry tracking shows QR code usage has kept growing year over year since 2020, with North American smartphone QR scan users reaching a new high in 2025<sup><a href="#fn1" class="text-[#c59b63] hover:underline">[1]</a></sup>, and in restaurants specifically, QR-based menus have moved from a stopgap to a permanent fixture<sup><a href="#fn2" class="text-[#c59b63] hover:underline">[2]</a></sup> — yet most restaurants still treat them as nothing more than "digital menus."</p>
+          <p class="mb-3">That's a waste. Every restaurant operator knows this awkward fact: every word on a menu is expensive. One extra line of text pushes out a photo; one extra paragraph of story costs you a dish slot. For us — cooking Taiwanese food carried from a 1975 Kaohsiung lamb hot pot shop — this hurts, because every dish has a story worth telling, and the menu only has room for names, prices, and one small photo.</p>
+          <p class="mb-3">We tried the usual workarounds: bigger menus, a separate brand booklet on each table, even a hardcover "stories of our dishes" book at the entrance. The problem is the same — when guests sit down, they pick up their phone, not a brochure.</p>
+          <p class="mb-3">So we flipped the angle: <strong>don't make guests flip through stories, let them scan stories</strong> — upgrade the QR code already on every table from "digital menu" to "story doorway."</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Today's table QR: ordering. What we want it to become: stories.</h2>
+          <p class="mb-3">To be clear about what we currently do — today's QR codes on Memory Corner's tables work the same as most restaurants': scan and you land on the <strong>order page</strong>. It's a habit we kept from COVID. Useful, functional, but stuck at the utility layer.</p>
+          <p class="mb-3">After living with it for a while, we started seeing the same interface could do more. The 90 seconds a guest spends waiting for food is currently spent scrolling Instagram — it could be spent reading <strong>that dish's Taiwan story</strong>. So here's what we're planning to extend the same table-side QR into:</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Dish story pages (planned)</strong>: Scanning the card beside our Angelica Root Lamb Hot Pot would tell you how the recipe started at Grandpa Wu's 1975 Kaohsiung shop and why the broth simmers six hours. Scan Three-Cup Chicken and you'd find the family proportions for the "three cups" (soy sauce, sesame oil, rice wine) — including the bit where our grandma insists Thai basil goes in only at the final flash-fry.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Cross-location routing</strong>: The Coquitlam soft-opening menu and the Richmond full menu can sit behind the same physical card, with the dashboard switching destinations by location — this is the core advantage of dynamic QR, and it gets very practical once you open a second store.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Seasonal menu entry (planned)</strong>: Lunar New Year, Mid-Autumn mooncakes, summer shaved-ice season — every menu pivot becomes one dashboard change, and the cards on the table stay exactly where they are.</span>
+            </li>
+          </ul>
+          <p class="mb-3">Part of this article shares what we're already doing with QR (ordering, cross-location design); part of it documents <strong>the next steps we're planning</strong> — and along the way, lays out how to design this for any restaurant operator wanting to try the same.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Why "dynamic" QR codes, not the regular kind</h2>
+          <p class="mb-4">QR codes aren't new in restaurants — almost everyone tried digital menus during COVID. Most didn't keep them, and the reason is always the same: <strong>once you print a QR code, the destination is locked</strong>. Change the menu, change the page, change the URL — and you reprint every card.</p>
+          <p class="mb-3">Dynamic QR codes fix exactly this. <strong>The encoded URL is a relay URL</strong>; the actual destination is editable in a dashboard, while the printed pattern never changes. For a restaurant, that gives you four concrete benefits:</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>One print run, multiple locations</strong>: Our Richmond and Coquitlam stores share the same batch of table cards. The dashboard routes by location/time, so Coquitlam guests see the soft-opening menu while Richmond guests see the full menu — without different physical cards.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Seasonal swaps with no reprint</strong>: Lunar New Year, Mid-Autumn mooncakes, summer shaved-ice season — every menu pivot is one dashboard change, and the cards on the table stay exactly where they are.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Loyalty entry point</strong>: A QR on the printed receipt sends guests to the <a href="/en/news/membership-rewards" class="text-[#c59b63] hover:underline">Memory Corner membership page</a>. The receipt template stays the same; the dashboard handles new campaigns.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Scan analytics</strong>: Which dish's story gets scanned most, which table has the highest scan rate, weekend vs. weekday patterns — the dashboard surfaces all of it.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">How to pick a dynamic QR tool: 5 options compared</h2>
+          <p class="mb-3">Before getting to "which one we picked," it's worth scanning the market. Dynamic QR tools differ on four things that matter: <strong>pricing model</strong> (subscription vs. one-time purchase), <strong>scan limits</strong>, <strong>redirect speed</strong>, and <strong>built-in safety detection</strong>. For restaurants, the first two drive long-term cost; the last two drive guest experience.</p>
+          <div class="overflow-x-auto -mx-5 sm:mx-0 mb-4">
+            <table class="min-w-full text-[14px] sm:text-[15px] border-collapse">
+              <thead>
+                <tr class="bg-[#3b2a1a] text-white">
+                  <th class="text-left p-3 border border-stone-300">Tool</th>
+                  <th class="text-left p-3 border border-stone-300">Pricing model</th>
+                  <th class="text-left p-3 border border-stone-300">Dynamic edit</th>
+                  <th class="text-left p-3 border border-stone-300">Scan limit</th>
+                  <th class="text-left p-3 border border-stone-300">Redirect speed</th>
+                  <th class="text-left p-3 border border-stone-300">Safety check</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#fff7e8]">
+                  <td class="p-3 border border-stone-200"><strong><a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a></strong></td>
+                  <td class="p-3 border border-stone-200"><strong>One-time USD $15</strong></td>
+                  <td class="p-3 border border-stone-200">✅ Editable for life</td>
+                  <td class="p-3 border border-stone-200">Unlimited</td>
+                  <td class="p-3 border border-stone-200">&lt;100ms (edge redirect)</td>
+                  <td class="p-3 border border-stone-200">✅ Google Safe Browsing<sup><a href="#fn3" class="text-[#c59b63] hover:underline">[3]</a></sup></td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">QR Tiger</td>
+                  <td class="p-3 border border-stone-200">Monthly subscription</td>
+                  <td class="p-3 border border-stone-200">Paid plans</td>
+                  <td class="p-3 border border-stone-200">Tiered by plan</td>
+                  <td class="p-3 border border-stone-200">Standard</td>
+                  <td class="p-3 border border-stone-200">Partial</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">Uniqode (formerly Beaconstac)</td>
+                  <td class="p-3 border border-stone-200">Monthly + enterprise</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                  <td class="p-3 border border-stone-200">Tiered by plan</td>
+                  <td class="p-3 border border-stone-200">Standard</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">Bitly QR</td>
+                  <td class="p-3 border border-stone-200">Subscription (Bitly plans)</td>
+                  <td class="p-3 border border-stone-200">✅</td>
+                  <td class="p-3 border border-stone-200">Tiered by plan</td>
+                  <td class="p-3 border border-stone-200">Standard</td>
+                  <td class="p-3 border border-stone-200">Partial</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-stone-200">QR Code Generator</td>
+                  <td class="p-3 border border-stone-200">Freemium + paid</td>
+                  <td class="p-3 border border-stone-200">Paid plans</td>
+                  <td class="p-3 border border-stone-200">Limited on free</td>
+                  <td class="p-3 border border-stone-200">Standard</td>
+                  <td class="p-3 border border-stone-200">Partial</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-[14px] text-gray-600">For restaurants, the single biggest differentiator is the <strong>pricing model</strong>. Table cards live on for years; a subscription means "the moment you stop paying, every printed card on every table goes dead." That's an unacceptable long-term risk for a small operator. A one-time purchase eliminates it — which is the main reason we ended up with OwnQR (and the conclusion this comparison points to on its own).</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">The tool we use: OwnQR (one-time purchase, no monthly fee)</h2>
+          <p class="mb-3">Most dynamic-QR services on the market are subscription-based — $9, $19, $39 per month. If you stop paying, the QR codes either break or get hijacked to a paywall. For a restaurant, the real risk isn't the monthly cost — it's the prospect of <em>every printed card going dead</em> if that company shuts down or changes terms.</p>
+          <p class="mb-3">So we picked a <strong>one-time-purchase</strong> tool: <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a>. USD $15 once, QR codes editable for life, no monthly fee, no scan limits, no "upgrade to unlock" tiers. For small operators this pricing model is much safer than subscriptions — print the cards once and use them forever.</p>
+          <p class="mb-3">A few details that matter in practice:</p>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Redirect speed</strong>: Sub-100ms edge redirect — guests don't sit through a "redirecting…" white screen.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>No app download for guests</strong>: Just the native camera app. This matters especially for older guests who don't want to install anything.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Scan dashboard</strong>: <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR's analytics view</a> shows scans per QR and time-of-day patterns — useful because it tells you which dishes guests are most curious about.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Artistic QR</strong>: Branded designs, not just black-and-white squares — we worked our brand colour into the table-card QR so the table layout feels coherent.</span>
+            </li>
+          </ul>
+          <p class="text-[14px] text-gray-600">(Disclosure: OwnQR is a tool we work with, and the founder is a regular at our Richmond location. We chose it because the buy-once pricing fits restaurant timelines — not as a paid placement.)</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Where to start as a restaurant owner: the minimum viable version</h2>
+          <p class="mb-3">If you run a restaurant and want to try this, we'd recommend starting in four steps — you don't have to do them all at once:</p>
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <ol class="list-decimal pl-5 space-y-3 text-[15px] sm:text-[16px]">
+              <li><strong>Pick 3 dishes with the strongest stories</strong> — not the bestsellers, the ones guests ask about most often. When we roll this out, we'll start with Angelica Root Lamb Hot Pot, Three-Cup Chicken, and Braised Pork Rice — the three dishes guests most often ask "where did this come from?" about.</li>
+              <li><strong>Write a 300–500 word story page per dish</strong>, hosted on your own website at /menu/dish-name (or a dedicated stories domain). The key word is <strong>your own site</strong> — never park stories on a third-party platform, or the traffic isn't yours.</li>
+              <li><strong>Bind each page to a <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">dynamic QR code</a></strong> — one QR per dish. With a buy-once tool, this step is paid once and done.</li>
+              <li><strong>Print as table cards</strong> next to the dish on the menu. Business-card size (90×54mm) works; on the back, put a short prompt like "Scan to read this dish's story."</li>
+            </ol>
+          </div>
+          <p class="text-[14px] text-gray-600">After the first three dishes work, expanding to more is just repetition — same tool, same dashboard, same workflow.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Pitfalls we avoided (you should too)</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Don't build an app.</strong> Nobody downloads an app to eat dinner. Stay on the "camera → browser" shortest path.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Don't gate stories behind email signup.</strong> No popups, no forms, no retargeting pixels. The moment guests realize a QR scan is harvesting data, the trust is gone.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Don't write stories like marketing copy.</strong> Write about the family, the ingredient, why the recipe is the way it is. "Welcome to our signature dish" is the wrong register.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span>
+              <span><strong>Make the cards durable.</strong> Restaurant tables see soy sauce, soup, grease. Laminate the cards or use synthetic paper, at least 350gsm; round the corners to prevent curl from scraping. In practice, standard cardstock typically needs reprinting within two weeks; waterproof synthetic paper holds up for a full season or more.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Which restaurant types benefit most?</h2>
+          <p class="mb-3">Not every restaurant needs dynamic QR codes — but these five operator types tend to see results quickly:</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🍜 Small independent restaurants</h3>
+              <p class="text-[14px] text-gray-700">Few dishes, many stories. Each signature dish deserves its own story page — QR is the cheapest way to bring that story to the table.</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🚚 Food trucks</h3>
+              <p class="text-[14px] text-gray-700">No menu wall, limited surface area. One QR sticker holds the full menu, allergen info, and payment link.</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🥐 Bakeries and cafés</h3>
+              <p class="text-[14px] text-gray-700">Daily-rotating items, frequent seasonal specials. Dynamic QR switches today's menu in one click — no reprinting POP cards every morning.</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🧋 Bubble tea & drink shops</h3>
+              <p class="text-[14px] text-gray-700">Delivery-platform links, seasonal launches, loyalty points — three entry points through one QR; the cup sticker stays the same forever.</p>
+            </div>
+            <div class="bg-white/70 rounded-xl p-5 border border-stone-200 sm:col-span-2">
+              <h3 class="font-bold mb-2 text-[#3b2a1a]">🎪 Pop-ups & seasonal vendors</h3>
+              <p class="text-[14px] text-gray-700">Different events, different locations, different menus. The QR image stays fixed; the back end switches destinations — print one batch of cards, use them for a whole year.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Next visit, scan one</h2>
+          <p class="mb-3">Next time you're at Memory Corner, the QR codes on the table will get you to the order page — that interface is what we're slowly extending, with dish-story pages, seasonal-menu entry points, and membership all rolling in over time. If you run a restaurant yourself and want to push the same table-side QR further, <a href="https://ownqrcode.com" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">OwnQR</a> is the lowest-risk way in — a buy-once tool means even a failed experiment only costs USD $15.</p>
+          <p class="text-[14px] text-gray-600">For the full Memory Corner brand story, see the <a href="/en/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Richmond flagship three-generation guide</a>, or the <a href="/en/news/taiwanese-restaurant-coquitlam-north-rd" class="text-[#c59b63] hover:underline">Coquitlam North Rd soft-opening article</a>.</p>
+        </section>
+
+        <section class="mb-6 pt-6 border-t border-stone-200">
+          <h2 class="text-[16px] font-bold mb-3 text-gray-500">References</h2>
+          <ol class="text-[13px] text-gray-600 space-y-2 list-decimal pl-5">
+            <li id="fn1">Statista — QR Codes statistics &amp; facts (tracking QR scan usage and user counts). <a href="https://www.statista.com/topics/9293/qr-codes/" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">statista.com/topics/9293/qr-codes</a></li>
+            <li id="fn2">Toast — Restaurant Trends Report (annual industry report tracking QR-menu adoption). <a href="https://pos.toasttab.com/restaurant-trends" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">pos.toasttab.com/restaurant-trends</a></li>
+            <li id="fn3">Google Safe Browsing — official documentation (the phishing/malware URL detection API that OwnQR integrates). <a href="https://safebrowsing.google.com/" target="_blank" rel="noopener noreferrer" class="text-[#c59b63] hover:underline">safebrowsing.google.com</a></li>
+          </ol>
+        </section>
+      `,
+      faq: [
+        {
+          q: "What's the difference between a dynamic and a static QR code?",
+          a: "A static QR encodes the destination URL directly into the image — once printed, the destination is locked, and changing it means reprinting every card. A dynamic QR encodes a relay URL; the actual destination is editable in a dashboard at any time. The same printed QR can point to a dish story today and a Mid-Autumn promo next month — the pattern never changes. For restaurants, dynamic is the only way to avoid reprinting cards every time the menu shifts.",
+        },
+        {
+          q: "Why pick a buy-once QR tool over a monthly subscription?",
+          a: "Restaurant table cards are long-lived assets — they can run for two or three years. If your QR tool is subscription-based, the moment you stop paying every QR either breaks or hijacks to a paywall, and every printed card on every table goes dead at once. A buy-once tool like OwnQR (USD $15 one-time) removes that exposure — you pay once and the QR is yours, even through a temporary closure or rebrand.",
+        },
+        {
+          q: "Do guests need to download an app to scan?",
+          a: "No. Both iOS and Android native camera apps already support QR scanning. Point the camera at the code, a link appears at the top of the screen, tap it — the page opens in the regular browser. No download, no login, no data permission required.",
+        },
+        {
+          q: "How do you make QR cards that survive on a restaurant table?",
+          a: "Tables see water, soy sauce, and oil. We recommend: (1) lamination (matte or gloss PP film) or synthetic paper for the print stock; (2) at least 350gsm card thickness; (3) rounded corners to prevent curl from scraping. In practice, standard cardstock typically needs reprinting within two weeks due to soiling or curl; switching to waterproof synthetic paper extends life to a full season or more.",
+        },
+        {
+          q: "How many dishes should I start with?",
+          a: "Start with 3 — not the bestsellers, but the dishes guests ask about most. Write one 300–500 word story page per dish, bind each to a dynamic QR, print as table cards beside the dish. The full setup for three dishes is roughly an afternoon's work; total cost (tool + printing + design) usually under USD $50.",
+        },
+        {
+          q: "Is OwnQR safe? Could a QR lead to phishing?",
+          a: "OwnQR runs every redirect through Google Safe Browsing API to catch known malicious destinations. The other safety layer for restaurant owners: because the QR is dynamic, if you ever discover a card has been redirected to the wrong place (for example through a former employee's account access), you can fix it in the dashboard in seconds — no physical card recall needed.",
+        },
+      ],
+      list_items: [
+        { name_zh: "OwnQR（買斷制動態 QR）", name_en: "OwnQR (Buy-once Dynamic QR)", url: "https://ownqrcode.com" },
+        { name_zh: "QR Tiger", name_en: "QR Tiger", url: "https://www.qrcode-tiger.com" },
+        { name_zh: "Uniqode（前 Beaconstac）", name_en: "Uniqode (formerly Beaconstac)", url: "https://www.uniqode.com" },
+        { name_zh: "Bitly QR", name_en: "Bitly QR", url: "https://bitly.com/pages/products/qr-codes" },
+        { name_zh: "QR Code Generator", name_en: "QR Code Generator", url: "https://www.qr-code-generator.com" },
+      ],
+    },
+  },
+
+  /* ─────────────────────────────────────────────────────────────
      #F（Coquitlam 試營運專文）目前已使用集團官方 Coquitlam 店面照
      之後若有專拍封面可換到 /images/news/taiwanese-restaurant-coquitlam-north-rd.webp
      ───────────────────────────────────────────────────────────── */
