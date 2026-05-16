@@ -18,9 +18,9 @@ const MENU_IMAGES = [
   "/images/menu/有香/有香_202503菜單本13.jpg",
   "/images/menu/有香/有香_202503菜單本14.jpg",
   "/images/menu/有香/有香_202503菜單本15.jpg",
-  "/images/menu/有香/有香_202503菜單本16.jpg",
   "/images/menu/有香/有香_202503菜單本17.jpg",
   "/images/menu/有香/有香_202503菜單本18.jpg",
+  "/images/menu/有香/有香_202503菜單本16.jpg",
   "/images/menu/有香/有香_202503菜單本19.jpg",
   "/images/menu/有香/有香_202503菜單本20.jpg",
   "/images/menu/有香/有香_202503菜單本21.jpg",
@@ -37,9 +37,9 @@ const TRANSLATIONS = {
     breadcrumb: {
       home: "首頁",
       brand_menu: "品牌菜單",
-      current: "有香菜單",
+      current: "有香(Richmond)菜單",
     },
-    heading: "有香 ｜ 『經典台灣料理』｜ 菜 單",
+    heading: "有香(Richmond) ｜ 經典台灣料理｜ 菜 單",
     imageAlt: "有香菜單頁面",
   },
   en: {
@@ -51,9 +51,9 @@ const TRANSLATIONS = {
     breadcrumb: {
       home: "Home",
       brand_menu: "Brand Menu",
-      current: "Memory Corner Menu",
+      current: "Memory Corner (Richmond) Menu",
     },
-    heading: "Memory Corner | Classic Taiwanese Cuisine | Menu",
+    heading: "Memory Corner (Richmond) | Classic Taiwanese Cuisine | Menu",
     imageAlt: "Memory Corner Menu Page",
   },
 };
@@ -237,7 +237,7 @@ export default function Menu01Page({ t, locale }) {
                 {t.breadcrumb.current}
               </span>
             </div>
-            <h1 className="mt-4 sm:mt-8 text-lg sm:text-3xl font-bold tracking-[0.15em] sm:tracking-[0.25em] text-stone-800 ">
+            <h1 className="mt-4 sm:mt-8 text-lg sm:text-3xl font-bold tracking-[0.08em] sm:tracking-[0.1em] text-stone-800 ">
               {t.heading}
             </h1>
           </div>
