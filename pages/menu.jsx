@@ -300,7 +300,11 @@ export default function MenuPage({ t, locale }) {
                 <div className="description p-8 flex-1 flex flex-col bg-white relative z-20">
                   {/* 標題區塊 */}
                   <h2 className="font-bold text-[#3b2a1a] leading-snug">
-                    <span className="block text-[22px] tracking-wide">
+                    <span
+                      className={`block tracking-wide ${
+                        locale === "en" ? "text-[19px]" : "text-[22px]"
+                      }`}
+                    >
                       {mainTitle}
                     </span>
                     {subTitle && (
