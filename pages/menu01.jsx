@@ -39,7 +39,7 @@ const TRANSLATIONS = {
       brand_menu: "品牌菜單",
       current: "有香(Richmond)菜單",
     },
-    heading: "有香(Richmond) ｜ 經典台灣料理｜ 菜 單",
+    heading: "有香(Richmond) ｜ 『經典台灣料理』｜ 菜 單",
     imageAlt: "有香菜單頁面",
   },
   en: {
