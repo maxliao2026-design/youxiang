@@ -46,6 +46,19 @@ const TRANSLATIONS = {
         logoIndex: 0,
       },
       {
+        id: "menu04",
+        href: "/menu04",
+        title: "【有香(Coquitlam)菜單】半世紀傳承，體驗台灣獨特的飲食文化",
+        desc: [
+          "從祖傳當歸羊肉鍋、台式火鍋，",
+          "到經典熱炒與酥香炸物，",
+          "再配上一杯台灣精釀啤酒，",
+          "在有香一次品嚐最經典的台味料理。",
+        ],
+        img: "/images/brand-story/memory-corner-coquitlam.webp",
+        logoIndex: 0,
+      },
+      {
         id: "menu02",
         href: "/menu02",
         title: "【憶點點菜單】細緻手作台味，難忘的美食饗宴",
@@ -102,6 +115,18 @@ const TRANSLATIONS = {
           "and Taiwanese craft beer — all the essentials of Taiwan, in one place.",
         ],
         img: "/images/menu/DAV01683.webp",
+        logoIndex: 0,
+      },
+      {
+        id: "menu04",
+        href: "/menu04",
+        title:
+          "【Memory Corner (Coquitlam)】Timeless flavours shaped by generations.",
+        desc: [
+          "Herbal lamb hot pot, classic stir-fries, crispy favourites,",
+          "and Taiwanese craft beer — all the essentials of Taiwan, in one place.",
+        ],
+        img: "/images/brand-story/memory-corner-coquitlam.webp",
         logoIndex: 0,
       },
       {
