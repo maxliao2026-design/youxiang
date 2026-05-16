@@ -24,7 +24,7 @@ const TRANSLATIONS = {
       home: "首頁",
       breadcrumb: "美味菜單",
     },
-    pageTitle: "『餐廳菜單 & 線上商品一覽』",
+    pageTitle: "餐廳菜單 & 線上商品一覽",
     // LOGO 資料
     logos: [
       "/images/logo/有香-logo.png",
@@ -35,7 +35,7 @@ const TRANSLATIONS = {
       {
         id: "menu01",
         href: "/menu01",
-        title: "【經典台灣料理】半世紀傳承，體驗台灣獨特的飲食文化",
+        title: "【有香(Richmond)菜單】半世紀傳承，體驗台灣獨特的飲食文化",
         desc: [
           "從祖傳當歸羊肉鍋、台式火鍋，",
           "到經典熱炒與酥香炸物，",
@@ -48,7 +48,7 @@ const TRANSLATIONS = {
       {
         id: "menu02",
         href: "/menu02",
-        title: "【療癒甜點與鹹食】細緻手作台味，難忘的美食饗宴",
+        title: "【憶點點菜單】細緻手作台味，難忘的美食饗宴",
         desc: [
           "匯聚台灣北、中、南的甜點與鹹食，",
           "從一口甜到一口鹹，",
@@ -85,7 +85,7 @@ const TRANSLATIONS = {
       home: "Home",
       breadcrumb: "Menu",
     },
-    pageTitle: "『Restaurant Menus & Online Product Overview』",
+    pageTitle: "Restaurant Menus & Online Product Overview",
     logos: [
       "/images/logo/有香-logo.png",
       "/images/logo/億點點-logo.png",
@@ -96,7 +96,7 @@ const TRANSLATIONS = {
         id: "menu01",
         href: "/menu01",
         title:
-          "【Classic Taiwanese Cuisine】Timeless flavours shaped by generations.",
+          "【Memory Corner (Richmond)】Timeless flavours shaped by generations.",
         desc: [
           "Herbal lamb hot pot, classic stir-fries, crispy favourites,",
           "and Taiwanese craft beer — all the essentials of Taiwan, in one place.",
@@ -107,7 +107,7 @@ const TRANSLATIONS = {
       {
         id: "menu02",
         href: "/menu02",
-        title: "【Sweet & Savoury Delights】A Memorable Dining Experience",
+        title: "【Sweet Memory (Richmond)】A Memorable Dining Experience",
         desc: [
           "Bringing together sweet and savoury delights from across Taiwan,",
           "from the north to the south.",
