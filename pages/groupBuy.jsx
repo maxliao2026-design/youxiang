@@ -250,7 +250,6 @@ function GroupNoticeModal({ open, onClose, nextPeriod }) {
 export default function GroupBuyPage({
   initialItems = [],
   periods = [],
-  debugLogs = [],
 }) {
   const router = useRouter();
   const { locale, query, isReady, asPath } = router;
@@ -1000,39 +999,44 @@ export async function getStaticProps({ locale }) {
 
       const baseObj = isZhLocale ? zhObj || enObj || p : enObj || zhObj || p;
 
-      const displayProduct = { ...baseObj };
-
       const finalZhName = zhObj ? zhObj.name : baseObj.name;
       const finalEnName = enObj ? enObj.name : baseObj.name;
 
-      displayProduct.id = isZhLocale ? zhId || baseObj.id : enId || baseObj.id;
-      displayProduct.name = isZhLocale ? finalZhName : finalEnName;
-      displayProduct.name_zh = finalZhName;
-      displayProduct.name_en = finalEnName;
-      displayProduct.linkedChineseId = zhId || baseObj.id;
-      displayProduct.sku = baseObj.sku || "";
-
       const priceSource = enObj || zhObj || p;
-      displayProduct.regular_price = priceSource.regular_price;
-      displayProduct.price = priceSource.price;
-      displayProduct.sale_price = priceSource.sale_price;
-
       const stockSource =
         [zhObj, enObj, p].find((obj) => obj && obj.manage_stock) || priceSource;
-
-      displayProduct.manage_stock = stockSource.manage_stock || false;
-      displayProduct.stock_quantity =
-        stockSource.stock_quantity !== null
-          ? Number(stockSource.stock_quantity)
-          : null;
-      displayProduct.stock_status = stockSource.stock_status;
 
       let imgSrc = baseObj.images?.[0]?.src;
       if (imgSrc && !imgSrc.startsWith("http"))
         imgSrc = `${ensureURL(base)}${imgSrc}`;
-      displayProduct.img = imgSrc || "/images/placeholder.png";
 
-      displayProduct.categories = baseObj.categories || [];
+      // 只挑前端真的會用到的欄位 — 避免把 WooCommerce 完整 product object
+      // (含 description HTML、meta_data、_links 等等) 全部塞進 props。
+      // 之前 spread baseObj 讓每頁 props 膨脹到 1.4MB；改成 13 個欄位後降到 ~50KB。
+      const displayProduct = {
+        id: isZhLocale ? zhId || baseObj.id : enId || baseObj.id,
+        name: isZhLocale ? finalZhName : finalEnName,
+        name_zh: finalZhName,
+        name_en: finalEnName,
+        slug: baseObj.slug || "",
+        linkedChineseId: zhId || baseObj.id,
+        sku: baseObj.sku || "",
+        regular_price: priceSource.regular_price,
+        price: priceSource.price,
+        sale_price: priceSource.sale_price,
+        manage_stock: stockSource.manage_stock || false,
+        stock_quantity:
+          stockSource.stock_quantity !== null
+            ? Number(stockSource.stock_quantity)
+            : null,
+        stock_status: stockSource.stock_status,
+        img: imgSrc || "/images/placeholder.png",
+        categories: (baseObj.categories || []).map((c) => ({
+          id: c.id,
+          name: c.name,
+          slug: c.slug,
+        })),
+      };
 
       finalProducts.push(displayProduct);
     });
@@ -1066,5 +1070,6 @@ export async function getStaticProps({ locale }) {
     log(99, `❌ 發生嚴重錯誤: ${e.message}`);
   }
 
-  return { props: { initialItems, periods, debugLogs }, revalidate: 10 };
+  // debugLogs 從沒在 render 端用到，移出 props 以免無謂膨脹
+  return { props: { initialItems, periods }, revalidate: 10 };
 }
