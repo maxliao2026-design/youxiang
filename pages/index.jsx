@@ -409,42 +409,42 @@ export default function Home({ t, locale }) {
   const OPTIONS = { dragFree: true, loop: true };
   const SLIDES = [
     {
-      image: "/images/beer/台啤-蜂蜜.webp",
+      image: "/images/beer/--7385bb7e23.webp",
       title: t.beer.honey.title,
       description: t.beer.honey.description,
     },
     {
-      image: "/images/beer/微果醺.webp",
+      image: "/images/beer/img-668d4c6e63.webp",
       title: t.beer.girl.title,
       description: t.beer.girl.description,
     },
     {
-      image: "/images/beer/245A4057-已增強-雜訊減少 (1).webp",
+      image: "/images/beer/245a4057--1-2c89510ebe.webp",
       title: t.beer.fruit.title,
       description: t.beer.fruit.description,
     },
     {
-      image: "/images/beer/245A3705-已增強-雜訊減少.webp",
+      image: "/images/beer/245a3705---53d7971e50.webp",
       title: t.beer.craft.title,
       description: t.beer.craft.description,
     },
     {
-      image: "/images/beer/台啤-蜂蜜.webp",
+      image: "/images/beer/--7385bb7e23.webp",
       title: t.beer.honey.title,
       description: t.beer.honey.description,
     },
     {
-      image: "/images/beer/微果醺.webp",
+      image: "/images/beer/img-668d4c6e63.webp",
       title: t.beer.girl.title,
       description: t.beer.girl.description,
     },
     {
-      image: "/images/beer/245A4057-已增強-雜訊減少 (1).webp",
+      image: "/images/beer/245a4057--1-2c89510ebe.webp",
       title: t.beer.fruit.title,
       description: t.beer.fruit.description,
     },
     {
-      image: "/images/beer/245A3705-已增強-雜訊減少.webp",
+      image: "/images/beer/245a3705---53d7971e50.webp",
       title: t.beer.craft.title,
       description: t.beer.craft.description,
     },
@@ -478,7 +478,7 @@ export default function Home({ t, locale }) {
     "@type": "Organization",
     name: BRAND_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/images/index/about/有香集團-logo.png`,
+    logo: `${SITE_URL}/images/index/about/youxiang-group-about-logo.png`,
     description: t.meta.description,
     sameAs: [
       "https://www.facebook.com/MemoryCorner8",
@@ -765,7 +765,7 @@ export default function Home({ t, locale }) {
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
                 <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-2">
                   <Image
-                    src="/images/index/about/有香集團-logo.png"
+                    src="/images/index/about/youxiang-group-about-logo.png"
                     alt="Group Logo"
                     width={260}
                     height={120}
@@ -799,7 +799,7 @@ export default function Home({ t, locale }) {
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
                 <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-2">
                   <Image
-                    src="/images/index/about/有香-logo.png"
+                    src="/images/index/about/youxiang-logo.png"
                     alt="Memory Corner Logo"
                     width={260}
                     height={120}
@@ -833,7 +833,7 @@ export default function Home({ t, locale }) {
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
                 <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-2">
                   <Image
-                    src="/images/index/about/億點點-logo.png"
+                    src="/images/index/about/memory-corner-logo.png"
                     alt="Sweet Memory Logo"
                     width={260}
                     height={120}

@@ -702,7 +702,7 @@ export const SlideTabsExample = () => {
                 <Link href="/" aria-label="Home" className="block shrink-0">
                   <div className="w-[200px] sm:w-[220px] md:w-[260px]">
                     <Image
-                      src="/images/logo/有香餐飲集團-logo.png"
+                      src="/images/logo/youxiang-group-logo.png"
                       alt="有香餐飲集團"
                       width={260}
                       height={60}
@@ -817,7 +817,7 @@ export const SlideTabsExample = () => {
                   </NavLink>
                   <Link href="/" aria-label="Home" className="px-2 w-[240px]">
                     <Image
-                      src="/images/logo/有香餐飲集團-logo.png"
+                      src="/images/logo/youxiang-group-logo.png"
                       alt="有香餐飲集團"
                       width={180}
                       height={58}
@@ -1476,7 +1476,7 @@ function MobileNavSheet({
               <Link href="/" onClick={onClose} aria-label="Home">
                 <div className="w-[120px]">
                   <Image
-                    src="/images/logo/有香餐飲集團-logo.png"
+                    src="/images/logo/youxiang-group-logo.png"
                     alt="有香餐飲集團"
                     width={150}
                     height={48}

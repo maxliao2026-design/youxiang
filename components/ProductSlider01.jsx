@@ -17,18 +17,18 @@ export default function ProductSlider({
     {
       title: "有香 Memory Corner ",
       subtitle: "Crisp & clean flavor profile",
-      src: "/images/羊肉爐.png",
+      src: "/images/img-c28b1c7470.png",
       ctas: [
         {
           text: "外帶自取",
           tel: "04-1234-5678",
-          iconSrc: "/images/外帶自取01.png",
+          iconSrc: "/images/01-43f9908d06.png",
           className: "mr-3",
         },
         {
           text: "線上訂位",
           href: "https://lin.ee/xxxx",
-          iconSrc: "/images/線上訂位.png",
+          iconSrc: "/images/img-452f75a445.png",
           target: "_blank",
           rel: "noopener noreferrer",
         },

@@ -196,18 +196,18 @@ export default function FloatingSidebar() {
   const buttons = [
     {
       label: "餐廳點餐",
-      src: "/images/sidebar/浮動選單-餐廳點餐.png",
+      src: "/images/sidebar/--570c5d000f.png",
       href: null,
       onClick: () => setShowOrderPopup(true),
     },
     {
       label: "線上購物",
-      src: "/images/sidebar/浮動選單-線上購物.png",
+      src: "/images/sidebar/--23b618bef9.png",
       href: "/groupBuy",
     },
     {
       label: "啤酒訂購",
-      src: "/images/sidebar/浮動選單-啤酒訂購.png",
+      src: "/images/sidebar/--8302bb02e6.png",
       href: "/beer",
     },
   ];

@@ -19,13 +19,13 @@ export default function ProductSlider({
         {
           text: "外帶自取",
           tel: "04-1234-5678", // 會自動轉成 tel:0412345678
-          iconSrc: "/images/外帶自取01.png",
+          iconSrc: "/images/01-43f9908d06.png",
           className: "mr-3",
         },
         {
           text: "線上訂位",
           href: "https://lin.ee/xxxx", // 一般連結
-          iconSrc: "/images/線上訂位.png",
+          iconSrc: "/images/img-452f75a445.png",
           target: "_blank", // 可選
           rel: "noopener noreferrer", // 可選
         },
@@ -574,7 +574,7 @@ export default function ProductSlider({
                               draggable={false}
                             >
                               <Image
-                                src="/images/外帶自取01.png"
+                                src="/images/01-43f9908d06.png"
                                 alt=""
                                 placeholder="empty"
                                 loading="lazy"
@@ -611,7 +611,7 @@ export default function ProductSlider({
                               draggable={false}
                             >
                               <Image
-                                src="/images/線上訂位.png"
+                                src="/images/img-452f75a445.png"
                                 alt=""
                                 placeholder="empty"
                                 loading="lazy"

@@ -34,7 +34,7 @@ const BookPage = React.forwardRef(function BookPage(
 });
 
 function Book() {
-  // 產出 /images/有香菜單01.png ~ 10.png
+  // 產出 /images/01-2aa0d4945d.png ~ 10.png
   const menuImages = useMemo(
     () =>
       Array.from(

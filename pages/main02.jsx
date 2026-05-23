@@ -46,14 +46,14 @@ export default function Participation() {
 
   const images = [
     "/images/desert.png",
-    "/images/冰品.png",
-    "/images/室內.png",
-    "/images/億點點01.png",
-    "/images/冰品.png",
-    "/images/室內.png",
-    "/images/億點點01.png",
-    "/images/冰品.png",
-    "/images/室內.png",
+    "/images/img-0e253bae46.png",
+    "/images/img-f12c2c705c.png",
+    "/images/01-04aac35e80.png",
+    "/images/img-0e253bae46.png",
+    "/images/img-f12c2c705c.png",
+    "/images/01-04aac35e80.png",
+    "/images/img-0e253bae46.png",
+    "/images/img-f12c2c705c.png",
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function Participation() {
           <div className="absolute z-40 right-[10%] top-1/2">
             <div className="flex flex-col justify-center items-center">
               <Image
-                src="/images/肉包.png"
+                src="/images/img-6f8646c259.png"
                 alt="main-img"
                 width={2200}
                 height={2200}
@@ -75,7 +75,7 @@ export default function Participation() {
           <div className="absolute z-40 left-[10%] bottom-0">
             <div className="flex flex-col justify-center items-center">
               <Image
-                src="/images/湯匙.png"
+                src="/images/img-aebdb52aed.png"
                 alt="main-img"
                 width={2200}
                 height={2200}
@@ -194,7 +194,7 @@ export default function Participation() {
               />
             </motion.div>
             <Image
-              src="/images/有香03.png"
+              src="/images/03-630fbc608f.png"
               alt="beer-img"
               placeholder="empty"
               loading="lazy"

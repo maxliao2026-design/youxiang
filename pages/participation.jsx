@@ -40,7 +40,7 @@ const TRANSLATIONS = {
         tag: "研發",
         title: "研發團隊不斷創新",
         desc: "以傳統工法為基礎，融合創新思維，用心打造每一道能代表品牌精神的料理。",
-        img: "/images/participation/炒菜.webp",
+        img: "/images/participation/img-a13013d29c.webp",
       },
       {
         tag: "培訓",
@@ -121,7 +121,7 @@ const TRANSLATIONS = {
         tag: "R&D",
         title: "Innovative R&D Team",
         desc: "Based on traditional methods infused with innovative thinking, we carefully craft every dish to represent the brand spirit.",
-        img: "/images/participation/炒菜.webp",
+        img: "/images/participation/img-a13013d29c.webp",
       },
       {
         tag: "Training",

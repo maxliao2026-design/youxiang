@@ -11,8 +11,8 @@ const SITE_DOMAIN =
 
 /* ========== 1. 資料設定 ========== */
 const MENU_IMAGES = [
-  "/images/menu/有香ㄟ灶腳/2025-10-灶腳-IG-灶腳宅配到府品項(3000x3750px)-定稿.jpg",
-  "/images/menu/有香ㄟ灶腳/2025-10-灶腳-IG-灶腳宅配區域&運費說明(3000x3750px)-定稿.jpg",
+  "/images/menu/有香ㄟ灶腳/2025-10--ig-3000x3750px--f18692b85c.jpg",
+  "/images/menu/有香ㄟ灶腳/2025-10--ig-3000x3750px--2dbac1000f.jpg",
 ];
 
 /* ========== 2. i18n 翻譯資料 ========== */

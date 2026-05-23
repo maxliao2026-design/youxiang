@@ -143,7 +143,7 @@ export default function Participation() {
           <div className="main-top w-full flex">
             <div className="w-[15%]" data-aos="zoom-in">
               <Image
-                src="/images/有香文字.png"
+                src="/images/img-55f4ab548d.png"
                 alt="main-img"
                 width={1200}
                 height={1200} // 1:1
@@ -166,7 +166,7 @@ export default function Participation() {
             <div className="w-[15%]" data-aos="zoom-in">
               {" "}
               <Image
-                src="/images/台灣文字.png"
+                src="/images/img-055f3cdd09.png"
                 alt="main-img"
                 width={1200}
                 height={1200} // 1:1
@@ -178,7 +178,7 @@ export default function Participation() {
           {/* 你的主視覺圖片 */}
           {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30">
           <Image
-            src="/images/合作加盟.png"
+            src="/images/img-94199ac53b.png"
             alt="加盟合作-有香餐飲集團"
             width={800}
             height={1500}
@@ -222,7 +222,7 @@ export default function Participation() {
             <div className="relative flex justify-center items-center px-4 sm:px-6 py-10">
               <div className="absolute z-40 right-2 top-2 sm:right-6 sm:top-6 lg:right-[7%] lg:top-[20%]">
                 <Image
-                  src="/images/標籤01.png"
+                  src="/images/01-b5b6acb7d4.png"
                   alt="title-txt"
                   width={1200}
                   height={1200}
@@ -234,7 +234,7 @@ export default function Participation() {
               <div className="flex flex-col items-center justify-center">
                 <div className="py-6 sm:py-8">
                   <Image
-                    src="/images/種類01.png"
+                    src="/images/01-7e35e6168c.png"
                     alt="title-txt"
                     width={1200}
                     height={1200}
@@ -245,7 +245,7 @@ export default function Participation() {
 
                 <div className="w-full max-w-[530px] px-2">
                   <Image
-                    src="/images/羊肉爐.png"
+                    src="/images/img-c28b1c7470.png"
                     alt="main-img"
                     width={1200}
                     height={1200}
@@ -265,7 +265,7 @@ export default function Participation() {
             <div className="relative flex justify-center items-center px-4 sm:px-6 py-10">
               <div className="absolute z-40 right-2 top-2 sm:right-6 sm:top-6 lg:right-[7%] lg:top-[20%]">
                 <Image
-                  src="/images/標籤01.png"
+                  src="/images/01-b5b6acb7d4.png"
                   alt="title-txt"
                   width={1200}
                   height={1200}
@@ -277,7 +277,7 @@ export default function Participation() {
               <div className="flex flex-col items-center justify-center">
                 <div className="py-6 sm:py-8">
                   <Image
-                    src="/images/種類01.png"
+                    src="/images/01-7e35e6168c.png"
                     alt="title-txt"
                     width={1200}
                     height={1200}
@@ -308,7 +308,7 @@ export default function Participation() {
             <div className="relative flex justify-center items-center px-4 sm:px-6 py-10">
               <div className="absolute z-40 right-2 top-2 sm:right-6 sm:top-6 lg:right-[7%] lg:top-[20%]">
                 <Image
-                  src="/images/標籤01.png"
+                  src="/images/01-b5b6acb7d4.png"
                   alt="title-txt"
                   width={1200}
                   height={1200}
@@ -320,7 +320,7 @@ export default function Participation() {
               <div className="flex flex-col items-center justify-center">
                 <div className="py-6 sm:py-8">
                   <Image
-                    src="/images/種類01.png"
+                    src="/images/01-7e35e6168c.png"
                     alt="title-txt"
                     width={1200}
                     height={1200}
@@ -470,7 +470,7 @@ export default function Participation() {
                       className="w-[280px] h-[280px] absolute top-5 z-20 left-1/2 -translate-x-1/2"
                     />
                     <Image
-                      src="/images/花紋01.png"
+                      src="/images/01-272f45782e.png"
                       alt="hotpot-pattern"
                       width={900}
                       height={900}
@@ -510,7 +510,7 @@ export default function Participation() {
                       className="w-[320px] h-[320px] absolute bottom-5 left-1/2 -translate-x-1/2"
                     />
                     <Image
-                      src="/images/花紋01.png"
+                      src="/images/01-272f45782e.png"
                       alt="hotpot"
                       placeholder="empty"
                       loading="lazy"
@@ -545,7 +545,7 @@ export default function Participation() {
                       className="w-[320px] h-[320px] absolute top-5 left-1/2 -translate-x-1/2"
                     />
                     <Image
-                      src="/images/花紋01.png"
+                      src="/images/01-272f45782e.png"
                       alt="hotpot"
                       placeholder="empty"
                       loading="lazy"

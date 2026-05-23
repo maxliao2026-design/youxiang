@@ -12,7 +12,7 @@ export default function participation() {
       <section className="section-hero bg-[url('/images/bg02.png')] flex justify-center items-center bg-contain bg-center h-[75vh]">
         <div className="title flex flex-col justify-center items-center">
           <Image
-            src="/images/燈籠.png"
+            src="/images/img-0a5ca11822.png"
             alt="logo"
             placeholder="empty"
             loading="lazy"
@@ -22,7 +22,7 @@ export default function participation() {
           ></Image>
           <div className="info mt-20">
             <Image
-              src="/images/印章logo.png"
+              src="/images/logo-475eb5a483.png"
               alt="logo"
               placeholder="empty"
               loading="lazy"

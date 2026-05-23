@@ -627,18 +627,18 @@ function ProductSlider({
     {
       title: "有香 Memory Corner ",
       subtitle: "Crisp & clean flavor profile",
-      src: "/images/羊肉爐1.png", // ← 第一張
+      src: "/images/1-0a849927be.png", // ← 第一張
       ctas: [
         {
           text: "外帶自取",
           tel: "04-1234-5678",
-          iconSrc: "/images/外帶自取01.png",
+          iconSrc: "/images/01-43f9908d06.png",
           className: "mr-3",
         },
         {
           text: "線上訂位",
           href: "https://lin.ee/xxxx",
-          iconSrc: "/images/線上訂位.png",
+          iconSrc: "/images/img-452f75a445.png",
           target: "_blank",
           rel: "noopener noreferrer",
         },
@@ -1024,7 +1024,7 @@ function ProductSlider({
             <div className="copy ">
               <div className="my-5">
                 <Image
-                  src="/images/旗幟.png"
+                  src="/images/img-86cd26ab08.png"
                   alt="旗幟"
                   placeholder="empty"
                   property="eager"
@@ -1080,7 +1080,7 @@ function ProductSlider({
               data-aos-easing="ease-out-cubic"
             >
               <motion.img
-                src="/images/湯匙.png"
+                src="/images/img-aebdb52aed.png"
                 alt="chopsticks"
                 className="max-w-[450px] will-change-transform"
                 style={{ y: chopsticksY }}
@@ -1226,7 +1226,7 @@ function ProductSlider({
                         className="card-bg"
                         src={s.src}
                         alt={s.title}
-                        {...(s.src === "/images/羊肉爐1.png"
+                        {...(s.src === "/images/1-0a849927be.png"
                           ? {
                               "data-aos": "zoom-in",
                               "data-aos-duration": "900",
@@ -1253,7 +1253,7 @@ function ProductSlider({
                 >
                   <div className="flex flex-col justify-center items-center">
                     <img
-                      src="/images/肉包.png"
+                      src="/images/img-6f8646c259.png"
                       alt=""
                       className="max-w-[100px]"
                     />

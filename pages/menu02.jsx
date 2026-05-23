@@ -11,20 +11,20 @@ const SITE_DOMAIN =
 
 /* ========== 1. 資料設定 (憶點點) ========== */
 const MENU_IMAGES = [
-  "/images/menu/憶點點/憶點點_202509菜單本P3.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P4.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P5.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P6.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P7.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P8.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P10.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P11.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P13.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P14.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P15.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P16.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P18.jpg",
-  "/images/menu/憶點點/憶點點_202509菜單本P19.jpg",
+  "/images/menu/憶點點/_202509p3-4dfb2387c8.jpg",
+  "/images/menu/憶點點/_202509p4-35f0d06ad1.jpg",
+  "/images/menu/憶點點/_202509p5-f616b85532.jpg",
+  "/images/menu/憶點點/_202509p6-335b5d0a60.jpg",
+  "/images/menu/憶點點/_202509p7-442f1be298.jpg",
+  "/images/menu/憶點點/_202509p8-3112dd0835.jpg",
+  "/images/menu/憶點點/_202509p10-8914322792.jpg",
+  "/images/menu/憶點點/_202509p11-368b2e0fbe.jpg",
+  "/images/menu/憶點點/_202509p13-e8101553af.jpg",
+  "/images/menu/憶點點/_202509p14-9148d82a5c.jpg",
+  "/images/menu/憶點點/_202509p15-8d662359ca.jpg",
+  "/images/menu/憶點點/_202509p16-721f95118c.jpg",
+  "/images/menu/憶點點/_202509p18-22db99fcc6.jpg",
+  "/images/menu/憶點點/_202509p19-4736125c1b.jpg",
 ];
 
 /* ========== 2. i18n 翻譯資料 ========== */

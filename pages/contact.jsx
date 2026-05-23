@@ -275,7 +275,7 @@ export default function ContactPage({ t, locale }) {
       "@type": "Organization",
       name: "Memory Corner Group",
       url: SITE_URL,
-      logo: `${SITE_URL}/images/logo/有香餐飲集團-logo.png`,
+      logo: `${SITE_URL}/images/logo/youxiang-group-logo.png`,
       contactPoint: [
         {
           "@type": "ContactPoint",

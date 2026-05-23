@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex sm:justify-start justify-center">
               <Link href="/">
                 <Image
-                  src="/images/logo/有香餐飲集團-logo.png"
+                  src="/images/logo/youxiang-group-logo.png"
                   alt="Memory Corner / 有香餐飲集團"
                   width={180}
                   height={80}

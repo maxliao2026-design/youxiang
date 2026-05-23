@@ -58,7 +58,7 @@ const RESTAURANTS = [
       { dayOfWeek: ["Friday", "Saturday"], opens: "11:30", closes: "15:00" },
       { dayOfWeek: ["Friday", "Saturday"], opens: "16:00", closes: "23:00" },
     ],
-    img: "/images/brand-story/有香光采.webp",
+    img: "/images/brand-story/img-7a073a765b.webp",
     mapUrl: "https://maps.google.com/?q=345+North+Rd,+Coquitlam,+BC+V3K+3V8",
   },
   {
@@ -83,7 +83,7 @@ const RESTAURANTS = [
       { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "17:00", closes: "00:30" },
       { dayOfWeek: ["Saturday", "Sunday"], opens: "11:30", closes: "00:30" },
     ],
-    img: "/images/brand-story/憶點點/憶點點(1280 x 650 像素).webp",
+    img: "/images/brand-story/憶點點/1280x650-91a6742aa9.webp",
     mapUrl: "https://maps.google.com/?q=8080+Leslie+Rd+%23130,+Richmond,+BC+V6X+4A8",
   },
   {
@@ -106,7 +106,7 @@ const RESTAURANTS = [
     hours_schema: [
       { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "10:00", closes: "19:00" },
     ],
-    img: "/images/brand-story/有香ㄟ灶腳上方(1280 x 650 像素).webp",
+    img: "/images/brand-story/1280x650-fee5a0cbfe.webp",
     mapUrl: "https://maps.google.com/?q=8080+Leslie+Rd+%23150,+Richmond,+BC+V6X+4A8",
   },
 ];

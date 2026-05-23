@@ -27,9 +27,9 @@ const TRANSLATIONS = {
     pageTitle: "餐廳菜單 & 線上商品一覽",
     // LOGO 資料
     logos: [
-      "/images/logo/有香-logo.png",
-      "/images/logo/億點點-logo.png",
-      "/images/logo/有香灶腳logo-white.png",
+      "/images/logo/youxiang-logo.png",
+      "/images/logo/memory-corner-logo.png",
+      "/images/logo/youxiang-zaojiao-logo-white.png",
     ],
     items: [
       {
@@ -68,7 +68,7 @@ const TRANSLATIONS = {
           "在每一次入口之間，",
           "留下療癒又難忘的美食記憶。",
         ],
-        img: "/images/menu/Sweet-Memory-16-燒仙草＋凍氛圍照-2.webp",
+        img: "/images/menu/sweet-memory-16--2-282a9ac374.webp",
         logoIndex: 1,
       },
       {
@@ -100,9 +100,9 @@ const TRANSLATIONS = {
     },
     pageTitle: "Restaurant Menus & Online Product Overview",
     logos: [
-      "/images/logo/有香-logo.png",
-      "/images/logo/億點點-logo.png",
-      "/images/logo/有香灶腳logo-white.png",
+      "/images/logo/youxiang-logo.png",
+      "/images/logo/memory-corner-logo.png",
+      "/images/logo/youxiang-zaojiao-logo-white.png",
     ],
     items: [
       {
@@ -139,7 +139,7 @@ const TRANSLATIONS = {
           "From one sweet bite to one savoury bite,",
           "each moment leaves a comforting and unforgettable food memory.",
         ],
-        img: "/images/menu/Sweet-Memory-16-燒仙草＋凍氛圍照-2.webp",
+        img: "/images/menu/sweet-memory-16--2-282a9ac374.webp",
         logoIndex: 1,
       },
       {

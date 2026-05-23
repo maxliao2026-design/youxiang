@@ -24,3 +24,13 @@ node_modules/
 /out
 .vercel
 *.tsbuildinfo
+
+# 本地用：搬出去的舊資產 (給回滾用，不該進 repo)
+_unused_archive/
+
+# 本地 npm cache
+npm-cache/
+
+# 本地 IDE / 開發工具
+.claude/
+dev.sh

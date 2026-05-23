@@ -14,8 +14,8 @@ module.exports = {
   },
 
   images: {
-    // 暫時關閉 Next/Image 最佳化，避免外網域設定不齊造成阻擋
-    unoptimized: true,
+    // Next/Image 自動產生 WebP/AVIF + 各尺寸 srcset；大幅降低流量
+    unoptimized: false,
     remotePatterns: [
       { protocol: "https", hostname: "inf.fjg.mybluehost.me", pathname: "/**" },
       { protocol: "https", hostname: "i0.wp.com", pathname: "/**" },
@@ -26,6 +26,8 @@ module.exports = {
       },
     ],
     formats: ["image/avif", "image/webp"],
+    // 邊緣快取一年；新版本上線 Vercel 會自動產生新的圖片 URL
+    minimumCacheTTL: 31536000,
   },
 
   // ✅ 關閉尾斜線，避免 /api/.../ 404

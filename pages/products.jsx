@@ -130,7 +130,7 @@ export default function Home() {
         {/* Banner */}
         <section>
           <Image
-            src="/images/2025-10-灶腳-IG-灶腳宅配(1920x1080px)-定稿.jpg"
+            src="/images/2025-10--ig-1920x1080px--8bfbd0295f.jpg"
             alt="banner"
             width={1920}
             height={1080}

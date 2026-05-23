@@ -336,7 +336,7 @@ export default function BeerOrderPage({
     "@context": "https://schema.org",
     "@type": "Restaurant",
     name: "Sweet Memory 憶點點",
-    image: `${SITE_URL}/images/logo/有香餐飲集團-logo.png`,
+    image: `${SITE_URL}/images/logo/youxiang-group-logo.png`,
     "@id": `${SITE_URL}/#sweetmemory`,
     url: SITE_URL,
     telephone: "+1-604-284-5434",

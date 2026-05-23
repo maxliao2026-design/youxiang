@@ -20,7 +20,7 @@ const TRANSLATIONS = {
         "有香餐飲集團始於1975年，傳承台灣經典美味。旗下包含有香 Memory Corner、Sweet Memory 憶點點等品牌，在北美傳遞家的溫度與正宗台式料理。",
       keywords:
         "有香餐飲集團, Memory Corner, 台灣料理, 溫哥華美食, 品牌故事, 憶點點",
-      ogImage: "/images/brand-story/集團/集團banner.webp",
+      ogImage: "/images/brand-story/集團/banner-a34d4e96eb.webp",
       siteName: "有香餐飲集團 Memory Corner",
       ogLocale: "zh_TW",
     },
@@ -31,27 +31,27 @@ const TRANSLATIONS = {
       corner: "有香ㄟ灶腳 Old Memory Kitchen",
     },
     brandLogos: {
-      group: "/images/品牌門店logo/有香LOGO.png",
-      youxiang: "/images/品牌門店logo/有香LOGO.png",
-      memory: "/images/品牌門店logo/憶點點LOGO.png",
-      corner: "/images/品牌門店logo/有香ㄟ灶腳LOGO.png",
+      group: "/images/品牌門店logo/logo-57b590ae80.png",
+      youxiang: "/images/品牌門店logo/logo-57b590ae80.png",
+      memory: "/images/品牌門店logo/logo-0744d4bff4.png",
+      corner: "/images/品牌門店logo/logo-500855c75b.png",
     },
     brandList: {
       title: "旗下品牌",
       desc: "有香餐飲集團匯聚多元品牌，始終以料理為核心，從經典台灣料理到療癒甜點與鹹食，再到日常冷凍台式家常美味，持續傳承台灣飲食文化的深厚底蘊。凡事台味，生活更有滋味。",
       logos: [
         {
-          src: "/images/品牌門店logo/有香LOGO.png",
+          src: "/images/品牌門店logo/logo-57b590ae80.png",
           alt: "Memory Corner 有香",
           width: 140,
         },
         {
-          src: "/images/品牌門店logo/憶點點LOGO.png",
+          src: "/images/品牌門店logo/logo-0744d4bff4.png",
           alt: "Sweet Memory 憶點點",
           width: 140,
         },
         {
-          src: "/images/品牌門店logo/有香ㄟ灶腳LOGO.png",
+          src: "/images/品牌門店logo/logo-500855c75b.png",
           alt: "Kitchen Corner 有香ㄟ灶腳",
           width: 140,
         },
@@ -236,7 +236,7 @@ const TRANSLATIONS = {
           addressRegion: "BC",
           streetAddress: "345 North Rd",
           hours: "Daily\n• 11:30 AM – 11:00 PM",
-          img: "/images/brand-story/有香光采.webp",
+          img: "/images/brand-story/img-7a073a765b.webp",
           mapUrl:
             "https://maps.google.com/?q=345+North+Rd,+Coquitlam,+BC+V3K+3V8",
         },
@@ -254,7 +254,7 @@ const TRANSLATIONS = {
           streetAddress: "8080 Leslie Rd #130",
           hours:
             "Mon–Fri\n• 5:00 PM – 12:30 AM\n\nSat, Sun & All Holidays\n• 11:30 AM – 12:30 AM\n(All Holidays include school breaks)",
-          img: "/images/brand-story/憶點點/憶點點(1280 x 650 像素).webp",
+          img: "/images/brand-story/憶點點/1280x650-91a6742aa9.webp",
           mapUrl:
             "https://maps.google.com/?q=8080+Leslie+Rd+%23130,+Richmond,+BC+V6X+4A8",
         },
@@ -271,7 +271,7 @@ const TRANSLATIONS = {
           addressRegion: "BC",
           streetAddress: "8080 Leslie Rd #150",
           hours: "Daily\n• 10:00 AM – 7:00 PM",
-          img: "/images/brand-story/有香ㄟ灶腳上方(1280 x 650 像素).webp",
+          img: "/images/brand-story/1280x650-fee5a0cbfe.webp",
           mapUrl:
             "https://maps.google.com/?q=8080+Leslie+Rd+%23150,+Richmond,+BC+V6X+4A8",
         },
@@ -285,7 +285,7 @@ const TRANSLATIONS = {
         "Established in 1975, Memory Corner Group brings authentic Taiwanese cuisine to North America. Home to Memory Corner and Sweet Memory.",
       keywords:
         "Memory Corner Group, Taiwanese Cuisine, Vancouver Food, Brand Story, Sweet Memory",
-      ogImage: "/images/brand-story/集團/集團banner.webp",
+      ogImage: "/images/brand-story/集團/banner-a34d4e96eb.webp",
       siteName: "Memory Corner Group",
       ogLocale: "en_US",
     },
@@ -296,27 +296,27 @@ const TRANSLATIONS = {
       corner: "Old Memory Kitchen",
     },
     brandLogos: {
-      group: "/images/品牌門店logo/有香LOGO.png",
-      youxiang: "/images/品牌門店logo/有香LOGO.png",
-      memory: "/images/品牌門店logo/憶點點LOGO.png",
-      corner: "/images/品牌門店logo/有香ㄟ灶腳LOGO.png",
+      group: "/images/品牌門店logo/logo-57b590ae80.png",
+      youxiang: "/images/品牌門店logo/logo-57b590ae80.png",
+      memory: "/images/品牌門店logo/logo-0744d4bff4.png",
+      corner: "/images/品牌門店logo/logo-500855c75b.png",
     },
     brandList: {
       title: "OUR BRANDS",
       desc: "Memory Corner Group brings together diverse brands, from classic Taiwanese cuisine and nostalgic desserts to convenient instant meals, satisfying your taste buds in every way.",
       logos: [
         {
-          src: "/images/品牌門店logo/有香LOGO.png",
+          src: "/images/品牌門店logo/logo-57b590ae80.png",
           alt: "Memory Corner 有香",
           width: 140,
         },
         {
-          src: "/images/品牌門店logo/憶點點LOGO.png",
+          src: "/images/品牌門店logo/logo-0744d4bff4.png",
           alt: "Sweet Memory 憶點點",
           width: 140,
         },
         {
-          src: "/images/品牌門店logo/有香ㄟ灶腳LOGO.png",
+          src: "/images/品牌門店logo/logo-500855c75b.png",
           alt: "Kitchen Corner 有香ㄟ灶腳",
           width: 140,
         },
@@ -534,7 +534,7 @@ const TRANSLATIONS = {
           addressRegion: "BC",
           streetAddress: "345 North Rd",
           hours: "Daily\n• 11:30 AM – 11:00 PM",
-          img: "/images/brand-story/有香光采.webp",
+          img: "/images/brand-story/img-7a073a765b.webp",
           mapUrl:
             "https://maps.google.com/?q=345+North+Rd,+Coquitlam,+BC+V3K+3V8",
         },
@@ -552,7 +552,7 @@ const TRANSLATIONS = {
           streetAddress: "8080 Leslie Rd #130",
           hours:
             "Mon–Fri\n• 5:00 PM – 12:30 AM\n\nSat, Sun & All Holidays\n• 11:30 AM – 12:30 AM\n(All Holidays include school breaks)",
-          img: "/images/brand-story/憶點點/憶點點(1280 x 650 像素).webp",
+          img: "/images/brand-story/憶點點/1280x650-91a6742aa9.webp",
           mapUrl:
             "https://maps.google.com/?q=8080+Leslie+Rd+%23130,+Richmond,+BC+V6X+4A8",
         },
@@ -569,7 +569,7 @@ const TRANSLATIONS = {
           addressRegion: "BC",
           streetAddress: "8080 Leslie Rd #150",
           hours: "Daily\n• 10:00 AM – 7:00 PM",
-          img: "/images/brand-story/有香ㄟ灶腳上方(1280 x 650 像素).webp",
+          img: "/images/brand-story/1280x650-fee5a0cbfe.webp",
           mapUrl:
             "https://maps.google.com/?q=8080+Leslie+Rd+%23150,+Richmond,+BC+V6X+4A8",
         },
@@ -624,7 +624,7 @@ const ContentGroup = ({ t }) => (
           >
             <div className="min-w-full relative h-[300px] md:h-[520px]">
               <Image
-                src="/images/brand-story/集團/集團banner.webp"
+                src="/images/brand-story/集團/banner-a34d4e96eb.webp"
                 alt={t.content.group.bannerAlt}
                 fill
                 className="object-cover"
@@ -633,7 +633,7 @@ const ContentGroup = ({ t }) => (
             </div>
             <div className="min-w-full relative h-[300px] md:h-[520px]">
               <Image
-                src="/images/brand-story/集團/集團banner.webp"
+                src="/images/brand-story/集團/banner-a34d4e96eb.webp"
                 alt={t.content.group.bannerAlt}
                 fill
                 className="object-cover"
@@ -714,7 +714,7 @@ const ContentYouxiang = ({ t }) => (
       </h1>
       <div className="mb-2  ">
         <Image
-          src="/images/brand-story/有香上方(1280 x 650 像素).webp"
+          src="/images/brand-story/1280x650-6e61c1d94f.webp"
           alt="Memory Corner Origin"
           width={880}
           height={520}
@@ -739,7 +739,7 @@ const ContentYouxiang = ({ t }) => (
         <div className="md:w-1/2">
           <div className=" ">
             <Image
-              src="/images/brand-story/有香光采.webp"
+              src="/images/brand-story/img-7a073a765b.webp"
               alt="Memory Corner Glory"
               width={880}
               height={520}
@@ -770,7 +770,7 @@ const ContentYouxiang = ({ t }) => (
       </h2>
       <div className=" ">
         <Image
-          src="/images/brand-story/有香下方（1400 x 700）.webp"
+          src="/images/brand-story/1400x700-b1beca020b.webp"
           alt="Memory Corner Classic"
           width={880}
           height={520}
@@ -811,7 +811,7 @@ const ContentMemory = ({ t }) => (
       </div>
       <div className="mb-2  ">
         <Image
-          src="/images/brand-story/憶點點/憶點點(1280 x 650 像素).webp"
+          src="/images/brand-story/憶點點/1280x650-91a6742aa9.webp"
           alt="Sweet Memory Origin"
           width={880}
           height={520}
@@ -833,7 +833,7 @@ const ContentMemory = ({ t }) => (
         <div className="md:w-1/2">
           <div className=" ">
             <Image
-              src="/images/brand-story/憶點點/憶點點中(500 x 600 像素)拷貝.webp"
+              src="/images/brand-story/憶點點/500x600-377665e72f.webp"
               alt="Sweet Memory Persistence"
               width={880}
               height={520}
@@ -867,7 +867,7 @@ const ContentMemory = ({ t }) => (
       <div>
         <div className=" ">
           <Image
-            src="/images/brand-story/憶點點/憶點點下方（1400 x 700）.webp"
+            src="/images/brand-story/憶點點/1400x700-edcddb0322.webp"
             alt="Sweet Memory Classic"
             width={880}
             height={520}
@@ -909,7 +909,7 @@ const ContentCorner = ({ t }) => (
       </h1>
       <div className="mb-2  ">
         <Image
-          src="/images/brand-story/有香ㄟ灶腳上方(1280 x 650 像素).webp"
+          src="/images/brand-story/1280x650-fee5a0cbfe.webp"
           alt="Kitchen Corner Origin"
           width={880}
           height={520}
@@ -934,7 +934,7 @@ const ContentCorner = ({ t }) => (
         <div className="md:w-1/2">
           <div className=" ">
             <Image
-              src="/images/brand-story/灶腳直立式小圖.webp"
+              src="/images/brand-story/img-ee1d67f43e.webp"
               alt="Kitchen Corner Quality"
               width={880}
               height={520}
@@ -965,7 +965,7 @@ const ContentCorner = ({ t }) => (
       </h2>
       <div className=" ">
         <Image
-          src="/images/brand-story/灶腳三色芋圓產品-2.webp"
+          src="/images/brand-story/-2-cdd0468c54.webp"
           alt="Kitchen Corner Classic"
           width={880}
           height={520}
@@ -1129,20 +1129,20 @@ export default function BrandStoryPage({ t, locale }) {
 
   const brandLogos = t.brandLogos || {};
   const currentBrandLogo =
-    brandLogos[activeTab] || "/images/品牌門店logo/有香ㄟ灶腳LOGO.png";
+    brandLogos[activeTab] || "/images/品牌門店logo/logo-500855c75b.png";
 
   const getHeaderBg = () => {
     switch (activeTab) {
       case "group":
         return "/images/brand-story/集團/DAV02074.jpg";
       case "youxiang":
-        return "/images/index/about/DAV01968.jpg";
+        return "/images/index/about/DAV01968.webp";
       case "memory":
-        return "/images/brand-story/憶點點/憶點點(1280 x 650 像素).webp";
+        return "/images/brand-story/憶點點/1280x650-91a6742aa9.webp";
       case "corner":
-        return "/images/brand-story/有香ㄟ灶腳上方(1280 x 650 像素).webp";
+        return "/images/brand-story/1280x650-fee5a0cbfe.webp";
       default:
-        return "/images/index/about/DAV01968.jpg";
+        return "/images/index/about/DAV01968.webp";
     }
   };
 
@@ -1200,7 +1200,7 @@ export default function BrandStoryPage({ t, locale }) {
     "@id": `${SITE_DOMAIN}/#organization`,
     name: "Memory Corner Group / 有香餐飲集團",
     url: SITE_DOMAIN,
-    logo: `${SITE_DOMAIN}/images/品牌門店logo/有香LOGO.png`,
+    logo: `${SITE_DOMAIN}/images/品牌門店logo/logo-57b590ae80.png`,
     foundingDate: "1975",
     description: t.meta.description,
     sameAs: [

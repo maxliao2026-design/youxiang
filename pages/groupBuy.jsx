@@ -537,7 +537,7 @@ export default function GroupBuyPage({
     "@context": "https://schema.org",
     "@type": "Restaurant",
     name: "Old Memory Kitchen 有香ㄟ灶腳",
-    image: `${SITE_URL}/images/logo/有香餐飲集團-logo.png`,
+    image: `${SITE_URL}/images/logo/youxiang-group-logo.png`,
     "@id": `${SITE_URL}/#oldmemorykitchen`,
     url: SITE_URL,
     telephone: "+1-778-723-1685",
