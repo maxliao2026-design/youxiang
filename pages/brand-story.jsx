@@ -1223,25 +1223,43 @@ export default function BrandStoryPage({ t, locale }) {
   };
 
   // 4. 各個實體店面的獨立宣告 (LocalBusiness / Restaurant)
-  const storesSchemas = allStores.map((store) => ({
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    name: store.name,
-    image: `${SITE_DOMAIN}${store.img}`,
-    telephone: store.tel,
-    url: store.mapUrl,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: store.streetAddress,
-      addressLocality: store.addressLocality,
-      addressRegion: store.addressRegion,
-      postalCode: store.postalCode,
-      addressCountry: "CA",
-    },
-    priceRange: "$$",
-    servesCuisine: "Taiwanese",
-    openingHours: store.hours.replace(/\n/g, " "),
-  }));
+  // 依品牌名對應菜單頁與菜系(憶點點主打甜點/手搖，呼應在地搜尋需求）
+  const menuInfoFor = (name = "") => {
+    const n = String(name).toLowerCase();
+    if (n.includes("憶點點") || n.includes("sweet memory"))
+      return { menuPath: "/menu02", cuisine: ["Taiwanese", "Dessert", "Bubble Tea"] };
+    if (n.includes("灶腳") || n.includes("old memory") || n.includes("kitchen"))
+      return { menuPath: "/menu03", cuisine: "Taiwanese" };
+    if (n.includes("coquitlam") || n.includes("高貴林"))
+      return { menuPath: "/menu04", cuisine: "Taiwanese" };
+    if (n.includes("richmond") || n.includes("有香") || n.includes("memory corner"))
+      return { menuPath: "/menu01", cuisine: "Taiwanese" };
+    return { menuPath: "/menu", cuisine: "Taiwanese" };
+  };
+
+  const storesSchemas = allStores.map((store) => {
+    const { menuPath, cuisine } = menuInfoFor(store.name);
+    return {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      name: store.name,
+      image: `${SITE_DOMAIN}${store.img}`,
+      telephone: store.tel,
+      url: store.mapUrl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: store.streetAddress,
+        addressLocality: store.addressLocality,
+        addressRegion: store.addressRegion,
+        postalCode: store.postalCode,
+        addressCountry: "CA",
+      },
+      priceRange: "$$",
+      servesCuisine: cuisine,
+      hasMenu: `${SITE_DOMAIN}${menuPath}`,
+      openingHours: store.hours.replace(/\n/g, " "),
+    };
+  });
 
   const jsonLdList = [
     breadcrumbSchema,

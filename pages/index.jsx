@@ -494,6 +494,16 @@ export default function Home({ t, locale }) {
     priceRange: "$$",
     servesCuisine: "Taiwanese",
     url: SITE_URL,
+    telephone: "+1-604-284-5434",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "4651 Garden City Rd #1110",
+      addressLocality: "Richmond",
+      addressRegion: "BC",
+      postalCode: "V6X 2K4",
+      addressCountry: "CA",
+    },
+    hasMenu: `${SITE_URL}/menu`,
   };
 
   const videoSchema = {
