@@ -481,7 +481,7 @@ export default function Home({ t, locale }) {
     logo: `${SITE_URL}/images/index/about/youxiang-group-about-logo.png`,
     description: t.meta.description,
     sameAs: [
-      "https://www.facebook.com/MemoryCorner8",
+      "https://www.facebook.com/MemoryCorner",
       "https://www.instagram.com/memorydininggroup",
     ],
   };

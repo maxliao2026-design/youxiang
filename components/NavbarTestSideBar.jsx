@@ -102,7 +102,7 @@ const Navbar = () => {
       </ul>
       <div className="MobileIcons flex mt-10 w-full">
         <a
-          href="https://www.facebook.com/profile.php?id=61569146001285"
+          href="https://www.facebook.com/MemoryCorner"
           className="flex justify-center items-center mr-3 "
         >
           <Image

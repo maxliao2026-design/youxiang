@@ -81,7 +81,7 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 {/* Facebook */}
                 <Link
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/MemoryCorner"
                   aria-label="Facebook"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,7 +96,7 @@ export default function Footer() {
                 </Link>
                 {/* Instagram */}
                 <Link
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/memorydininggroup"
                   aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"

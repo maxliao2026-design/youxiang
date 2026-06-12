@@ -1204,7 +1204,7 @@ export default function BrandStoryPage({ t, locale }) {
     foundingDate: "1975",
     description: t.meta.description,
     sameAs: [
-      "https://www.facebook.com/MemoryCorner8",
+      "https://www.facebook.com/MemoryCorner",
       "https://www.instagram.com/memorydininggroup",
     ],
     subOrganization: allStores.map((store) => ({

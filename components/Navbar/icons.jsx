@@ -140,7 +140,7 @@ export default function App() {
   return (
     <div className="flex gap-4 items-center">
       <a
-        href="https://www.facebook.com/profile.php?id=61569146001285"
+        href="https://www.facebook.com/MemoryCorner"
         target="_blank"
         rel="noreferrer"
       >
