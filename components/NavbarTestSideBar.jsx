@@ -116,7 +116,7 @@ const Navbar = () => {
           ></Image>
         </a>
         <a
-          href="https://www.instagram.com/starisland_baby2022?igsh=MXVkeWExOXBsdWx1NQ%3D%3D&utm_source=qr"
+          href="https://www.instagram.com/memorydininggroup"
           className="flex justify-center items-center mr-5 "
         >
           <Image

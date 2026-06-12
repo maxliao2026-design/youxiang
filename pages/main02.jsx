@@ -110,7 +110,7 @@ export default function Participation() {
               <p className="text-[20px] text-[#e52727] font-bold mt-4">
                 憶點點(Sweet Memory)
                 匯聚台灣北中南美食，提供古早味甜品手工嫩豆花、仙 ...
-                有香中央廚房(Old Memory<br></br>
+                有香製作中心(Old Memory<br></br>
                 Kitchen)是有香餐飲集團為了嚴格控管產品製程、追求極致
               </p>
             </div>

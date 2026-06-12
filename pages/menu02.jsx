@@ -31,9 +31,9 @@ const MENU_IMAGES = [
 const TRANSLATIONS = {
   "zh-TW": {
     meta: {
-      title: "憶點點菜單 | Sweet Memory",
+      title: "憶點點 Sweet Memory 列治文台式甜點菜單｜手作甜點・鹹食",
       description:
-        "憶點點 Sweet Memory 完整菜單。提供古早味鹹食、手作甜點與懷舊台灣小吃。",
+        "憶點點 Sweet Memory 列治文 Leslie Rd 完整菜單與價位。台式手作甜點、古早味鹹食與懷舊台灣小吃，飯後甜點與下午茶首選。",
     },
     breadcrumb: {
       home: "首頁",
@@ -45,9 +45,9 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      title: "Menu | Sweet Memory",
+      title: "Sweet Memory Richmond Menu | Taiwanese Desserts & Snacks",
       description:
-        "Full menu of Sweet Memory. Offering traditional savory dishes, handmade desserts, and nostalgic Taiwanese snacks.",
+        "Sweet Memory dessert menu & prices on Leslie Rd, Richmond. Handmade Taiwanese desserts, savory bites and nostalgic snacks — perfect for dessert or afternoon tea.",
     },
     breadcrumb: {
       home: "Home",

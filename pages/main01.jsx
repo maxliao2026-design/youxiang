@@ -581,7 +581,7 @@ export default function Participation() {
                   the owner's expectations for different aspects of Taiwanese
                   culture: the main store - to inherit the authentic Taiwanese
                   cuisine, the dessert store - to provide Taiwanese classic
-                  desserts and snacks, and the central kitchen - to strictly
+                  desserts and snacks, and the production hub - to strictly
                   control the quality of ingredients and master the taste. We
                   also deeply hope that Memory Dining Group will continue to
                   thrive and bring the Taiwanese culture to everyone.

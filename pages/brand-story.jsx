@@ -102,7 +102,7 @@ const TRANSLATIONS = {
           {
             heading: "從一家餐廳，到有香餐飲集團",
             content:
-              "<p>隨著有香 Memory Corner 的成長，<br />品牌的願景也不再只限於一家餐廳。<br />因此成立了 <b>有香餐飲集團 Memory Dining Group</b>，整合多個品牌與中央廚房體系，目前涵蓋：</p><ul class='list-disc list-inside my-4 inline-block text-left'><li><b>有香 Memory Corner – 經典台灣料理</b></li><li><b>憶點點 Sweet Memory – </b>療癒甜點與鹹食</li><li><b>有香ㄟ灶腳 Old Memory Kitchen – </b>台味便利店</li><li><b>中央廚房與製作中心 – </b>Central Kitchen & Production Hub</li></ul><p>所有品牌皆源自同一份家族精神，<br />延續三代傳承的料理初心，<br />用不同形式，訴說同一個家的故事。</p>",
+              "<p>隨著有香 Memory Corner 的成長，<br />品牌的願景也不再只限於一家餐廳。<br />因此成立了 <b>有香餐飲集團 Memory Dining Group</b>，整合多個品牌與製作中心體系，目前涵蓋：</p><ul class='list-disc list-inside my-4 inline-block text-left'><li><b>有香 Memory Corner – 經典台灣料理</b></li><li><b>憶點點 Sweet Memory – </b>療癒甜點與鹹食</li><li><b>有香ㄟ灶腳 Old Memory Kitchen – </b>台味便利店</li><li><b>製作中心 – </b>Production Hub</li></ul><p>所有品牌皆源自同一份家族精神，<br />延續三代傳承的料理初心，<br />用不同形式，訴說同一個家的故事。</p>",
           },
           {
             heading: "我們相信",
@@ -193,7 +193,7 @@ const TRANSLATIONS = {
           caption: "嚴格把關，只為呈現最好的台灣味。",
           title: "從源頭到餐桌，<br />守護記憶中的味道",
           paragraphs: [
-            "為了讓在異鄉的遊子能吃到最正宗的台灣味，我們成立了專屬的中央廚房與選品團隊。每一道冷凍調理包，都經過無數次還原度的測試；每一款上架的零食，都是台灣人從小吃到大的經典。",
+            "為了讓在異鄉的遊子能吃到最正宗的台灣味，我們成立了專屬的製作中心與選品團隊。每一道冷凍調理包，都經過無數次還原度的測試；每一款上架的零食，都是台灣人從小吃到大的經典。",
             "我們相信，便利不代表隨便。即便是一包簡單的乾拌麵，也要有如同現煮般的靈魂與香氣。",
           ],
         },
@@ -367,7 +367,7 @@ const TRANSLATIONS = {
           {
             heading: "From One Restaurant to Memory Dining Group",
             content:
-              "<p>As Memory Corner continued to grow,<br />the vision expanded beyond a single restaurant.<br />This led to the establishment of <b>Memory Dining Group</b>,<br />bringing together multiple brands and a central kitchen system, including:</p><ul class='list-disc list-inside my-4 inline-block text-left'><li><b>Memory Corner – </b>Classic Taiwanese Cuisine</li><li><b>Sweet Memory – </b>Nostalgic Desserts & Savoury Dishes</li><li><b>Old Memory Kitchen – </b>Taiwanese Convenience Store</li><li><b>Central Kitchen & Production Hub</b></li></ul><p>All concepts are rooted in the same family legacy,<br />carrying forward a spirit passed down through three generations —<br />telling one story, in many forms,<br />through the taste of home.</p>",
+              "<p>As Memory Corner continued to grow,<br />the vision expanded beyond a single restaurant.<br />This led to the establishment of <b>Memory Dining Group</b>,<br />bringing together multiple brands and a production hub, including:</p><ul class='list-disc list-inside my-4 inline-block text-left'><li><b>Memory Corner – </b>Classic Taiwanese Cuisine</li><li><b>Sweet Memory – </b>Nostalgic Desserts & Savoury Dishes</li><li><b>Old Memory Kitchen – </b>Taiwanese Convenience Store</li><li><b>Production Hub</b></li></ul><p>All concepts are rooted in the same family legacy,<br />carrying forward a spirit passed down through three generations —<br />telling one story, in many forms,<br />through the taste of home.</p>",
           },
           {
             heading: "Our Belief",
@@ -1205,7 +1205,7 @@ export default function BrandStoryPage({ t, locale }) {
     description: t.meta.description,
     sameAs: [
       "https://www.facebook.com/MemoryCorner8",
-      "https://www.instagram.com/memorycorner8",
+      "https://www.instagram.com/memorydininggroup",
     ],
     subOrganization: allStores.map((store) => ({
       "@type": "Restaurant",

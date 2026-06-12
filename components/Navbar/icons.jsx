@@ -154,7 +154,7 @@ export default function App() {
         </Button>
       </a>
       <a
-        href="https://www.instagram.com/starisland_baby2022?igsh=MXVkeWExOXBsdWx1NQ%3D%3D&utm_source=qr"
+        href="https://www.instagram.com/memorydininggroup"
         target="_blank"
         rel="noreferrer"
       >

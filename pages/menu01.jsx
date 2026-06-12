@@ -30,9 +30,9 @@ const MENU_IMAGES = [
 const TRANSLATIONS = {
   "zh-TW": {
     meta: {
-      title: "有香菜單 | Memory Corner",
+      title: "有香 Memory Corner 列治文菜單｜台菜・羊肉爐・鍋物",
       description:
-        "有香 Memory Corner 完整菜單。提供經典台灣小吃、羊肉爐、各式鍋物與飲品。",
+        "有香 Memory Corner 列治文總店完整菜單與價位。經典台灣小吃、招牌羊肉爐、各式鍋物與飲品，內用外帶皆宜。",
     },
     breadcrumb: {
       home: "首頁",
@@ -44,9 +44,9 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      title: "Menu | Memory Corner",
+      title: "Memory Corner Richmond Menu | Taiwanese Hot Pot & Eats",
       description:
-        "Full menu of Memory Corner. Serving authentic Taiwanese snacks, Lamb Hot Pot, and various drinks.",
+        "Full menu & prices for Memory Corner Richmond. Classic Taiwanese snacks, signature lamb hot pot, hot pots and drinks. Dine-in or takeout.",
     },
     breadcrumb: {
       home: "Home",

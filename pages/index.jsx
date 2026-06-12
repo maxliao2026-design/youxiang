@@ -78,7 +78,7 @@ const TRANSLATIONS = {
     about: {
       title: "ABOUT US",
       group_desc:
-        "始於 1975 年，從一間街角餐廳，<br/>走向三個品牌與中央廚房的餐飲集團。<br/>我們將台灣的味道帶到北美溫哥華，<br/>讓每一道料理，都承載家的溫度與歸屬。",
+        "始於 1975 年，從一間街角餐廳，<br/>走向三個品牌與製作中心的餐飲集團。<br/>我們將台灣的味道帶到北美溫哥華，<br/>讓每一道料理，都承載家的溫度與歸屬。",
       memory_desc:
         "大火快炒、慢燉入味與酥香炸物，<br/>成就半世紀傳承的經典台灣料理。",
       sweet_desc:
@@ -133,7 +133,7 @@ const TRANSLATIONS = {
     about: {
       title: "ABOUT US",
       group_desc:
-        "Founded in 1975,<br/>from one restaurant to three brands and a central kitchen,<br/>we bring Taiwanese food culture to life in North America,<br/>sharing the warmth and sense of home.",
+        "Founded in 1975,<br/>from one restaurant to three brands and a production hub,<br/>we bring Taiwanese food culture to life in North America,<br/>sharing the warmth and sense of home.",
       memory_desc:
         "From fiery stir-fries and slow-simmered dishes<br/>to crispy golden favourites,we craft timeless Taiwanese flavours.",
       sweet_desc:
@@ -482,7 +482,7 @@ export default function Home({ t, locale }) {
     description: t.meta.description,
     sameAs: [
       "https://www.facebook.com/MemoryCorner8",
-      "https://www.instagram.com/memorycorner8",
+      "https://www.instagram.com/memorydininggroup",
     ],
   };
 
