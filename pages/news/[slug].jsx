@@ -22,6 +22,180 @@ import { buildArticleJsonLd } from "../../lib/seo/article-schema";
    ================================================================= */
 const CONTENT = {
   /* ─────────────────────────────────────────────────────────────
+     #憶點點 Sweet Memory（台式甜點 / Richmond）
+     暫用菜單甜點頁(P6)轉 ASCII webp 當封面：/images/news/taiwanese-dessert-richmond.webp
+     之後有甜點實拍可替換。品項與價格取自 2026 客人版菜單（已驗證）。
+     ───────────────────────────────────────────────────────────── */
+  "taiwanese-dessert-richmond": {
+    "zh-TW": {
+      title: "列治文台式甜點宵夜｜憶點點 Sweet Memory：燒仙草・芒果凍・古早味手搖",
+      quick_answer:
+        "憶點點 Sweet Memory 是位於 Richmond 8080 Leslie Rd #130 的台式甜點與宵夜店，隸屬有香餐飲集團。招牌是手工自製豆花（古早味、三色、豆漿、巧克力、布丁豆花，$8.95 起，可加珍珠、粉粿、仙草凍等 14 種配料），以及燒仙草、新鮮芒果凍、各式茶凍與古早味手工甜品（麻糬鍋餅、麥仔煎、厚片吐司）；另有 15 款古早味手搖奶茶。也供應肉燥飯、大腸麵線等鹹食與關東煮。週一至五 5:00 PM、週末 11:30 AM 開門，每天營業到凌晨 12:30，是列治文少見營業到深夜的台式甜點選擇。內用、外帶皆可，採 walk-in。",
+      content_html: `
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">在列治文想吃「台式甜點」，其實選擇不多</h2>
+          <p class="mb-3">Richmond 的甜點店很多，珍奶、雪花冰、港式糖水都找得到——但真正做<strong>台灣味</strong>的甜點，少。所謂台式甜點，不是蛋糕也不是冰淇淋，而是燒仙草、麻糬、麥仔煎這種讓在台灣長大的人一口就回到小時候的味道。</p>
+          <p class="mb-3"><strong>憶點點 Sweet Memory</strong> 就是補上這一塊的店。它隸屬<a href="/brand-story?tab=group" class="text-[#c59b63] hover:underline">有香餐飲集團</a>，跟台菜餐廳<a href="/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">有香 Memory Corner</a> 同集團，主打「療癒甜點與鹹食」——飯後想吃點甜的、或半夜想找東西墊胃，都在這裡。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">憶點點的台式甜點實際上有什麼？</h2>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">豆花（招牌・手工自製）</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>古早味豆花（Tofu Pudding）$8.95</strong>——以黃豆手工熬煮，質地柔嫩、豆香濃郁。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>三色豆花 $10.95</strong>、<strong>豆漿豆花 $9.25</strong>、<strong>巧克力豆花 $9.50</strong>、<strong>布丁豆花 $9.75</strong>。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span>可另加 14 種配料：珍珠、粉粿、黑糖粉粿、仙草凍、蜜芋頭、三色芋圓、紅豆、薏仁、蜜豆、花生、煉奶…（$2.50 起），自由搭一碗。</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">凍品・糖水</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>燒仙草（Hot Grass Jelly）$8.85</strong>——熱熱一碗、內含烤花生，台灣冬天的療癒糖水。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>新鮮芒果凍（Fresh Mango Jelly）$9.25</strong>——搭真實芒果丁。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>各式茶凍 $8.95 起</strong>——茉莉、伯爵、烏龍、白蜜桃、咖啡、仙草等口味可選。</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">古早味手工甜品</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>紅豆沙寶泥麻糬鍋餅 $8.35</strong>、<strong>爆漿麻糬（黑芝麻／花生）$8.35</strong>。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>麥仔煎 $7.95</strong>（綜合／黑糖花生）、<strong>芋仔餅 3 入 $8.95</strong>。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>厚片吐司</strong>——煉奶 $7.50、奶酥／榛果巧克力／綿花糖 各 $7.95。</span></li>
+            </ul>
+          </div>
+          <p class="text-[14px] text-gray-600 mt-3">完整品項與價格見<a href="/menu02" class="text-[#c59b63] hover:underline">憶點點線上菜單</a>。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">配一杯古早味手搖（15 款奶茶）</h2>
+          <p class="mb-3">甜點配茶才完整。憶點點有 15 款手搖奶茶，從<strong>香濃奶茶、古早味鮮奶茶、烏龍奶茶、伯爵奶茶</strong>到加料的<strong>紅豆奶茶、布丁奶茶、仙草凍奶茶</strong>都有，$6.70 起。想喝點不一樣的，<strong>桂花烏龍奶茶（含粉粿）$8.25</strong> 是店裡的特色。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">不只是甜點：鹹食、關東煮，開到凌晨 12:30</h2>
+          <p class="mb-3">憶點點的定位其實是「甜點＋宵夜」。除了甜品，也供應<strong>肉燥飯、火雞肉飯、大腸麵線、筒仔米糕、皮蛋豆腐、五味魷魚</strong>等古早味鹹食，以及<strong>關東煮</strong>（魚豆腐、貢丸、米血糕…）。</p>
+          <p class="mb-3">最關鍵的是時間：<strong>週一至五下午 5:00 開到凌晨 12:30、週末 11:30 AM 開到凌晨 12:30</strong>。在 Richmond，半夜想吃台式甜點或熱湯關東煮的選擇本來就少，這是憶點點最實用的地方。</p>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">地點、姊妹店與會員</h2>
+          <p class="mb-3">憶點點位於 <strong>Richmond 8080 Leslie Rd #130</strong>，同一棟還有姊妹品牌<strong>有香ㄟ灶腳 Old Memory Kitchen（#150）</strong>的台味冷凍家用包。台菜本店<a href="/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">有香 Memory Corner</a> 在 Garden City Rd——在那吃完正餐，散步來憶點點吃飯後甜點，是很順的台味路線。</p>
+          <p class="mb-3">三個品牌會員制度共通：一個帳號、跨店累積（CAD $1 = 10 點，1,600 點折抵 $10）。</p>
+        </section>
+      `,
+      faq: [
+        {
+          q: "憶點點 Sweet Memory 在哪裡？",
+          a: "位於 8080 Leslie Rd #130, Richmond, BC V6X 4A8，電話 (604) 370-2882。同一棟 #150 是姊妹品牌有香ㄟ灶腳。",
+        },
+        {
+          q: "營業到幾點？適合宵夜嗎？",
+          a: "每天營業到凌晨 12:30。週一至五下午 5:00 開門、週末 11:30 AM 開門。在 Richmond 算是少數深夜還能吃台式甜點與關東煮的店，很適合宵夜。",
+        },
+        {
+          q: "招牌甜點推薦哪幾樣？",
+          a: "手工自製豆花是招牌——古早味豆花 $8.95，可加珍珠、粉粿、仙草凍、蜜芋頭等 14 種配料自由搭；另有三色、豆漿、巧克力、布丁豆花。喜歡糖水可選燒仙草（含烤花生）、新鮮芒果凍；想吃手工甜品則有麻糬鍋餅、麥仔煎、厚片吐司。第一次來建議從一碗豆花配一杯古早味奶茶開始。",
+        },
+        {
+          q: "有手搖飲／珍奶嗎？",
+          a: "有 15 款古早味手搖奶茶，$6.70 起，包含烏龍奶茶、伯爵奶茶、紅豆／布丁／仙草凍奶茶，以及含粉粿的桂花烏龍奶茶。",
+        },
+        {
+          q: "要訂位嗎？可以外帶嗎？",
+          a: "採 walk-in，內用與外帶皆可。甜點與手搖都適合外帶。",
+        },
+      ],
+    },
+    en: {
+      title: "Taiwanese Dessert in Richmond: Sweet Memory (憶點點)",
+      quick_answer:
+        "Sweet Memory (憶點點) is a Taiwanese dessert and late-night spot at 8080 Leslie Rd #130, Richmond, BC, part of the Memory Corner group. The signature is handmade tofu pudding (douhua) — classic, triple, soy-milk, chocolate and custard, from $8.95, with 14 toppings like pearls, tapioca jelly cake and grass jelly — alongside hot grass jelly, fresh mango jelly, tea jellies and handmade sweets (mochi pancake, mai-zai-jian, thick toast). There are also 15 hand-shaken milk teas. Beyond dessert it serves savoury rice bowls, noodles and oden. Open Mon–Fri 5:00 PM and weekends 11:30 AM, every day until 12:30 AM — one of the few places in Richmond for Taiwanese dessert this late. Dine-in or takeout, walk-in.",
+      content_html: `
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Taiwanese Dessert in Richmond Is Surprisingly Hard to Find</h2>
+          <p class="mb-3">Richmond has plenty of dessert spots — bubble tea, snow ice, Hong Kong sweet soups. But truly <strong>Taiwanese</strong> dessert is rare. We're not talking cakes or ice cream, but grass jelly, mochi and mai-zai-jian — the flavours that take anyone who grew up in Taiwan straight back to childhood.</p>
+          <p class="mb-3"><strong>Sweet Memory (憶點點)</strong> fills that gap. Part of the <a href="/en/brand-story?tab=group" class="text-[#c59b63] hover:underline">Memory Corner group</a> alongside the Taiwanese restaurant <a href="/en/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Memory Corner</a>, it focuses on "comforting desserts and savoury bites" — whether you want something sweet after dinner or a late-night snack.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">What Taiwanese Desserts Does Sweet Memory Actually Have?</h2>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Tofu Pudding / Douhua (signature, handmade)</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Classic Tofu Pudding $8.95</strong> — slow-made from soybeans, silky and fragrant.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Triple Classic $10.95</strong>, <strong>Tofu Pudding in Soy Milk $9.25</strong>, <strong>Chocolate $9.50</strong>, <strong>Custard $9.75</strong>.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span>Add from 14 toppings: pearls, tapioca jelly cake, brown-sugar tapioca, grass jelly, sweet taro, three-colour yam balls, red bean, peanut, condensed milk and more (from $2.50) — build your own bowl.</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Jellies &amp; Sweet Soups</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Hot Grass Jelly $8.85</strong> — served warm with roasted peanuts, Taiwan's classic winter comfort.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Fresh Mango Jelly $9.25</strong> — with real diced mango.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Assorted Tea Jellies from $8.95</strong> — jasmine, Earl Grey, oolong, peach, coffee, grass jelly and more.</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200">
+            <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Handmade Taiwanese Sweets</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Red-Bean Mochi Pancake $8.35</strong> and <strong>Lava Burst Mochi (black sesame / peanut) $8.35</strong>.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Taiwanese Pancake (mai-zai-jian) $7.95</strong> and <strong>Taro Cakes, 3 pcs $8.95</strong>.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Thick Toast</strong> — condensed milk $7.50; cream custard / hazelnut chocolate / marshmallow $7.95 each.</span></li>
+            </ul>
+          </div>
+          <p class="text-[14px] text-gray-600 mt-3">See the full list and prices on the <a href="/en/menu02" class="text-[#c59b63] hover:underline">Sweet Memory online menu</a>.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Pair It with a Hand-Shaken Milk Tea (15 to choose from)</h2>
+          <p class="mb-3">Dessert isn't complete without tea. Sweet Memory pours 15 hand-shaken milk teas — from <strong>house milk tea, traditional fresh milk tea, oolong and Earl Grey</strong> to loaded versions with <strong>red bean, pudding or grass jelly</strong>, from $6.70. For something different, the <strong>Osmanthus Oolong Milk Tea with tapioca gummy cubes ($8.25)</strong> is a house favourite.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">More Than Dessert: Savoury Bites, Oden, Open Till 12:30 AM</h2>
+          <p class="mb-3">Sweet Memory is really a "dessert + late-night" spot. Beyond sweets it serves nostalgic savoury dishes — <strong>braised pork rice, turkey rice, intestine vermicelli, tube rice pudding, century-egg tofu, five-flavour squid</strong> — plus <strong>oden</strong> (fish tofu, meatballs, rice-blood cake and more).</p>
+          <p class="mb-3">The key detail is the hours: <strong>Mon–Fri 5:00 PM to 12:30 AM, weekends 11:30 AM to 12:30 AM</strong>. Late-night Taiwanese dessert or a warm bowl of oden is genuinely hard to find in Richmond — which is exactly where Sweet Memory shines.</p>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Location, Sister Stores &amp; Rewards</h2>
+          <p class="mb-3">Sweet Memory is at <strong>8080 Leslie Rd #130, Richmond</strong>. The same building (#150) houses sister brand <strong>Old Memory Kitchen</strong> for Taiwanese frozen home meals. The group's Taiwanese restaurant, <a href="/en/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Memory Corner</a>, is on Garden City Rd — finish dinner there, then walk over for dessert.</p>
+          <p class="mb-3">All three brands share one membership: a single account earning points across stores (CAD $1 = 10 points; 1,600 points = $10 off).</p>
+        </section>
+      `,
+      faq: [
+        {
+          q: "Where is Sweet Memory (憶點點) in Richmond?",
+          a: "At 8080 Leslie Rd #130, Richmond, BC V6X 4A8; phone (604) 370-2882. Unit #150 in the same building is sister brand Old Memory Kitchen.",
+        },
+        {
+          q: "How late is it open? Is it good for late-night?",
+          a: "Open daily until 12:30 AM — Mon–Fri from 5:00 PM, weekends from 11:30 AM. It's one of the few places in Richmond serving Taiwanese dessert and oden this late, so it's great for a late-night snack.",
+        },
+        {
+          q: "Which desserts should I order first?",
+          a: "Handmade tofu pudding (douhua) is the signature — classic tofu pudding $8.95, build your own with 14 toppings like pearls, tapioca jelly cake, grass jelly and sweet taro; triple, soy-milk, chocolate and custard versions too. For sweet soups try hot grass jelly (with roasted peanuts) or fresh mango jelly; for handmade sweets, the mochi pancake, mai-zai-jian or thick toast. A first visit pairs well with a bowl of tofu pudding and a milk tea.",
+        },
+        {
+          q: "Do they have bubble tea / milk tea?",
+          a: "Yes — 15 hand-shaken milk teas from $6.70, including oolong, Earl Grey, and loaded options with red bean, pudding or grass jelly, plus osmanthus oolong with tapioca gummy cubes.",
+        },
+        {
+          q: "Do I need a reservation? Can I take out?",
+          a: "Walk-in, dine-in or takeout. Desserts and milk teas travel well for takeout.",
+        },
+      ],
+    },
+  },
+
+  /* ─────────────────────────────────────────────────────────────
      #G（動態 QR menu / 餐廳場景指南）
      目前借用 brand-story Richmond 室內照當封面；
      若之後有桌邊掃碼實拍可換成 /images/news/dynamic-qr-menu.webp

@@ -18,6 +18,46 @@
 
 const ARTICLES = [
   {
+    slug: "taiwanese-dessert-richmond",
+    date: "2026-06-12",
+    img: "/images/news/taiwanese-dessert-richmond.webp",
+    category: "guide",
+    author_id: "jessica-lin",
+    related_restaurants: ["store-sweet-memory", "store-youxiang-richmond"],
+    keywords_zh: [
+      "列治文 台式甜點",
+      "台式甜點 Richmond",
+      "憶點點",
+      "Sweet Memory Richmond",
+      "豆花 Richmond",
+      "燒仙草 Richmond",
+      "芒果凍",
+      "台式手搖 Richmond",
+      "Richmond 宵夜甜點",
+      "糖水 Richmond",
+    ],
+    keywords_en: [
+      "dessert richmond",
+      "chinese dessert richmond",
+      "taiwanese dessert richmond",
+      "tofu pudding richmond",
+      "tofu dessert richmond",
+      "grass jelly richmond",
+      "bubble tea richmond",
+      "sweet memory richmond",
+      "late night dessert richmond",
+      "richmond dessert",
+    ],
+    is_listicle: false,
+    title_zh:
+      "列治文台式甜點宵夜｜憶點點 Sweet Memory：手工豆花・燒仙草・古早味手搖",
+    desc_zh:
+      "在 Richmond 想吃台式甜點？憶點點 Sweet Memory（8080 Leslie Rd #130）主打手工豆花（可加珍珠、粉粿、仙草凍等 14 種配料）、燒仙草、芒果凍與古早味甜品，搭配 15 款手搖奶茶；每天營業到凌晨 12:30。",
+    title_en: "Taiwanese Dessert in Richmond: Sweet Memory (憶點點)",
+    desc_en:
+      "Craving Taiwanese dessert in Richmond? Sweet Memory (8080 Leslie Rd #130) serves handmade tofu pudding (douhua) with 14 toppings, grass jelly, mango jelly, mochi and thick toast, plus 15 hand-shaken milk teas — open late till 12:30 AM.",
+  },
+  {
     slug: "taiwanese-restaurant-dynamic-qr-menu-story",
     date: "2026-05-15",
     img: "/images/brand-story/memory-corner-01.png",
