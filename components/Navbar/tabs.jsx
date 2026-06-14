@@ -1469,7 +1469,7 @@ function MobileNavSheet({
             animate="animate"
             exit="exit"
             ref={panelRef}
-            className="fixed right-0 top-0 z-[3010] h-full w-full bg-white shadow-2xl"
+            className="fixed right-0 top-0 z-[3010] h-full w-full bg-white text-[#3c2514] shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between border-b border-black/10 px-4 py-3">
