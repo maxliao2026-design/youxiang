@@ -1574,59 +1574,6 @@ function MobileNavSheet({
                 </Link>
               </nav>
 
-              <div className="border-t border-black/10 p-4 space-y-3 bg-gray-50/50">
-                {!auth?.user ? (
-                  <button
-                    onClick={() => {
-                      onLoginClick?.();
-                      onClose?.();
-                    }}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-black px-4 py-2.5 text-white hover:opacity-90 whitespace-nowrap"
-                  >
-                    <User2 size={18} /> {t.login}
-                  </button>
-                ) : (
-                  <div className="rounded-xl border border-black/10 bg-white p-3 text-center shadow-sm">
-                    <div className="text-sm text-black/70 mb-2">
-                      Hello,{" "}
-                      {auth.user.displayName || auth.user.name || "Member"}
-                    </div>
-                    <div className="flex justify-center gap-2">
-                      <Link
-                        href="/account"
-                        className="rounded-lg bg-black text-white px-3 py-1.5 text-xs hover:opacity-90 whitespace-nowrap"
-                        onClick={onClose}
-                      >
-                        {t.my_account}
-                      </Link>
-                      <button
-                        className="rounded-lg border border-black/15 px-3 py-1.5 text-xs hover:bg-black/5 whitespace-nowrap"
-                        onClick={() => {
-                          onLogoutClick?.();
-                          onClose?.();
-                        }}
-                      >
-                        {t.logout}
-                      </button>
-                    </div>
-                  </div>
-                )}
-                <button
-                  onClick={() => {
-                    onCartClick?.();
-                    onClose?.();
-                  }}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-black/15 bg-white px-4 py-2.5 hover:bg-black/5 whitespace-nowrap"
-                >
-                  <ShoppingCart size={18} /> {t.cart}
-                  {cartCount > 0 && (
-                    <span className="ml-1 rounded-full bg-[#9c2121] px-2 py-[1px] text-[11px] text-white whitespace-nowrap">
-                      {cartCount}
-                    </span>
-                  )}
-                </button>
-              </div>
-
               <div className="border-t border-black/10 p-4 bg-white">
                 <div className="mt-3 text-center text-[10px] text-black/40">
                   © {new Date().getFullYear()} Memory Corner
