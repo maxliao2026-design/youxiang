@@ -43,6 +43,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">豆花（招牌・手工自製）</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-tofu-pudding-richmond.webp" alt="憶點點 Sweet Memory Richmond 手工豆花，搭配三色芋圓與糖水的台式 tofu pudding" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="825" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">招牌手工豆花，口感滑順，可自選紅豆、粉粿、芋圓等 14 種配料。</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>古早味豆花（Tofu Pudding）$8.95</strong>——以黃豆手工熬煮，口感滑順、豆香溫潤，是店裡的祖傳老味道。</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>三色豆花 $10.95</strong>、<strong>豆漿豆花 $9.25</strong>、<strong>巧克力豆花 $9.50</strong>、<strong>布丁豆花 $9.75</strong>。</span></li>
@@ -52,6 +56,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">凍品・糖水</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-grass-jelly-richmond.webp" alt="憶點點 Sweet Memory Richmond 燒仙草，淋上香濃配料的台式 grass jelly 甜湯" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="1650" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">燒仙草——台式糖水的療癒代表，內含烤花生。</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>燒仙草（Hot Grass Jelly）$8.85</strong>——熱熱一碗、內含烤花生，台灣冬天的療癒糖水。</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>新鮮芒果凍（Fresh Mango Jelly）$9.25</strong>——搭真實芒果丁。</span></li>
@@ -61,6 +69,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">古早味手工甜品</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-thick-toast-richmond.webp" alt="憶點點 Sweet Memory Richmond 棉花糖厚片吐司，台式古早味甜點" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="733" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">棉花糖厚片吐司，台式古早味甜點。</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>紅豆沙寶泥麻糬鍋餅 $8.35</strong>、<strong>爆漿麻糬（黑芝麻／花生）$8.35</strong>。</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>麥仔煎 $7.95</strong>（綜合／黑糖花生）、<strong>芋仔餅 3 入 $8.95</strong>。</span></li>
@@ -133,6 +145,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Tofu Pudding / Douhua (signature, handmade)</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-tofu-pudding-richmond.webp" alt="Sweet Memory handmade Taiwanese tofu pudding (douhua) with taro balls and syrup, Richmond" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="825" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">Silky handmade tofu pudding — build your own with 14 toppings.</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Classic Tofu Pudding $8.95</strong> — slow-made from soybeans by hand, silky-smooth and gently fragrant; the shop's traditional family recipe.</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Triple Classic $10.95</strong>, <strong>Tofu Pudding in Soy Milk $9.25</strong>, <strong>Chocolate $9.50</strong>, <strong>Custard $9.75</strong>.</span></li>
@@ -142,6 +158,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Jellies &amp; Sweet Soups</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-grass-jelly-richmond.webp" alt="Sweet Memory Taiwanese grass jelly dessert with cream and toppings, Richmond" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="1650" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">Grass jelly — a comforting Taiwanese sweet soup, with roasted peanuts.</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Hot Grass Jelly $8.85</strong> — served warm with roasted peanuts, Taiwan's classic winter comfort.</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Fresh Mango Jelly $9.25</strong> — with real diced mango.</span></li>
@@ -151,6 +171,10 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Handmade Taiwanese Sweets</h3>
+            <figure class="my-4 -mx-1 sm:mx-0">
+              <img src="/images/news/sweet-memory-thick-toast-richmond.webp" alt="Sweet Memory marshmallow thick toast, a nostalgic Taiwanese dessert, Richmond" class="rounded-lg w-full h-auto border border-stone-200" loading="lazy" width="1100" height="733" />
+              <figcaption class="text-[13px] text-gray-500 mt-2 italic">Marshmallow thick toast — a nostalgic Taiwanese sweet.</figcaption>
+            </figure>
             <ul class="space-y-3">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Red-Bean Mochi Pancake $8.35</strong> and <strong>Lava Burst Mochi (black sesame / peanut) $8.35</strong>.</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Taiwanese Pancake (mai-zai-jian) $7.95</strong> and <strong>Taro Cakes, 3 pcs $8.95</strong>.</span></li>
