@@ -44,7 +44,7 @@ const CONTENT = {
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">豆花（招牌・手工自製）</h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>古早味豆花（Tofu Pudding）$8.95</strong>——以黃豆手工熬煮，質地柔嫩、豆香濃郁。</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>古早味豆花（Tofu Pudding）$8.95</strong>——以黃豆手工熬煮，口感滑順、豆香溫潤，是店裡的祖傳老味道。</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>三色豆花 $10.95</strong>、<strong>豆漿豆花 $9.25</strong>、<strong>巧克力豆花 $9.50</strong>、<strong>布丁豆花 $9.75</strong>。</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span>可另加 14 種配料：珍珠、粉粿、黑糖粉粿、仙草凍、蜜芋頭、三色芋圓、紅豆、薏仁、蜜豆、花生、煉奶…（$2.50 起），自由搭一碗。</span></li>
             </ul>
@@ -79,6 +79,13 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">不只是甜點：鹹食、關東煮，開到凌晨 12:30</h2>
           <p class="mb-3">憶點點的定位其實是「甜點＋宵夜」。除了甜品，也供應<strong>肉燥飯、火雞肉飯、大腸麵線、筒仔米糕、皮蛋豆腐、五味魷魚</strong>等古早味鹹食，以及<strong>關東煮</strong>（魚豆腐、貢丸、米血糕…）。</p>
           <p class="mb-3">最關鍵的是時間：<strong>週一至五下午 5:00 開到凌晨 12:30、週末 11:30 AM 開到凌晨 12:30</strong>。在 Richmond，半夜想吃台式甜點或熱湯關東煮的選擇本來就少，這是憶點點最實用的地方。</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">在列治文吃「台式甜點」，和一般甜點店有什麼不同？</h2>
+          <p class="mb-3">列治文的甜點選擇多，但大多落在兩種：以飲料為主的手搖／珍奶店，和廣式糖水。台式甜點走的是第三條路——<strong>「料」才是主角</strong>。在憶點點，一碗手工豆花是你自己組的：紅豆、粉粿、黑糖粉粿、仙草凍、蜜芋頭、三色芋圓、珍珠、花生…14 種配料任搭，每一碗都不一樣。</p>
+          <p class="mb-3">和一般手搖店比，這裡不是「順手帶一杯」，而是「坐下來吃一碗」的古早味甜品；和廣式糖水比，台式的豆花、燒仙草、麻糬走的是更家常、更療癒的路線。再加上有鹹食、關東煮、又營業到凌晨 12:30——同一個地方能同時當<strong>飯後甜點、下午茶、深夜宵夜</strong>三種場景，這在列治文並不多見。</p>
+          <p class="mb-3">所以如果你在找的是「列治文哪裡有真正的台式甜點」「想吃一碗會讓人想起台灣的豆花或燒仙草」，而不只是一杯手搖——憶點點是少數對得上的答案。</p>
         </section>
 
         <section class="mb-6">
@@ -127,7 +134,7 @@ const CONTENT = {
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200 mb-4">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">Tofu Pudding / Douhua (signature, handmade)</h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Classic Tofu Pudding $8.95</strong> — slow-made from soybeans, silky and fragrant.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Classic Tofu Pudding $8.95</strong> — slow-made from soybeans by hand, silky-smooth and gently fragrant; the shop's traditional family recipe.</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span><strong>Triple Classic $10.95</strong>, <strong>Tofu Pudding in Soy Milk $9.25</strong>, <strong>Chocolate $9.50</strong>, <strong>Custard $9.75</strong>.</span></li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-2 h-2 rounded-full bg-[#c59b63] shrink-0"></span><span>Add from 14 toppings: pearls, tapioca jelly cake, brown-sugar tapioca, grass jelly, sweet taro, three-colour yam balls, red bean, peanut, condensed milk and more (from $2.50) — build your own bowl.</span></li>
             </ul>
@@ -162,6 +169,13 @@ const CONTENT = {
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">More Than Dessert: Savoury Bites, Oden, Open Till 12:30 AM</h2>
           <p class="mb-3">Sweet Memory is really a "dessert + late-night" spot. Beyond sweets it serves nostalgic savoury dishes — <strong>braised pork rice, turkey rice, intestine vermicelli, tube rice pudding, century-egg tofu, five-flavour squid</strong> — plus <strong>oden</strong> (fish tofu, meatballs, rice-blood cake and more).</p>
           <p class="mb-3">The key detail is the hours: <strong>Mon–Fri 5:00 PM to 12:30 AM, weekends 11:30 AM to 12:30 AM</strong>. Late-night Taiwanese dessert or a warm bowl of oden is genuinely hard to find in Richmond — which is exactly where Sweet Memory shines.</p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">How Is Taiwanese Dessert Different from a Typical Dessert Shop in Richmond?</h2>
+          <p class="mb-3">Richmond has no shortage of dessert spots, but most fall into two camps: drink-led bubble-tea shops, and Cantonese sweet-soup houses. Taiwanese dessert takes a third path — <strong>the toppings are the star</strong>. At Sweet Memory, a bowl of handmade tofu pudding is yours to build: red bean, tapioca jelly cake, brown-sugar tapioca, grass jelly, sweet taro, three-colour yam balls, pearls, peanut… 14 toppings to mix, so no two bowls are alike.</p>
+          <p class="mb-3">Unlike a bubble-tea counter, this is a place to sit down for a bowl of nostalgic dessert rather than just grab a cup; unlike Cantonese sweet soups, the tofu pudding, grass jelly and mochi follow a homier, comforting Taiwanese style. Add savoury bites, oden and a 12:30 AM close, and one spot covers <strong>after-dinner dessert, afternoon tea and a late-night snack</strong> — uncommon in Richmond.</p>
+          <p class="mb-3">So if you're looking for where to find real Taiwanese dessert in Richmond — a bowl of douhua or grass jelly that tastes like home, not just another cup of bubble tea — Sweet Memory is one of the few answers that fits.</p>
         </section>
 
         <section class="mb-6">
