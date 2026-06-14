@@ -103,7 +103,7 @@ const CONTENT = {
         <section class="mb-6">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">地點、姊妹店與會員</h2>
           <p class="mb-3">憶點點位於 <strong>Richmond 8080 Leslie Rd #130</strong>，同一棟還有姊妹品牌<strong>有香ㄟ灶腳 Old Memory Kitchen（#150）</strong>的台味冷凍家用包。台菜本店<a href="/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">有香 Memory Corner</a> 在 Garden City Rd——在那吃完正餐，散步來憶點點吃飯後甜點，是很順的台味路線。</p>
-          <p class="mb-3">三個品牌會員制度共通：一個帳號、跨店累積（CAD $1 = 10 點，1,600 點折抵 $10）。</p>
+          <p class="mb-3">三個品牌會員制度共通：於店內出示會員碼跨店累積（CAD $1 = 10 點，1,600 點折抵 $10）。</p>
         </section>
       `,
       faq: [
@@ -205,7 +205,7 @@ const CONTENT = {
         <section class="mb-6">
           <h2 class="text-xl md:text-2xl font-bold mb-4 text-[#3b2a1a]">Location, Sister Stores &amp; Rewards</h2>
           <p class="mb-3">Sweet Memory is at <strong>8080 Leslie Rd #130, Richmond</strong>. The same building (#150) houses sister brand <strong>Old Memory Kitchen</strong> for Taiwanese frozen home meals. The group's Taiwanese restaurant, <a href="/en/news/authentic-taiwanese-restaurant-richmond" class="text-[#c59b63] hover:underline">Memory Corner</a>, is on Garden City Rd — finish dinner there, then walk over for dessert.</p>
-          <p class="mb-3">All three brands share one membership: a single account earning points across stores (CAD $1 = 10 points; 1,600 points = $10 off).</p>
+          <p class="mb-3">All three brands share one membership — earn and redeem points in-store across all locations (CAD $1 = 10 points; 1,600 points = $10 off).</p>
         </section>
       `,
       faq: [
@@ -820,7 +820,7 @@ const CONTENT = {
               </li>
             </ul>
           </div>
-          <p class="text-[14px] text-gray-600">會員制度兩家共通，一個帳號跨店累積點數（CAD $1 = 10 點，1,600 點折抵 $10）。詳見 <a href="/news/membership-rewards" class="text-[#c59b63] hover:underline">會員回饋計畫</a>。</p>
+          <p class="text-[14px] text-gray-600">會員制度兩家共通，於店內出示會員碼跨店累積點數（CAD $1 = 10 點，1,600 點折抵 $10）。詳見 <a href="/news/membership-rewards" class="text-[#c59b63] hover:underline">會員回饋計畫</a>。</p>
         </section>
 
         <section class="mb-10">
@@ -935,7 +935,7 @@ const CONTENT = {
               </li>
             </ul>
           </div>
-          <p class="text-[14px] text-gray-600">Membership works across both locations — one account, cross-store points (CAD $1 = 10 pts; 1,600 pts = $10 off). See <a href="/en/news/membership-rewards" class="text-[#c59b63] hover:underline">Membership Rewards</a>.</p>
+          <p class="text-[14px] text-gray-600">Membership works across both locations — earn points in-store across stores (CAD $1 = 10 pts; 1,600 pts = $10 off). See <a href="/en/news/membership-rewards" class="text-[#c59b63] hover:underline">Membership Rewards</a>.</p>
         </section>
 
         <section class="mb-10">
@@ -1034,7 +1034,7 @@ const CONTENT = {
 
           <div class="bg-white/70 rounded-xl p-5 sm:p-6 border border-stone-200">
             <h3 class="text-lg font-bold text-[#3b2a1a] mb-2">3. 三品牌的一站式台味體驗</h3>
-            <p class="text-[15px] sm:text-[16px] mb-2">有香 Memory Corner 是集團的核心，但不是全部。在 Richmond 8080 Leslie Rd 上，姊妹品牌<strong>憶點點 Sweet Memory（#130）</strong>與<strong>有香ㄟ灶腳 Old Memory Kitchen（#150）</strong>分別補上甜點宵夜與家用冷凍包這兩塊。會員制度三家共通——一個帳號、跨店累積（CAD $1 = 10 點，1,600 點折抵 $10）。</p>
+            <p class="text-[15px] sm:text-[16px] mb-2">有香 Memory Corner 是集團的核心，但不是全部。在 Richmond 8080 Leslie Rd 上，姊妹品牌<strong>憶點點 Sweet Memory（#130）</strong>與<strong>有香ㄟ灶腳 Old Memory Kitchen（#150）</strong>分別補上甜點宵夜與家用冷凍包這兩塊。會員制度三家共通——於店內出示會員碼跨店累積（CAD $1 = 10 點，1,600 點折抵 $10）。</p>
             <p class="text-[14px] text-gray-600">延伸閱讀：<a href="/news/taiwanese-convenience-store-vancouver" class="text-[#c59b63] hover:underline">走進有香ㄟ灶腳</a>｜<a href="/news/membership-rewards" class="text-[#c59b63] hover:underline">會員回饋計畫</a></p>
           </div>
         </section>
@@ -1379,7 +1379,7 @@ const CONTENT = {
               <span><strong>有香ㄟ灶腳</strong>：販售型便利店，每日 10:00–19:00。</span>
             </li>
           </ul>
-          <p class="mb-3">在憶點點吃晚飯或宵夜後，順手到有香ㄟ灶腳補貨，把當週的家常料理包帶回家——對住在 Richmond 的台僑家庭、UBC／SFU 的台灣留學生，是大溫少見的「一站式台味補給」動線。會員系統共用，同一帳號可跨店累積點數。</p>
+          <p class="mb-3">在憶點點吃晚飯或宵夜後，順手到有香ㄟ灶腳補貨，把當週的家常料理包帶回家——對住在 Richmond 的台僑家庭、UBC／SFU 的台灣留學生，是大溫少見的「一站式台味補給」動線。會員系統共用，於店內出示會員碼可跨店累積點數。</p>
         </section>
 
         <section class="mb-10">
@@ -1421,7 +1421,7 @@ const CONTENT = {
         },
         {
           q: "有香ㄟ灶腳與隔壁的憶點點 Sweet Memory 是同一家店嗎？",
-          a: "屬於同集團的姊妹品牌，位於同棟不同單位（憶點點 #130／有香ㄟ灶腳 #150）。憶點點專做台式甜點與古早味鹹食的內用與外帶，有香ㄟ灶腳則是販售型便利店。會員制度共用，同一帳號可在兩店累積與折抵點數。",
+          a: "屬於同集團的姊妹品牌，位於同棟不同單位（憶點點 #130／有香ㄟ灶腳 #150）。憶點點專做台式甜點與古早味鹹食的內用與外帶，有香ㄟ灶腳則是販售型便利店。會員制度共用，於店內可在兩店累積與折抵點數。",
         },
         {
           q: "有香ㄟ灶腳在哪裡？",
