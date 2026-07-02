@@ -32,10 +32,8 @@ export default async function handler(req, res) {
     });
 
     const toList = [
-       "bob112722761236tom@gmail.com",
-        "volon1019@gmail.com",
-  "raymondxwu@hotmail.com",
-  "maxliao2020@gmail.com",
+      "franchise@memorycorner8.com", // 加盟專用信箱(Cloudflare 轉寄至 Max Gmail)
+      "maxliao2020@gmail.com", // 直接備援,確保 Cloudflare 轉寄未就緒時仍收得到
     ];
 
     const subject = `【加盟資訊表單】新申請 - ${fullName || "未填寫姓名"}`;
