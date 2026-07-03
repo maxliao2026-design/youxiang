@@ -33,6 +33,18 @@ module.exports = {
   // ✅ 關閉尾斜線，避免 /api/.../ 404
   trailingSlash: false,
 
+  // 加盟企劃書（密碼加密靜態頁）：/franchise → public/franchise.html
+  // locale:false 避免 i18n 前綴改寫；/en/franchise 也導到同一份
+  async rewrites() {
+    return {
+      beforeFiles: [
+        { source: "/franchise", destination: "/franchise.html", locale: false },
+        { source: "/en/franchise", destination: "/franchise.html", locale: false },
+        { source: "/zh-TW/franchise", destination: "/franchise.html", locale: false },
+      ],
+    };
+  },
+
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
