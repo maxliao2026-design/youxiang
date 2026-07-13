@@ -6,6 +6,11 @@
 **/*.avi
 **/*.wmv
 
+# 例外：首頁實際引用、已壓縮的網頁版影片（ASCII 檔名）須進 repo 才能部署
+# 注意：.mov 仍全擋，避免灶腳 ProRes 母帶（68MB）意外被追蹤
+!public/video/*.mp4
+!public/video/*.webm
+
 # 排除設計原始檔與壓縮包
 **/*.ai
 **/*.psd

@@ -28,10 +28,10 @@ const OG_IMAGE_PATH = "/images/index/about/3-1.webp";
 
 // 影片輪播清單
 const PROMO_VIDEOS = [
-  "/video/A_溫馨用餐_web.mp4",
-  "/video/B_GrassJelly_web.mp4",
-  "/video/B_Toast_web.mp4",
-  "/video/C_五分鐘出好料理_web.mp4",
+  "/video/dining-web.mp4",
+  "/video/grass-jelly-web.mp4",
+  "/video/toast-web.mp4",
+  "/video/quick-cook-web.mp4",
 ];
 
 /* =================================================================
@@ -513,7 +513,7 @@ export default function Home({ t, locale }) {
     description:
       "Enjoy authentic Taiwanese cuisine and beer with friends at Memory Corner.",
     thumbnailUrl: `${SITE_URL}/images/index/video/b4c86b1e81f93dc869c7923db929e811.jpg`,
-    contentUrl: `${SITE_URL}/video/A. Memory Corner | 有香影片-朋友歡聚暢飲.mp4`,
+    contentUrl: `${SITE_URL}/video/dining-web.mp4`,
     uploadDate: "2024-01-01T08:00:00+08:00",
     embedUrl: canonical,
   };
@@ -689,8 +689,8 @@ export default function Home({ t, locale }) {
                 playsInline
                 aria-label="Video of Taiwanese grocery shop"
               >
-                <source src="/video/灶腳.mov" type="video/quicktime" />
-                <source src="/video/灶腳.webm" type="video/webm" />
+                <source src="/video/zaojiao.webm" type="video/webm" />
+                <source src="/video/zaojiao.mp4" type="video/mp4" />
                 您的瀏覽器不支援此影片格式。
               </video>
             </div>
