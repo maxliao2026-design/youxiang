@@ -833,6 +833,7 @@ export async function getStaticProps({ params, locale }) {
     // 封裝最終傳給前端的資料
     const productData = {
       id: p.id,
+      slug: p.slug,
       linkedChineseId: linkedChineseId || p.id,
       name: p.name,
       name_zh: finalNameZh,
