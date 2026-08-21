@@ -33,8 +33,8 @@ async function sendLineNotification(order, cartItems = []) {
   
   // 1. 類型標籤
   let typeLabel = "一般訂單";
-  if (hasBeer) typeLabel = "啤酒商城 (憶點點)";
-  else if (hasGroupBuy) typeLabel = "團購網 (有香ㄟ灶腳)";
+  if (hasBeer) typeLabel = "啤酒";
+  else if (hasGroupBuy) typeLabel = "團購";
 
   // 2. 商品明細格式化
 const itemsList = order.line_items.map(item => {
