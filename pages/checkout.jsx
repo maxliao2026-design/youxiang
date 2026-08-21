@@ -18,6 +18,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { cartStore } from "@/lib/cartStore";
+import { isBeerProduct } from "@/lib/cartUtils";
 import { authStore } from "@/lib/authStore";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -118,20 +119,6 @@ function getNextPeriod(periods = []) {
   return upcoming[0] || null;
 }
 
-// 🍺 判斷是否為啤酒商品
-const isBeerProduct = (item) => {
-  if (!item) return false;
-  const n1 = String(item.name || "").toLowerCase();
-  const n2 = String(item.name_zh || "").toLowerCase();
-  const n3 = String(item.name_en || "").toLowerCase();
-  const check = (str) =>
-    str.includes("beer") ||
-    str.includes("啤酒") ||
-    str.includes("台啤") ||
-    str.includes("生啤") ||
-    str.includes("draft");
-  return check(n1) || check(n2) || check(n3);
-};
 
 /* =================== Modal =================== */
 function GroupNoticeModal({ open, onClose, nextPeriod }) {
@@ -375,9 +362,10 @@ export default function CheckoutPage() {
   /* ------------------ Init ------------------ */
   useEffect(() => {
     cartStore.init();
-    // 移除了原有的 !isBeerProduct 過濾，允許啤酒進入結帳
+    // 此頁只處理一般團購商品（有香ㄟ灶腳）。啤酒一律走 /checkout-beer（憶點點，唯一有酒牌）。
+    // 兩邊取貨地點、收銀、LINE 通知對象都不同，絕不能混成同一張 WooCommerce 訂單。
     const unsubCart = cartStore.subscribe((c) => {
-      setCart(c);
+      setCart(c.filter((it) => !isBeerProduct(it)));
     });
 
     authStore.init?.();
@@ -445,18 +433,6 @@ export default function CheckoutPage() {
     }));
   }, [auth?.user, locale]);
 
-  // 檢查是否含有啤酒，如果選了外送則自動退回選擇頁面
-  useEffect(() => {
-    if (fulfillmentMethod === "delivery" && cart.some(isBeerProduct)) {
-      setFulfillmentMethod(null);
-      alert(
-        locale === "en"
-          ? "Cart contains beer items which are available for pickup only. We've reset your fulfillment method."
-          : "購物車內含啤酒商品，僅限來店自取，已為您重置取貨方式。",
-      );
-    }
-  }, [cart, fulfillmentMethod, locale]);
-
   /* ------------------ Store Methods (已加入庫存防呆) ------------------ */
   const handleUpdateQty = (itemId, change, maxStock = Infinity) => {
     const item = cart.find((i) => i.id === itemId);
@@ -482,14 +458,9 @@ export default function CheckoutPage() {
     let selectedArea = null;
     let taxAmount = 0;
 
-    // 將商品區分出啤酒與一般團購商品計算小計
-    const beerSubtotal = cart
-      .filter(isBeerProduct)
-      .reduce((sum, it) => sum + Number(it.price || 0) * (it.qty || 0), 0);
-    const normalSubtotal = cart
-      .filter((it) => !isBeerProduct(it))
-      .reduce((sum, it) => sum + Number(it.price || 0) * (it.qty || 0), 0);
-    const subtotal = roundPrice(beerSubtotal + normalSubtotal);
+    const subtotal = roundPrice(
+      cart.reduce((sum, it) => sum + Number(it.price || 0) * (it.qty || 0), 0),
+    );
 
     if (fulfillmentMethod === "delivery") {
       selectedArea = AREAS.find((a) => a.value === form.deliveryArea);
@@ -501,8 +472,8 @@ export default function CheckoutPage() {
       const taxRate = selectedArea?.tax || 0;
       taxAmount = roundPrice((subtotal * taxRate) / 100);
     } else if (fulfillmentMethod === "pickup") {
-      // 自取：一般團購商品 5%、啤酒 15%
-      taxAmount = roundPrice(normalSubtotal * 0.05 + beerSubtotal * 0.15);
+      // 自取：一般團購商品 5%
+      taxAmount = roundPrice(subtotal * 0.05);
     }
 
     const total = roundPrice(subtotal + shippingFee + taxAmount);
@@ -603,10 +574,8 @@ export default function CheckoutPage() {
   ]);
 
   /* ------------------ Render 第一步：選擇取貨方式 ------------------ */
-  const hasBeer = cart.some(isBeerProduct);
-
   if (!fulfillmentMethod) {
-    const isDeliveryAvailable = !!activePeriod && !hasBeer;
+    const isDeliveryAvailable = !!activePeriod;
 
     return (
       <Layout>
@@ -645,15 +614,7 @@ export default function CheckoutPage() {
                   if (isDeliveryAvailable) {
                     setFulfillmentMethod("delivery");
                   } else {
-                    if (hasBeer) {
-                      alert(
-                        locale === "en"
-                          ? "Beer items are available for store pickup only."
-                          : "購物車內含啤酒商品，僅提供來店自取服務。",
-                      );
-                    } else {
-                      setShowGroupModal(true);
-                    }
+                    setShowGroupModal(true);
                   }
                 }}
                 className={`group relative rounded-2xl transition-all duration-300 w-full shadow-md hover:shadow-xl
@@ -673,19 +634,8 @@ export default function CheckoutPage() {
                   <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white backdrop-blur-[2px] rounded-2xl p-4 text-center">
                     <Lock size={40} className="mb-3" />
                     <span className="text-xl font-bold tracking-wider">
-                      {hasBeer
-                        ? locale === "en"
-                          ? "Beer: Pickup Only"
-                          : "啤酒僅限自取"
-                        : t.delivery_closed}
+                      {t.delivery_closed}
                     </span>
-                    {hasBeer && (
-                      <span className="text-sm mt-2 font-medium opacity-90">
-                        {locale === "en"
-                          ? "Please select Store Pickup"
-                          : "購物車含啤酒，請選擇來店自取"}
-                      </span>
-                    )}
                   </div>
                 )}
               </button>
@@ -1166,13 +1116,7 @@ export default function CheckoutPage() {
                     <span>{t.tax}</span>
                     {fulfillmentMethod === "pickup" && (
                       <span className="text-xs text-gray-400 mt-0.5">
-                        ({locale === "en" ? "Normal 5%" : "一般商品 5%"}
-                        {cart.some(isBeerProduct)
-                          ? locale === "en"
-                            ? " / Beer 15%"
-                            : " / 啤酒 15%"
-                          : ""}
-                        )
+                        ({locale === "en" ? "Normal 5%" : "一般商品 5%"})
                       </span>
                     )}
                   </div>

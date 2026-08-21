@@ -17,12 +17,11 @@ async function sendLineNotification(order, cartItems = []) {
   const hasBeer = cartItems.some(item => item.store_type === 'beer');
   const hasGroupBuy = cartItems.some(item => item.store_type === 'group_buy');
 
+  // handler 已擋掉混單，這裡一張訂單只會對應一家店。
   let targetIds = new Set();
-  if (hasGroupBuy) groupBuyAdmins.forEach(id => targetIds.add(id));
-  // 預設或啤酒訂單都通知啤酒管理員
-  if (hasBeer || (!hasGroupBuy && !hasBeer)) {
-    beerAdmins.forEach(id => targetIds.add(id));
-  }
+  if (hasBeer) beerAdmins.forEach(id => targetIds.add(id));
+  else if (hasGroupBuy) groupBuyAdmins.forEach(id => targetIds.add(id));
+  else beerAdmins.forEach(id => targetIds.add(id)); // 舊資料沒有 store_type 時的預設
 
   const toList = Array.from(targetIds);
   if (toList.length === 0) {
@@ -34,9 +33,8 @@ async function sendLineNotification(order, cartItems = []) {
   
   // 1. 類型標籤
   let typeLabel = "一般訂單";
-  if (hasBeer && hasGroupBuy) typeLabel = "啤酒 + 團購";
-  else if (hasBeer) typeLabel = "啤酒商城";
-  else if (hasGroupBuy) typeLabel = "團購網";
+  if (hasBeer) typeLabel = "啤酒商城 (憶點點)";
+  else if (hasGroupBuy) typeLabel = "團購網 (有香ㄟ灶腳)";
 
   // 2. 商品明細格式化
 const itemsList = order.line_items.map(item => {
@@ -140,6 +138,18 @@ export default async function handler(req, res) {
     }
     if (!email || !name) {
       return res.status(400).json({ ok: false, message: "缺少 Email 或 姓名" });
+    }
+
+    // 硬擋混單：啤酒（憶點點，唯一有酒牌）與團購商品（有香ㄟ灶腳）是兩個地點、
+    // 兩套收銀、兩組 LINE 通知對象，絕不能進同一張 WooCommerce 訂單。
+    // 前端 /checkout 與 /checkout-beer 已各自過濾，這裡是最後防線。
+    const storeTypes = new Set(cart.map((it) => it.store_type).filter(Boolean));
+    if (storeTypes.has("beer") && storeTypes.size > 1) {
+      console.warn("[create-order] 拒收混單 (beer + group_buy):", cart.map((it) => it.name));
+      return res.status(400).json({
+        ok: false,
+        message: "啤酒與一般商品需分開結帳（啤酒請至憶點點自取）",
+      });
     }
 
     // 環境變數檢查

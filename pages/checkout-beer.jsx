@@ -16,6 +16,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { cartStore } from "@/lib/cartStore";
+import { isBeerProduct } from "@/lib/cartUtils";
 import { authStore } from "@/lib/authStore";
 
 /* =================== Helper =================== */
@@ -39,20 +40,6 @@ const formatPrice = (num) => {
   });
 };
 
-// 🍺 判斷是否為啤酒商品
-const isBeerProduct = (item) => {
-  if (!item) return false;
-  const n1 = String(item.name || "").toLowerCase();
-  const n2 = String(item.name_zh || "").toLowerCase();
-  const n3 = String(item.name_en || "").toLowerCase();
-  const check = (str) =>
-    str.includes("beer") ||
-    str.includes("啤酒") ||
-    str.includes("台啤") ||
-    str.includes("生啤") ||
-    str.includes("draft");
-  return check(n1) || check(n2) || check(n3);
-};
 
 /* --- 日期產生器 (溫哥華時間) --- */
 const getNext7DaysCanada = (locale) => {
