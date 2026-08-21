@@ -4,6 +4,9 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Layout from "./Layout";
+import Link from "next/link";
+import { cartStore } from "@/lib/cartStore";
+import { isBeerProduct } from "@/lib/cartUtils";
 
 const PLACEHOLDER = "https://dummyimage.com/80x80/eeeeee/999999.png&text=%20";
 
@@ -31,6 +34,12 @@ const PAGE_TRANSLATIONS = {
     back_home_link: "首頁",
     back_home_suffix: "瀏覽更多商品。",
     currency: "NT$",
+    pending_beer_title: "您的購物車還有 {n} 件啤酒尚未結帳",
+    pending_beer_desc: "啤酒需另於「憶點點」自取結帳，與本筆訂單分開處理。",
+    pending_beer_cta: "前往啤酒結帳",
+    pending_general_title: "您的購物車還有 {n} 件團購商品尚未結帳",
+    pending_general_desc: "團購商品需另於「有香ㄟ灶腳」結帳（自取或宅配），與本筆訂單分開處理。",
+    pending_general_cta: "前往一般結帳",
   },
   en: {
     title: "Thank You for Your Order!",
@@ -53,6 +62,12 @@ const PAGE_TRANSLATIONS = {
     back_home_link: "Home",
     back_home_suffix: " to browse more products.",
     currency: "NT$",
+    pending_beer_title: "You still have {n} beer item(s) in your cart",
+    pending_beer_desc: "Beer is checked out separately for pickup at Sweet Memory.",
+    pending_beer_cta: "Go to Beer Checkout",
+    pending_general_title: "You still have {n} group-buy item(s) in your cart",
+    pending_general_desc: "Group-buy items are checked out separately at Old Memory Kitchen (pickup or delivery).",
+    pending_general_cta: "Go to Checkout",
   },
 };
 
@@ -68,6 +83,25 @@ export default function ThankYouPage() {
   const [order, setOrder] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false); // 新增 loading 狀態控制
+
+  // 拆單提醒：食品與啤酒分開結帳，下單後另一批仍留在購物車，這裡提示客人去結另一筆
+  const [remainingCart, setRemainingCart] = useState([]);
+  useEffect(() => {
+    cartStore.init();
+    return cartStore.subscribe((c) => setRemainingCart(c || []));
+  }, []);
+  const pendingBeer = remainingCart
+    .filter(isBeerProduct)
+    .reduce((n, it) => n + (it.qty || 0), 0);
+  const pendingGeneral = remainingCart
+    .filter((it) => !isBeerProduct(it))
+    .reduce((n, it) => n + (it.qty || 0), 0);
+  const pending =
+    pendingBeer > 0
+      ? { n: pendingBeer, kind: "beer", href: "/checkout-beer" }
+      : pendingGeneral > 0
+        ? { n: pendingGeneral, kind: "general", href: "/checkout" }
+        : null;
 
   // 1. Fetch Order Data
   useEffect(() => {
@@ -136,6 +170,25 @@ export default function ThankYouPage() {
             </h1>
             <p className="text-gray-600">{t.subtitle}</p>
           </div>
+
+          {pending && (
+            <div className="mb-10 rounded-2xl border-2 border-amber-400 bg-amber-50 p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <p className="text-lg font-bold text-amber-900">
+                  {t[`pending_${pending.kind}_title`].replace("{n}", pending.n)}
+                </p>
+                <p className="text-sm text-amber-800 mt-1">
+                  {t[`pending_${pending.kind}_desc`]}
+                </p>
+              </div>
+              <Link
+                href={pending.href}
+                className="shrink-0 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold px-6 py-3 text-center transition"
+              >
+                {t[`pending_${pending.kind}_cta`]} →
+              </Link>
+            </div>
+          )}
 
           {/* 顯示邏輯：依序判斷 Loading -> Error -> Missing ID -> Content */}
 

@@ -337,6 +337,7 @@ export default function CheckoutPage() {
 
   /* ------------------ State ------------------ */
   const [cart, setCart] = useState([]);
+  const [otherCount, setOtherCount] = useState(0); // 購物車裡屬於另一家店（啤酒）的件數
   const [placing, setPlacing] = useState(false);
   const [auth, setAuth] = useState(authStore.get());
   const [useDifferentContact, setUseDifferentContact] = useState(false);
@@ -366,6 +367,7 @@ export default function CheckoutPage() {
     // 兩邊取貨地點、收銀、LINE 通知對象都不同，絕不能混成同一張 WooCommerce 訂單。
     const unsubCart = cartStore.subscribe((c) => {
       setCart(c.filter((it) => !isBeerProduct(it)));
+      setOtherCount(c.filter(isBeerProduct).reduce((n, it) => n + (it.qty || 0), 0));
     });
 
     authStore.init?.();
@@ -1168,6 +1170,13 @@ export default function CheckoutPage() {
                 )}
                 {placing ? t.placing_order : t.place_order}
               </button>
+              {otherCount > 0 && (
+                <p className="mt-3 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 leading-relaxed">
+                  {locale === "en"
+                    ? `Your cart also has ${otherCount} beer item(s). Beer is checked out separately for pickup at Sweet Memory — we'll remind you after this order.`
+                    : `購物車另有 ${otherCount} 件啤酒，需另於「憶點點」自取結帳；本筆完成後會提醒您。`}
+                </p>
+              )}
             </div>
           </aside>
         </div>

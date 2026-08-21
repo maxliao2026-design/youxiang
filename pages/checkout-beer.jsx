@@ -162,6 +162,7 @@ export default function CheckoutBeerPage() {
   /* ------------------ State ------------------ */
   const [fulfillmentMethod, setFulfillmentMethod] = useState(null);
   const [cart, setCart] = useState([]);
+  const [otherCount, setOtherCount] = useState(0); // 購物車裡屬於另一家店（團購食品）的件數
   const [placing, setPlacing] = useState(false);
   const [auth, setAuth] = useState(authStore.get());
   const [useDifferentContact, setUseDifferentContact] = useState(false);
@@ -180,6 +181,7 @@ export default function CheckoutBeerPage() {
     cartStore.init();
     const unsubCart = cartStore.subscribe((c) => {
       setCart(c.filter(isBeerProduct));
+      setOtherCount(c.filter((it) => !isBeerProduct(it)).reduce((n, it) => n + (it.qty || 0), 0));
     });
 
     authStore.init?.();
@@ -680,6 +682,13 @@ export default function CheckoutBeerPage() {
                 )}
                 {placing ? t.placing_order : t.place_order}
               </button>
+              {otherCount > 0 && (
+                <p className="mt-3 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 leading-relaxed">
+                  {locale === "en"
+                    ? `Your cart also has ${otherCount} group-buy item(s). They are checked out separately at Old Memory Kitchen — we'll remind you after this order.`
+                    : `購物車另有 ${otherCount} 件團購商品，需另於「有香ㄟ灶腳」結帳；本筆完成後會提醒您。`}
+                </p>
+              )}
             </div>
           </aside>
         </div>
